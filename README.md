@@ -23,12 +23,12 @@ https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-2020-11-11-git-89429cf2f2-ess
 ### 3.1 Descomprimir y renombrar por "ffmpeg"
 ### 3.2 Mover a carpeta familiar. Ej: C:\ProgramFiles
 ### 3.3 Agregar al Path 
-#### 3.3.1 Configuracion Avanzada del Sistema
-#### 3.3.2 Variables de Entorno
-#### 3.3.3 Variables de Sistema = "Path"
-#### 3.3.4 Editar
-#### 3.3.5 Agregar la ruta donde se guardo la carpeta ffmpeg concatenando \bin
-#### 3.3.6 Aceptar...
+3.3.1 Configuracion Avanzada del Sistema
+3.3.2 Variables de Entorno
+3.3.3 Variables de Sistema = "Path"
+3.3.4 Editar
+3.3.5 Agregar la ruta donde se guardo la carpeta ffmpeg concatenando \bin
+3.3.6 Aceptar...
 
 	Corroborar en consola: ffmpeg -version
 
