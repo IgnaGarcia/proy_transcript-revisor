@@ -5,6 +5,9 @@ import wave
 import json
 import subprocess
 import math
+import time
+
+tinicial = time.time()
 
 SetLogLevel(-1)
 if not os.path.exists("model"):
@@ -52,3 +55,7 @@ arch.write(res['text'])
 
 arch.close()
 print("Proceso finalizado, revise en el directorio de la app el archivo resultado.txt")
+
+tfinal = time.time()
+difftime = tfinal - tinicial
+print("La funcion tardo: ", difftime, "segs")
