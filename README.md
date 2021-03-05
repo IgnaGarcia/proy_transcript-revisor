@@ -18,7 +18,7 @@ pip3 install vosk
 
 ## 3-Descargar ffmpeg para convertir archivos de audio
 
-https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-2020-11-11-git-89429cf2f2-essentials_build.7z
+	https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z
 
 ### 3.1 Descomprimir y renombrar por "ffmpeg"
 ### 3.2 Mover a carpeta familiar. Ej: C:\ProgramFiles
