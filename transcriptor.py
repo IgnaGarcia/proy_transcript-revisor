@@ -18,7 +18,7 @@ class MyRecognizeCallback(RecognizeCallback):
         print("\n\nGuardando resultado...")
 
         # Archivo para todo el resultado (Timestamps, Keywords, ETC)
-        f = open("salida/data.txt", "w")
+        f = open("salida/data.json", "w")
         f.write(jsonText)  # Guardar el JSON Indentado
         f.close()
 
@@ -89,7 +89,9 @@ with open('audio.'+tipo, 'rb') as audio_file:
         keywords_threshold=0.8,
         inactivity_timeout=180,
         smart_formatting=True,
+        speaker_labels= True,
         timestamps=True,
+        word_confidence= True,
         max_alternatives=1)
 
 tfinal = time.time()
