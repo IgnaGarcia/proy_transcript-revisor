@@ -54,6 +54,11 @@ arch.write(res['text'])
 #                                                   sSeconds, eMinutes, eSeconds, res[x]['text']))
 
 arch.close()
+
+arch = open("data.json", "w")
+arch.write(json.dumps(res, indent=2))
+arch.close()
+
 print("Proceso finalizado, revise en el directorio de la app el archivo resultado.txt")
 
 tfinal = time.time()
