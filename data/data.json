@@ -635,7 +635,16 @@
           ]
         }
       ],
-      "keywords_result": {}
+      "keywords_result": {
+        "salud": [
+          {
+            "start_time": 31.44,
+            "end_time": 31.74,
+            "confidence": 0.9,
+            "normalized_text": "salud"
+          }
+        ]
+      }
     },
     {
       "final": true,
@@ -937,7 +946,16 @@
           ]
         }
       ],
-      "keywords_result": {}
+      "keywords_result": {
+        "historia": [
+          {
+            "start_time": 47.69,
+            "end_time": 48.0,
+            "confidence": 0.91,
+            "normalized_text": "historia"
+          }
+        ]
+      }
     },
     {
       "final": true,
@@ -1122,7 +1140,16 @@
           ]
         }
       ],
-      "keywords_result": {}
+      "keywords_result": {
+        "paciente": [
+          {
+            "start_time": 52.49,
+            "end_time": 53.17,
+            "confidence": 0.88,
+            "normalized_text": "paciente"
+          }
+        ]
+      }
     },
     {
       "final": true,
@@ -2291,23 +2318,23 @@
             ],
             [
               "pasi\u00f3n",
-              0.44
+              0.43
             ],
             [
               "sale",
-              0.74
+              0.73
             ],
             [
               "registr\u00f3",
-              0.82
+              0.85
             ],
             [
               "pacientes",
-              0.18
+              0.19
             ],
             [
               "del",
-              0.49
+              0.51
             ],
             [
               "sistema",
@@ -2597,7 +2624,16 @@
           ]
         }
       ],
-      "keywords_result": {}
+      "keywords_result": {
+        "paciente": [
+          {
+            "start_time": 134.25,
+            "end_time": 134.63,
+            "confidence": 0.98,
+            "normalized_text": "paciente"
+          }
+        ]
+      }
     },
     {
       "final": true,
@@ -3788,15 +3824,15 @@
             ],
             [
               "portando",
-              0.5
+              0.49
             ],
             [
               "bien",
-              0.55
+              0.54
             ],
             [
               "es",
-              0.76
+              0.63
             ],
             [
               "informaci\u00f3n",
@@ -3808,7 +3844,7 @@
             ],
             [
               "este",
-              0.51
+              0.53
             ],
             [
               "no",
@@ -5246,7 +5282,16 @@
           ]
         }
       ],
-      "keywords_result": {}
+      "keywords_result": {
+        "paciente": [
+          {
+            "start_time": 263.45,
+            "end_time": 264.18,
+            "confidence": 0.97,
+            "normalized_text": "paciente"
+          }
+        ]
+      }
     },
     {
       "final": true,
@@ -5296,7 +5341,16 @@
           ]
         }
       ],
-      "keywords_result": {}
+      "keywords_result": {
+        "historia": [
+          {
+            "start_time": 309.41,
+            "end_time": 309.83,
+            "confidence": 0.95,
+            "normalized_text": "historia"
+          }
+        ]
+      }
     },
     {
       "final": true,
@@ -5793,7 +5847,16 @@
           ]
         }
       ],
-      "keywords_result": {}
+      "keywords_result": {
+        "paciente": [
+          {
+            "start_time": 334.19,
+            "end_time": 334.76,
+            "confidence": 0.96,
+            "normalized_text": "paciente"
+          }
+        ]
+      }
     },
     {
       "final": true,
@@ -6014,7 +6077,16 @@
           ]
         }
       ],
-      "keywords_result": {}
+      "keywords_result": {
+        "historia": [
+          {
+            "start_time": 345.53,
+            "end_time": 345.89,
+            "confidence": 0.83,
+            "normalized_text": "historia"
+          }
+        ]
+      }
     },
     {
       "final": true,
@@ -7077,7 +7149,28 @@
           ]
         }
       ],
-      "keywords_result": {}
+      "keywords_result": {
+        "paciente": [
+          {
+            "start_time": 407.87,
+            "end_time": 408.72,
+            "confidence": 0.84,
+            "normalized_text": "paciente"
+          },
+          {
+            "start_time": 413.25,
+            "end_time": 414.01,
+            "confidence": 0.87,
+            "normalized_text": "paciente"
+          },
+          {
+            "start_time": 416.02,
+            "end_time": 416.67,
+            "confidence": 0.92,
+            "normalized_text": "paciente"
+          }
+        ]
+      }
     },
     {
       "final": true,
@@ -8358,7 +8451,7 @@
       "from": 95.88,
       "to": 96.43,
       "speaker": 1,
-      "confidence": 0.54,
+      "confidence": 0.52,
       "final": false
     },
     {
@@ -9786,91 +9879,91 @@
       "from": 207.35,
       "to": 207.93,
       "speaker": 1,
-      "confidence": 0.32,
+      "confidence": 0.41,
       "final": false
     },
     {
       "from": 208.93,
       "to": 209.74,
       "speaker": 1,
-      "confidence": 0.48,
+      "confidence": 0.42,
       "final": false
     },
     {
       "from": 210.62,
       "to": 210.73,
       "speaker": 1,
-      "confidence": 0.47,
+      "confidence": 0.44,
       "final": false
     },
     {
       "from": 210.73,
       "to": 210.96,
       "speaker": 1,
-      "confidence": 0.47,
+      "confidence": 0.44,
       "final": false
     },
     {
       "from": 210.96,
       "to": 211.72,
       "speaker": 1,
-      "confidence": 0.47,
+      "confidence": 0.44,
       "final": false
     },
     {
       "from": 211.93,
       "to": 212.17,
       "speaker": 1,
-      "confidence": 0.51,
+      "confidence": 0.46,
       "final": false
     },
     {
       "from": 212.17,
       "to": 212.74,
       "speaker": 1,
-      "confidence": 0.51,
+      "confidence": 0.46,
       "final": false
     },
     {
       "from": 212.74,
       "to": 213.23,
       "speaker": 1,
-      "confidence": 0.51,
+      "confidence": 0.46,
       "final": false
     },
     {
       "from": 213.23,
       "to": 213.52,
       "speaker": 1,
-      "confidence": 0.51,
+      "confidence": 0.46,
       "final": false
     },
     {
       "from": 213.67,
       "to": 213.82,
       "speaker": 1,
-      "confidence": 0.48,
+      "confidence": 0.45,
       "final": false
     },
     {
       "from": 213.82,
       "to": 214.25,
       "speaker": 1,
-      "confidence": 0.48,
+      "confidence": 0.45,
       "final": false
     },
     {
       "from": 214.7,
       "to": 215.4,
       "speaker": 1,
-      "confidence": 0.41,
+      "confidence": 0.43,
       "final": false
     },
     {
       "from": 216.4,
       "to": 217.01,
       "speaker": 1,
-      "confidence": 0.44,
+      "confidence": 0.43,
       "final": false
     },
     {
@@ -9933,42 +10026,42 @@
       "from": 222.68,
       "to": 223.18,
       "speaker": 1,
-      "confidence": 0.46,
+      "confidence": 0.43,
       "final": false
     },
     {
       "from": 223.84,
       "to": 223.97,
       "speaker": 1,
-      "confidence": 0.48,
+      "confidence": 0.5,
       "final": false
     },
     {
       "from": 223.97,
       "to": 224.36,
       "speaker": 1,
-      "confidence": 0.48,
+      "confidence": 0.5,
       "final": false
     },
     {
       "from": 224.36,
       "to": 224.57,
       "speaker": 1,
-      "confidence": 0.48,
+      "confidence": 0.5,
       "final": false
     },
     {
       "from": 224.69,
       "to": 225.2,
       "speaker": 1,
-      "confidence": 0.46,
+      "confidence": 0.44,
       "final": false
     },
     {
       "from": 225.3,
       "to": 225.92,
       "speaker": 1,
-      "confidence": 0.54,
+      "confidence": 0.49,
       "final": false
     },
     {
