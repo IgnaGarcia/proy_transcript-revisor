@@ -1,13 +1,49 @@
+//Listar las revisiones para manipularlas
+window.addEventListener("load", async () => {
+    //Conectarse a la DB y guardar la revision
+    let dbManager = await indexedDBManager()
+
+    let table = document.getElementById("revisionTable")
+    
+    let revisions = await dbManager.getAll()
+    
+    revisions.forEach(i => {
+        let tr = document.createElement("tr")
+        let tdNombre = document.createElement("td")
+        let tdFecha = document.createElement("td")
+        let tdDuracion = document.createElement("td")
+    
+        tdNombre.append(i.revision.titulo)
+        tdFecha.append(i.revision.fecha)
+        tdDuracion.append(i.revision.duracion)
+        
+        tr.append(tdNombre)
+        tr.append(tdFecha)
+        tr.append(tdDuracion)
+
+        table.append(tr)
+    })
+})
+
 //Constructor de Revision
-let revisionFactory = (titulo, audio, texto) => {
+let revisionFactory = (titulo, file, texto, duracion) => {
     //timestamp
     let date = new Date(Date.now())
     let strDate = date.getFullYear()+"/"+date.getMonth()+"/"+date.getUTCDate()+" "+date.getHours()+':'+date.getMinutes()
-    
+
+    let hrs = ~~(duracion / 3600);
+    let mins = ~~((duracion % 3600) / 60);
+    let secs = ~~duracion % 60
+    let strDuracion = ""
+    if (hrs > 0) strDuracion += "" + hrs + ":" + (mins < 10 ? "0" : "")
+    strDuracion += "" + mins + ":" + (secs < 10 ? "0" : "")
+    strDuracion += "" + secs
+
     let obj = {
         titulo: titulo,
-        audio: audio,
+        audio: file,
         texto: texto,
+        duracion: strDuracion,
         fecha: strDate
     }
 
@@ -25,25 +61,18 @@ let crearRevision = async () => {
     let json = 0
     if (inputTexto) json = await fileToJSON(inputTexto)
 
+    let audio = new Audio(window.URL.createObjectURL(inputAudio))
+    let promise = new Promise((resolve, reject) => {
+        audio.addEventListener('loadedmetadata', () => resolve(audio.duration))
+    })
+    let duration = await promise.then(res => res)
+
     //Crear Revision
-    let revision = revisionFactory(inputTitulo.value, inputAudio, json)
+    let revision = revisionFactory(inputTitulo.value, inputAudio, json, duration)
 
     //Conectarse a la DB y guardar la revision
     let dbManager = await indexedDBManager()
     dbManager.add({revision: revision}).then(e => console.log(e))
-    
-    /*let table = document.getElementById("revisionTable")
-    
-
-    let revisions = await dbManager.getAll()
-    revisions.forEach(revision => {
-        let tr = document.createElement("tr")
-        let tdNombre = document.createElement("td")
-        let tdFecha = document.createElement("td")
-        let tdDuracion = document.createElement("td")
-
-        tdNombre.append(revision.)
-    })*/
 }
 
 //Promise Wraper para manager de la DB
@@ -77,7 +106,7 @@ let indexedDBManager = async () => {
 }
 
 //Promesa de lectura completa del archivo
-let readFile = (file) => {
+let readFile = file => {
     return new Promise((resolve, reject) => {
         const reader = new FileReader()
 
@@ -89,7 +118,7 @@ let readFile = (file) => {
 }
 
 //Leer el archivo, convertirlo a JSON y pasarlo a limpio
-let fileToJSON = async (file) => {
+let fileToJSON = async file => {
     let result = await readFile(file)
     return await clearJSON(JSON.parse(result))
 }
@@ -119,7 +148,7 @@ let paragraphFactory = (paragraph, from) => {
 }
 
 //Limpieza de JSON de entrada
-let clearJSON = (json) => {
+let clearJSON = json => {
     let wordCount = 0
     let cleared = []
     
