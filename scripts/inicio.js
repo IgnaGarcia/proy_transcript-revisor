@@ -25,12 +25,25 @@ let crearRevision = async () => {
     let json = 0
     if (inputTexto) json = await fileToJSON(inputTexto)
 
-    //Guardar el audio
-    let audio = new Audio()
-    audio.src = window.URL.createObjectURL(inputAudio)
-
     //Crear Revision
-    let revision = revisionFactory(inputTitulo, audio, json)
+    let revision = revisionFactory(inputTitulo.value, inputAudio, json)
+
+    //Conectarse a la DB y guardar la revision
+    let dbManager = await indexedDBManager()
+    dbManager.add({revision: revision}).then(e => console.log(e))
+    
+    /*let table = document.getElementById("revisionTable")
+    
+
+    let revisions = await dbManager.getAll()
+    revisions.forEach(revision => {
+        let tr = document.createElement("tr")
+        let tdNombre = document.createElement("td")
+        let tdFecha = document.createElement("td")
+        let tdDuracion = document.createElement("td")
+
+        tdNombre.append(revision.)
+    })*/
 }
 
 //Promise Wraper para manager de la DB
@@ -44,17 +57,16 @@ let promiseReq = req => {
 //Manager de la DB del browser
 let indexedDBManager = async () => {
     // Abrimos la DB
-    let openRequest = indexedDB.open('testDB', 1);
+    let openRequest = indexedDB.open('Revisions', 1);
     openRequest.onupgradeneeded = (e) => {
         let db = e.target.result;
-        db.createObjectStore("doc", { keyPath: "id", autoIncrement: true });
-        console.log("created indexed DB")
+        db.createObjectStore("Revisions", { keyPath: "id", autoIncrement: true });
     };
 
     return promiseReq(openRequest).then(db => {
         let obj = {db: db}
-        obj.transaction= obj.db.transaction("doc", "readwrite")
-        obj.store= obj.transaction.objectStore("doc")
+        obj.transaction= obj.db.transaction("Revisions", "readwrite")
+        obj.store= obj.transaction.objectStore("Revisions")
         obj.add= (item) => promiseReq(obj.store.add(item))
         obj.get= (key) => promiseReq(obj.store.get(key))
         obj.delete= (key) => promiseReq(obj.store.delete(key))
