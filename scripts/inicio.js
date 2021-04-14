@@ -47,7 +47,7 @@ let revisionFactory = (titulo, file, texto, duracion) => {
         fecha: strDate
     }
 
-    return obj
+    return obj;
 }
 
 //Captar los datos ingresados, manipularlos y guardarlos
@@ -73,11 +73,12 @@ let crearRevision = async () => {
     //Conectarse a la DB y guardar la revision
     let dbManager = await indexedDBManager()
     dbManager.add({revision: revision}).then(e => console.log(e))
+    console.log("hola")
 }
 
 //Manager de la DB del browser
 let indexedDBManager = async () => {
-    
+    console.log("1era linea del manager del browser")
     //Promise Wraper para manager de la DB
     let promiseReq = req => {
         return new Promise((resolve, reject) => {
@@ -85,13 +86,14 @@ let indexedDBManager = async () => {
             req.onerror = () => reject(req.error);
         });
     }
-
+    console.log("abriendo db")
     // Abrimos la DB
     let openRequest = indexedDB.open('Revisions', 1);
     openRequest.onupgradeneeded = (e) => {
         let db = e.target.result;
         db.createObjectStore("Revisions", { keyPath: "id", autoIncrement: true });
     };
+    
 
     return promiseReq(openRequest).then(db => {
         let obj = {db: db}
@@ -154,6 +156,7 @@ let clearJSON = json => {
     let wordCount = 0
     let cleared = []
     
+
     json.results.forEach(result => {
         let paragraph = paragraphFactory(result.alternatives[0].transcript, result.alternatives[0].timestamps[0][1])
 
@@ -175,8 +178,20 @@ let clearJSON = json => {
             paragraph.words.push(nWord)
         })
 
+        
         cleared.push(paragraph)
     })
+
+    let root = document.getElementById("root");
+    root.setAttribute("contenteditable", "true");
+
+    console.log(cleared);
+    for(let i=0; i<cleared.length; i++){
+        let parrafo= document.createElement("div");
+        parrafo.setAttribute("contenteditable", "true");
+        parrafo.append("Speaker" + cleared[i].speaker + ": " + cleared[i].paragraph + "." + " ")
+        root.append(parrafo);
+    }
+    return cleared;
     
-    return cleared
 }
