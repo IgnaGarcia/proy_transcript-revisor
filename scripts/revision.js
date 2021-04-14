@@ -1,9 +1,21 @@
 //Una vez que carga el DOM se agrega el texto
-window.addEventListener("load", async () => {
+window.addEventListener("load", async () => { 
+    let root = document.getElementById("root");
+    root.setAttribute("contenteditable", "true");
+
     //Conectarse a la DB y obtener revision
-    let dbManager = await indexedDBManager()    
-    let revisions = await dbManager.get(1)
+    let dbManager = await indexedDBManager()
     
+    let urlParams = new URLSearchParams(window.location.search);
+    let id = parseInt(urlParams.get('id'))
+    
+    dbManager.get(id).then(revisions => {
+        revisions.revision.texto.forEach(el => {
+            let parrafo= document.createElement("div");
+            parrafo.append("Speaker" + el.speaker + ": " + el.paragraph + "." + " ")
+            root.append(parrafo);
+        })
+    })
 })
 
 //Manager de la DB del browser

@@ -1,29 +1,99 @@
 //Listar las revisiones para manipularlas
-window.addEventListener("load", async () => {
+window.addEventListener("load", () => {
+    appendTabla()
+})
+
+//Construir tabla de revisiones
+let appendTabla = async() => {
     //Conectarse a la DB y obtener la revision
     let dbManager = await indexedDBManager()
 
     let table = document.getElementById("revisionTable")
-    
-    let revisions = await dbManager.getAll()
-    
-    revisions.forEach(i => {
+
+    dbManager.getAll().then(revisions => {
+        revisions.forEach(i => {
+            let tr = document.createElement("tr")
+            let tdNombre = document.createElement("td")
+            let tdFecha = document.createElement("td")
+            let tdDuracion = document.createElement("td")
+            let tdOpen = document.createElement("td")
+            let tdBorrar = document.createElement("td")
+
+            let openLink = document.createElement("a")
+            openLink.setAttribute("href","./revision/?id="+i.id)
+            
+            let borrarLink = document.createElement("button")
+            borrarLink.setAttribute("onclick","deleteRevision("+i.id+")")
+            
+            tr.setAttribute("id",i.id)
+            borrarLink.append("Borrar")
+            openLink.append("Abrir")
+
+            tdNombre.append(i.revision.titulo)
+            tdFecha.append(i.revision.fecha)
+            tdDuracion.append(i.revision.duracion)
+            tdOpen.append(openLink)
+            tdBorrar.append(borrarLink)
+
+            tr.append(tdNombre)
+            tr.append(tdFecha)
+            tr.append(tdDuracion)
+            tr.append(tdOpen)
+            tr.append(tdBorrar)
+
+            table.append(tr)
+        })
+    })
+}
+
+let appendChild = async(id) => {
+    //Conectarse a la DB y obtener la revision
+    let dbManager = await indexedDBManager()
+
+    let table = document.getElementById("revisionTable")
+    dbManager.get(id).then(i => {
         let tr = document.createElement("tr")
         let tdNombre = document.createElement("td")
         let tdFecha = document.createElement("td")
         let tdDuracion = document.createElement("td")
-    
+        let tdOpen = document.createElement("td")
+        let tdBorrar = document.createElement("td")
+
+        let openLink = document.createElement("a")
+        openLink.setAttribute("href","./revision/?id="+i.id)
+
+        let borrarLink = document.createElement("button")
+        borrarLink.setAttribute("onclick","deleteRevision("+i.id+")")
+        
+        tr.setAttribute("id",i.id)
+        borrarLink.append("Borrar")
+        openLink.append("Abrir")
+
         tdNombre.append(i.revision.titulo)
         tdFecha.append(i.revision.fecha)
         tdDuracion.append(i.revision.duracion)
-        
+        tdOpen.append(openLink)
+        tdBorrar.append(borrarLink)
+
         tr.append(tdNombre)
         tr.append(tdFecha)
         tr.append(tdDuracion)
+        tr.append(tdOpen)
+        tr.append(tdBorrar)
 
         table.append(tr)
     })
-})
+}
+
+let deleteRevision = async(id) => {
+    //Conectarse a la DB y obtener la revision
+    let dbManager = await indexedDBManager()
+
+    dbManager.delete(id).then(i => {
+        let fila = document.getElementById(id)
+        fila.remove()
+    })
+}
 
 //Constructor de Revision
 let revisionFactory = (titulo, file, texto, duracion) => {
@@ -72,13 +142,11 @@ let crearRevision = async () => {
 
     //Conectarse a la DB y guardar la revision
     let dbManager = await indexedDBManager()
-    dbManager.add({revision: revision}).then(e => console.log(e))
-    console.log("hola")
+    dbManager.add({revision: revision}).then(e => appendChild(e))
 }
 
 //Manager de la DB del browser
 let indexedDBManager = async () => {
-    console.log("1era linea del manager del browser")
     //Promise Wraper para manager de la DB
     let promiseReq = req => {
         return new Promise((resolve, reject) => {
@@ -86,7 +154,7 @@ let indexedDBManager = async () => {
             req.onerror = () => reject(req.error);
         });
     }
-    console.log("abriendo db")
+    
     // Abrimos la DB
     let openRequest = indexedDB.open('Revisions', 1);
     openRequest.onupgradeneeded = (e) => {
@@ -178,20 +246,8 @@ let clearJSON = json => {
             paragraph.words.push(nWord)
         })
 
-        
         cleared.push(paragraph)
     })
 
-    let root = document.getElementById("root");
-    root.setAttribute("contenteditable", "true");
-
-    console.log(cleared);
-    for(let i=0; i<cleared.length; i++){
-        let parrafo= document.createElement("div");
-        parrafo.setAttribute("contenteditable", "true");
-        parrafo.append("Speaker" + cleared[i].speaker + ": " + cleared[i].paragraph + "." + " ")
-        root.append(parrafo);
-    }
     return cleared;
-    
 }
