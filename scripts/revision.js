@@ -2,7 +2,25 @@
 window.addEventListener("load", () => { 
     let root = document.getElementById("root");
     cargarTexto(root)
+    cargarAudio()
 })
+
+let cargarAudio = async() => {
+    //Conectarse a la DB y obtener revision
+    let dbManager = await indexedDBManager()
+        
+    let urlParams = new URLSearchParams(window.location.search);
+    let id = parseInt(urlParams.get('id'))
+
+    dbManager.get(id).then(revisions => {
+        let audio = new Audio()
+        audio.src = window.URL.createObjectURL(revisions.revision.audio);
+        
+        let audioContainer = document.getElementById("audioContainer")
+        audioContainer.append(audio)
+
+    })
+}
 
 let guardarRevision = async() => {
 
@@ -10,15 +28,15 @@ let guardarRevision = async() => {
 
 //Descargar en formato PDF
 let descargarPDF = () => {
-    let root = document.getElementById("root");
+    let root = document.getElementById("root")
     
     //Generar y descargar pdf
-    let doc = new jsPDF();
+    let doc = new jsPDF()
     doc.fromHTML(root, 15, 15, {
         'width': 170
     });
 
-    doc.save('sample-document.pdf');
+    doc.save('sample-document.pdf')
 }
 
 //Agregar el texto al DOM
