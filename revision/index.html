@@ -9,9 +9,21 @@
     <title>Revision de Transcripcion</title>
 </head>
 <body>
-    
-    <div id="root">
+    <div>
+        <button id="btnGuardar" onclick="guardarRevision()">
+            Guardar
+        </button>
+        <button id="btnDescargar" onclick="descargarPDF()">
+            Descargar
+        </button>
+    </div>
+
+    <div id="root" contenteditable=true>
         
+    </div>
+
+    <div id="audioContainer">
+        <audio></audio>
     </div>
 
     <script src="../scripts/revision.js"></script>

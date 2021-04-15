@@ -224,11 +224,12 @@ let clearJSON = json => {
     let wordCount = 0
     let cleared = []
     
-
     json.results.forEach(result => {
         let paragraph = paragraphFactory(result.alternatives[0].transcript, result.alternatives[0].timestamps[0][1])
 
         result.alternatives[0].timestamps.forEach((word, i) => {
+            if(result.alternatives[0].timestamps.length-1 === i) word[0]= word[0]+"."
+            
             let nWord = wordFactory(word[0], word[1], word[2], result.alternatives[0].word_confidence[i][1])
 
             if(Object.keys(result.keywords_result).indexOf(word[0]) != -1){

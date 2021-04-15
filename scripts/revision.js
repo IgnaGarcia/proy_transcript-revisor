@@ -1,22 +1,42 @@
 //Una vez que carga el DOM se agrega el texto
-window.addEventListener("load", async () => { 
+window.addEventListener("load", () => { 
     let root = document.getElementById("root");
-    root.setAttribute("contenteditable", "true");
+    cargarTexto(root)
+})
 
+let guardarRevision = async() => {
+
+}
+
+//Descargar en formato PDF
+let descargarPDF = () => {
+    let root = document.getElementById("root");
+    
+    //Generar y descargar pdf
+    let doc = new jsPDF();
+    doc.fromHTML(root, 15, 15, {
+        'width': 170
+    });
+
+    doc.save('sample-document.pdf');
+}
+
+//Agregar el texto al DOM
+let cargarTexto = async(root) => {
     //Conectarse a la DB y obtener revision
     let dbManager = await indexedDBManager()
-    
+        
     let urlParams = new URLSearchParams(window.location.search);
     let id = parseInt(urlParams.get('id'))
-    
+
     dbManager.get(id).then(revisions => {
         revisions.revision.texto.forEach(el => {
             let parrafo= document.createElement("div");
-            parrafo.append("Speaker" + el.speaker + ": " + el.paragraph + "." + " ")
+            parrafo.append("Speaker" + el.speaker + ": " + el.paragraph)
             root.append(parrafo);
         })
     })
-})
+}
 
 //Manager de la DB del browser
 let indexedDBManager = async () => {
