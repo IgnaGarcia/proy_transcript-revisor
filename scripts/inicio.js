@@ -60,7 +60,7 @@ let appendChild = async(id) => {
         let tdBorrar = document.createElement("td")
 
         let openLink = document.createElement("a")
-        openLink.setAttribute("href","./revision/?id="+i.id)
+        openLink.setAttribute("href","./revision/index.html?id="+i.id)
 
         let borrarLink = document.createElement("button")
         borrarLink.setAttribute("onclick","deleteRevision("+i.id+")")

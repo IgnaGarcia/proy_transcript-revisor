@@ -1,8 +1,19 @@
 //Una vez que carga el DOM se agrega el texto
 window.addEventListener("load", () => { 
     let root = document.getElementById("root");
-    cargarTexto(root)
-    cargarAudio()
+
+    //Conectarse a la DB y obtener revision
+    indexedDBManager().then(dbManager => {
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = parseInt(urlParams.get('id'))
+
+        dbManager.get(id).then(revisions => {
+            cargarTexto(revisions.revision, root)
+            cargarAudio(revisions.revision)
+
+            
+        })
+    })
 
     document.getElementById("btnDescPDF").addEventListener("click", descargarPDF)
     document.getElementById("btnDescDOC").addEventListener("click", descargarDOC)
@@ -10,32 +21,24 @@ window.addEventListener("load", () => {
 })
 
 //Agregar el Audio al HTML y controlarlo
-let cargarAudio = async() => {
-    //Conectarse a la DB y obtener revision
-    let dbManager = await indexedDBManager()
-        
-    let urlParams = new URLSearchParams(window.location.search);
-    let id = parseInt(urlParams.get('id'))
+let cargarAudio = (revision) => {
+    let audio = new Audio()
+    audio.src = window.URL.createObjectURL(revision.audio);
+    
+    let audioContainer = document.getElementById("audioContainer")
+    audioContainer.append(audio)
 
-    dbManager.get(id).then(revisions => {
-        let audio = new Audio()
-        audio.src = window.URL.createObjectURL(revisions.revision.audio);
-        
-        let audioContainer = document.getElementById("audioContainer")
-        audioContainer.append(audio)
-
-        document.getElementById("retroceder").addEventListener("click", () => {
-            if(audio.currentTime - 5 < 0) audio.currentTime = 0
-            else audio.currentTime -= 5
-        })
-        document.getElementById("play").addEventListener("click", () => {
-            if (audio.paused) audio.play()
-            else audio.pause()
-        })
-        document.getElementById("avanzar").addEventListener("click", () => {
-            if(audio.currentTime + 5 > audio.duration) audio.currentTime = audio.duration
-            else audio.currentTime += 5
-        })
+    document.getElementById("retroceder").addEventListener("click", () => {
+        if(audio.currentTime - 5 < 0) audio.currentTime = 0
+        else audio.currentTime -= 5
+    })
+    document.getElementById("play").addEventListener("click", () => {
+        if (audio.paused) audio.play()
+        else audio.pause()
+    })
+    document.getElementById("avanzar").addEventListener("click", () => {
+        if(audio.currentTime + 5 > audio.duration) audio.currentTime = audio.duration
+        else audio.currentTime += 5
     })
 }
 
@@ -67,35 +70,28 @@ let descargarPDF = () => {
 }
 
 //Agregar el texto al DOM
-let cargarTexto = async(root) => {
-    //Conectarse a la DB y obtener revision
-    let dbManager = await indexedDBManager()
+let cargarTexto = (revision, root) => {        
+    revision.texto.forEach((element, index) => {
+        let parrafo = document.createElement("div")
+        parrafo.id = "p-"+index
         
-    let urlParams = new URLSearchParams(window.location.search);
-    let id = parseInt(urlParams.get('id'))
+        let speaker = document.createElement("div")
+        speaker.id = "s-"+index
+        speaker.contentEditable = false
+        speaker.append("Speaker "+ element.speaker +": ")
 
-    dbManager.get(id).then(revisions => {
-        revisions.revision.texto.forEach((element, index) => {
-            let parrafo = document.createElement("div")
-            parrafo.id = "p-"+index
-            
-            let speaker = document.createElement("div")
-            speaker.id = "s-"+index
-            speaker.contentEditable = false
-            speaker.append("Speaker "+ element.speaker +": ")
+        parrafo.append(speaker)
+        element.words.forEach((e, i) => {
+            let palabra = document.createElement("span")
+            palabra.id = "w-"+index+"-"+i
+            palabra.append(e.word+" ")
 
-            parrafo.append(speaker)
-            element.words.forEach((e, i) => {
-                let palabra = document.createElement("span")
-                palabra.id = "w-"+index+"-"+i
-                palabra.append(e.word+" ")
-
-                parrafo.append(palabra)
-            })
-
-            root.append(parrafo);
+            parrafo.append(palabra)
         })
+
+        root.append(parrafo);
     })
+    
 }
 
 //Manager de la DB del browser
