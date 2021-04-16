@@ -18,12 +18,20 @@ let cargarAudio = async() => {
         
         let audioContainer = document.getElementById("audioContainer")
         audioContainer.append(audio)
-
     })
 }
 
 let guardarRevision = async() => {
 
+}
+
+//Descargar en formato DOC
+let descargarDOC = () => {
+    let content = document.getElementById("root")
+    let element = document.createElement('a')
+    element.href = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(content.innerText)
+    element.download = "prueba.doc"
+    element.click();
 }
 
 //Descargar en formato PDF
