@@ -9,6 +9,7 @@ window.addEventListener("load", () => {
     document.getElementById("btnGuardar").addEventListener("click", guardarRevision)
 })
 
+//Agregar el Audio al HTML y controlarlo
 let cargarAudio = async() => {
     //Conectarse a la DB y obtener revision
     let dbManager = await indexedDBManager()
@@ -38,6 +39,7 @@ let cargarAudio = async() => {
     })
 }
 
+//Guardar la Revision en IndexedDB
 let guardarRevision = async() => {
 
 }
@@ -73,9 +75,24 @@ let cargarTexto = async(root) => {
     let id = parseInt(urlParams.get('id'))
 
     dbManager.get(id).then(revisions => {
-        revisions.revision.texto.forEach(el => {
-            let parrafo= document.createElement("div");
-            parrafo.append("Speaker" + el.speaker + ": " + el.paragraph)
+        revisions.revision.texto.forEach((element, index) => {
+            let parrafo = document.createElement("div")
+            parrafo.id = "p-"+index
+            
+            let speaker = document.createElement("div")
+            speaker.id = "s-"+index
+            speaker.contentEditable = false
+            speaker.append("Speaker "+ element.speaker +": ")
+
+            parrafo.append(speaker)
+            element.words.forEach((e, i) => {
+                let palabra = document.createElement("span")
+                palabra.id = "w-"+index+"-"+i
+                palabra.append(e.word+" ")
+
+                parrafo.append(palabra)
+            })
+
             root.append(parrafo);
         })
     })
