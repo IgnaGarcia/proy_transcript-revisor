@@ -3,6 +3,10 @@ window.addEventListener("load", () => {
     let root = document.getElementById("root");
     cargarTexto(root)
     cargarAudio()
+
+    document.getElementById("btnDescPDF").addEventListener("click", descargarPDF)
+    document.getElementById("btnDescDOC").addEventListener("click", descargarDOC)
+    document.getElementById("btnGuardar").addEventListener("click", guardarRevision)
 })
 
 let cargarAudio = async() => {
@@ -18,6 +22,19 @@ let cargarAudio = async() => {
         
         let audioContainer = document.getElementById("audioContainer")
         audioContainer.append(audio)
+
+        document.getElementById("retroceder").addEventListener("click", () => {
+            if(audio.currentTime - 5 < 0) audio.currentTime = 0
+            else audio.currentTime -= 5
+        })
+        document.getElementById("play").addEventListener("click", () => {
+            if (audio.paused) audio.play()
+            else audio.pause()
+        })
+        document.getElementById("avanzar").addEventListener("click", () => {
+            if(audio.currentTime + 5 > audio.duration) audio.currentTime = audio.duration
+            else audio.currentTime += 5
+        })
     })
 }
 

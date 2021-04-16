@@ -10,30 +10,17 @@
 </head>
 <body>
     <div>
-        <button onclick="guardarRevision()">
-            Guardar
-        </button>
-        <button id="btnDescPDF" onclick="descargarPDF()">
-            Descargar PDF
-        </button>
-        <button onclick="descargarDOC()">
-            Descargar DOC
-        </button>
+        <button id="btnGuardar"> Guardar </button>
+        <button id="btnDescPDF"> Descargar PDF </button>
+        <button id="btnDescDOC"> Descargar DOC </button>
     </div>
 
-    <div id="root" contenteditable=true>
-    </div>
+    <div id="root" contenteditable=true> </div>
 
     <div id="audioContainer">
-        <button>
-            -5seg
-        </button>
-        <button>
-            Play/Pause
-        </button>
-        <button>
-            +5seg
-        </button>
+        <button id="retroceder"> -5seg </button>
+        <button id="play"> Play/Pause </button>
+        <button id="avanzar"> +5seg </button>
     </div>
 
     <script src="../scripts/revision.js"></script>
