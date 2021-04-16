@@ -1,17 +1,15 @@
 //Una vez que carga el DOM se agrega el texto
 window.addEventListener("load", () => { 
-    let root = document.getElementById("root");
-
+    let root = document.getElementById("root")
+    
     //Conectarse a la DB y obtener revision
     indexedDBManager().then(dbManager => {
-        let urlParams = new URLSearchParams(window.location.search);
+        let urlParams = new URLSearchParams(window.location.search)
         let id = parseInt(urlParams.get('id'))
 
         dbManager.get(id).then(revisions => {
             cargarTexto(revisions.revision, root)
             cargarAudio(revisions.revision)
-
-            
         })
     })
 
@@ -79,19 +77,29 @@ let cargarTexto = (revision, root) => {
         speaker.id = "s-"+index
         speaker.contentEditable = false
         speaker.append("Speaker "+ element.speaker +": ")
+        
+        let timeStamp = document.createElement("span")
+        timeStamp.append("["+element.from+" - "+element.to+"]")
+        speaker.append(timeStamp)
 
         parrafo.append(speaker)
+
+        let palabras = document.createElement("div")
+        palabras.id = "w-"+index
         element.words.forEach((e, i) => {
             let palabra = document.createElement("span")
             palabra.id = "w-"+index+"-"+i
             palabra.append(e.word+" ")
 
-            parrafo.append(palabra)
+            if(e.confidence < .45) palabra.className = "lowConfidence"
+            else if(e.confidence < .75) palabra.className = "mediumConfidence"
+
+            palabras.append(palabra)
         })
+        parrafo.append(palabras)
 
         root.append(parrafo);
     })
-    
 }
 
 //Manager de la DB del browser

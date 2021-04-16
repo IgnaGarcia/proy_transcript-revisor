@@ -27,3 +27,13 @@ a, a:visited {
     display: flex;
     flex-direction: column;
 }
+
+.lowConfidence{
+    background: #CC293620;
+    color: #CC2936;
+}
+
+.mediumConfidence{
+    background: #ffc80020;
+    color: #FF8A00;
+}
