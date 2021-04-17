@@ -1,6 +1,12 @@
 //Listar las revisiones para manipularlas
 window.addEventListener("load", () => {
     appendTabla()
+
+    document.getElementById("inputAudio").addEventListener("change", e => {
+        let inputTitulo = document.getElementById("inputTitulo")
+        inputTitulo.value = e.target.files[0].name.split(".")[0]
+    })
+
 })
 
 //Construir tabla de revisiones
