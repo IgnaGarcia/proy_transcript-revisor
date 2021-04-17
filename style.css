@@ -37,3 +37,8 @@ a, a:visited {
     background: #ffc80020;
     color: #FF8A00;
 }
+
+[data-current]{
+    text-decoration-line: underline;
+    color: #039BE5;
+}

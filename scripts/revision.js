@@ -21,8 +21,8 @@ window.addEventListener("load", () => {
 //Agregar el Audio al HTML y controlarlo
 let cargarAudio = (revision) => {
     let audio = new Audio()
-    audio.src = window.URL.createObjectURL(revision.audio);
-    
+    audio.src = window.URL.createObjectURL(revision.audio)
+
     let audioContainer = document.getElementById("audioContainer")
     audioContainer.append(audio)
 
@@ -38,6 +38,22 @@ let cargarAudio = (revision) => {
         if(audio.currentTime + 5 > audio.duration) audio.currentTime = audio.duration
         else audio.currentTime += 5
     })
+    
+    let actualWord = document.getElementById("w-0-0")
+    let to = actualWord.getAttribute("data-to")
+    actualWord.setAttribute('data-current', 1)
+
+    audio.addEventListener('timeupdate', e => {
+        if(audio.currentTime > to) {
+            let word = document.querySelector(`[data-from = '${audio.currentTime}']`)
+            
+            to = firstWord.getAttribute("data-to")
+            word.setAttribute('data-current', 1)
+
+            actualWord.removeAttribute('data-current')
+            actualWord = word
+        }
+    });
 }
 
 //Guardar la Revision en IndexedDB
@@ -90,6 +106,9 @@ let cargarTexto = (revision, root) => {
             let palabra = document.createElement("span")
             palabra.id = "w-"+index+"-"+i
             palabra.append(e.word+" ")
+
+            palabra.setAttribute('data-from', e.from)
+            palabra.setAttribute('data-to', e.to)
 
             if(e.confidence < .45) palabra.className = "lowConfidence"
             else if(e.confidence < .75) palabra.className = "mediumConfidence"
