@@ -9,7 +9,7 @@
     <title>Inicio</title>
 </head>
 <body>
-    <div>
+    <main class="flexColumn">
         <table>
             <thead>
                 <tr>
@@ -24,29 +24,30 @@
 
             </tbody>
         </table>
-    </div>
 
-    <form action="javascript:crearRevision()" class="flexColumn">
-        <div>
-            <label for="inputAudio">Audio a Comparar</label>
-            <input id="inputAudio" id="inputAudio" type="file"/>
-        </div>
+        <div class="formContainer">
+            <form action="javascript:crearRevision()" class="flexColumn">
+                <div class="flex">
+                    <label for="inputAudio">Audio a Comparar</label>
+                    <input class="file-custom"id="inputAudio" id="inputAudio" type="file"/>
+                </div>
 
-        <div>
-            <label for="inputTexto">Transcripcion a Revisar</label>
-            <input id="inputTexto" name="inputTexto" type="file"/>
-        </div>
+                <div class="flex">
+                    <label for="inputTexto">Transcripcion a Revisar</label>
+                    <input class="file-custom"id="inputTexto" name="inputTexto" type="file"/>
+                </div>
 
-        <div>
-            <label for="inputTitulo">Titulo de Revision</label>
-            <input id="inputTitulo" name="inputTitulo" type="text"/>
-        </div>
+                <div class="flex">
+                    <label for="inputTitulo">Titulo de Revision</label>
+                    <input id="inputTitulo" name="inputTitulo" type="text"/>
+                </div>
 
-        <div> 
-            <input id="inputSubmit" type="submit" value="Comenzar Revision"/>
+                <div class="flex"> 
+                    <input id="inputSubmit" type="submit" value="Comenzar Revision"/>
+                </div>
+            </form>
         </div>
-    </form>
-    
+    </main>
     <script src="./scripts/inicio.js"></script>
 </body>
 </html>

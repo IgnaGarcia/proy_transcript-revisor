@@ -9,13 +9,23 @@
     <title>Revision de Transcripcion</title>
 </head>
 <body>
-    <div>
-        <button id="btnGuardar"> Guardar </button>
-        <button id="btnDescPDF"> Descargar PDF </button>
-        <button id="btnDescDOC"> Descargar DOC </button>
+
+    <div id="header">
+        <div class="container flex">
+            <div class="flex">
+                <a class="button" href="../"> Inicio </a>
+            </div>
+            <div class="flex">
+                <button id="btnGuardar"> Guardar </button>
+                <button id="btnDescPDF"> Descargar PDF </button>
+                <button id="btnDescDOC"> Descargar DOC </button>
+            </div>
+        </div>
     </div>
 
-    <div id="root" contenteditable=true> </div>
+    <main class="fixeado">
+        <div id="root" contenteditable=true> </div>
+    </main> 
 
     <div id="audioContainer">
         <button id="retroceder"> -5seg </button>
