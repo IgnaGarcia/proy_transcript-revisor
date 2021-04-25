@@ -18,6 +18,35 @@ window.addEventListener("load", () => {
     document.getElementById("btnGuardar").addEventListener("click", guardarRevision)
 })
 
+// Sincronizar el texto con el audio a partir del current time
+let sincroAudio = (audio) => {
+    let words = Array.from(document.querySelectorAll("span[data-from]"))
+    let actualWord = words[0]
+    let from = actualWord.getAttribute("data-from")
+    let to = actualWord.getAttribute("data-to")
+    actualWord.setAttribute('data-current', 1)
+
+    audio.addEventListener('timeupdate', e => {
+        if(audio.currentTime > to || audio.currentTime < from) {
+            let word = words.filter(el => (audio.currentTime >= el.getAttribute("data-from")) && (audio.currentTime <= el.getAttribute("data-to")))
+            if(word[0]) {
+                from = word[0].getAttribute("data-from")
+                to = word[0].getAttribute("data-to")
+                word[0].setAttribute('data-current', 1)
+    
+                actualWord.removeAttribute('data-current')
+                actualWord = word[0]
+            }
+        }
+    });
+}
+
+// Escucha si hay un salto en el audio
+let jumpAudio = (audio) => {
+    let root = document.getElementById("root")
+    root.addEventListener('click', e => e.altKey ? audio.currentTime = e.target.getAttribute("data-from") : null)
+}
+
 //Agregar el Audio al HTML y controlarlo
 let cargarAudio = (revision) => {
     let audio = new Audio()
@@ -39,21 +68,8 @@ let cargarAudio = (revision) => {
         else audio.currentTime += 5
     })
     
-    let actualWord = document.getElementById("w-0-0")
-    let to = actualWord.getAttribute("data-to")
-    actualWord.setAttribute('data-current', 1)
-
-    audio.addEventListener('timeupdate', e => {
-        if(audio.currentTime > to) {
-            let word = document.querySelector(`[data-from = '${audio.currentTime}']`)
-            
-            to = firstWord.getAttribute("data-to")
-            word.setAttribute('data-current', 1)
-
-            actualWord.removeAttribute('data-current')
-            actualWord = word
-        }
-    });
+    sincroAudio(audio)
+    jumpAudio(audio)
 }
 
 //Guardar la Revision en IndexedDB
@@ -84,7 +100,7 @@ let descargarPDF = () => {
 }
 
 //Agregar el texto al DOM
-let cargarTexto = (revision, root) => {        
+let cargarTexto = (revision, root) => {
     revision.texto.forEach((element, index) => {
         let parrafo = document.createElement("div")
         parrafo.id = "p-"+index
@@ -105,15 +121,17 @@ let cargarTexto = (revision, root) => {
         element.words.forEach((e, i) => {
             let palabra = document.createElement("span")
             palabra.id = "w-"+index+"-"+i
+            palabra.className = palabra.className+" w"
             palabra.append(e.word+" ")
 
             palabra.setAttribute('data-from', e.from)
             palabra.setAttribute('data-to', e.to)
 
-            if(e.confidence < .45) palabra.className = "lowConfidence"
-            else if(e.confidence < .75) palabra.className = "mediumConfidence"
+            if(e.confidence < .45) palabra.className = palabra.className+" lowConfidence"
+            else if(e.confidence < .75) palabra.className = palabra.className+" mediumConfidence"
 
             palabras.append(palabra)
+            palabra.addEventListener('keydown', e => console.log(e.target))
         })
         parrafo.append(palabras)
 
