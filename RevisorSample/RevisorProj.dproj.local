@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2021/04/30 00:00:50.587,=D:\Projects\LEL\DelphiRevisor\Unit1.pas</Transaction>
-    <Transaction>2021/04/30 00:39:47.523,D:\Projects\LEL\DelphiRevisor\RevisorSample\Revisor.dfm=D:\Projects\LEL\DelphiRevisor\Unit1.dfm</Transaction>
-    <Transaction>2021/04/30 00:39:47.523,D:\Projects\LEL\DelphiRevisor\RevisorSample\Revisor.pas=D:\Projects\LEL\DelphiRevisor\Unit1.pas</Transaction>
-    <Transaction>2021/04/30 01:32:34.702,D:\Projects\LEL\DelphiRevisor\RevisorSample\RevisorProj.dproj=D:\Projects\LEL\DelphiRevisor\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2021/04/30 00:00:50.000.587,=D:\Projects\LEL\DelphiRevisor\Unit1.pas</Transaction>
+    <Transaction>2021/04/30 00:39:47.000.523,D:\Projects\LEL\DelphiRevisor\RevisorSample\Revisor.dfm=D:\Projects\LEL\DelphiRevisor\Unit1.dfm</Transaction>
+    <Transaction>2021/04/30 00:39:47.000.523,D:\Projects\LEL\DelphiRevisor\RevisorSample\Revisor.pas=D:\Projects\LEL\DelphiRevisor\Unit1.pas</Transaction>
+    <Transaction>2021/04/30 01:32:34.000.702,D:\Projects\LEL\DelphiRevisor\RevisorSample\RevisorProj.dproj=D:\Projects\LEL\DelphiRevisor\Project1.dproj</Transaction>
+    <Transaction>2021/04/30 17:02:20.000.103,=D:\Projects\LEL\DelphiRevisor\RevisorSample\Unit1.pas</Transaction>
+    <Transaction>2021/04/30 17:03:59.000.241,D:\Projects\LEL\DelphiRevisor\RevisorSample\Unit1.pas=D:\Projects\LEL\DelphiRevisor\RevisorSample\TextContainer.pas</Transaction>
+    <Transaction>2021/04/30 17:03:59.000.241,D:\Projects\LEL\DelphiRevisor\RevisorSample\Unit1.dfm=D:\Projects\LEL\DelphiRevisor\RevisorSample\TextContainer.dfm</Transaction>
   </Transactions>
 </BorlandProject>

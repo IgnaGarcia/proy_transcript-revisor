@@ -3,23 +3,22 @@ unit Revisor;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.JSON, Vcl.StdCtrls, Vcl.MPlayer, IOUtils;
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  System.JSON, Vcl.StdCtrls, Vcl.MPlayer, IOUtils, TextContainer;
 
 type
   TForm1 = class(TForm)
-    Memo1: TMemo;
     MediaPlayer1: TMediaPlayer;
     audioDialog: TOpenDialog;
     audioBtn: TButton;
     textBtn: TButton;
     textDialog: TOpenDialog;
+    TFrame11: TextContainer.TFrame1;
     procedure audioBtnClick(Sender: TObject);
     procedure textBtnClick(Sender: TObject);
   private
-    { Private declarations }
   public
-    { Public declarations }
   end;
 
 var
@@ -39,17 +38,10 @@ begin
 end;
 
 procedure TForm1.textBtnClick(Sender: TObject);
-var
- input: String;
- jData: TJSONValue;
 begin
   textDialog.Execute();
-  Memo1.Lines.Clear;
 
-  input := TFile.ReadAllText(textDialog.FileName);
-  jData := TJSonObject.parseJSONValue(input);
-
-  Memo1.Lines.Append(jData.ToString);
+  TFrame11.linkData(TJSonObject.parseJSONValue(TFile.ReadAllText(textDialog.FileName)));
 end;
 
 end.

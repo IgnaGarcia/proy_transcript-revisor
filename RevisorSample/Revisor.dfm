@@ -13,49 +13,59 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Memo1: TMemo
-    Left = 0
-    Top = 32
-    Width = 417
-    Height = 472
-    Lines.Strings = (
-      'Memo1')
-    ScrollBars = ssVertical
-    TabOrder = 0
-  end
   object MediaPlayer1: TMediaPlayer
-    Left = 88
+    Left = 77
     Top = 510
     Width = 253
     Height = 30
     DoubleBuffered = True
     ParentDoubleBuffered = False
-    TabOrder = 1
+    TabOrder = 0
   end
   object audioBtn: TButton
-    Left = 88
+    Left = 255
     Top = 1
     Width = 75
     Height = 25
     Caption = 'Cargar Audio'
-    TabOrder = 2
+    TabOrder = 1
     OnClick = audioBtnClick
   end
   object textBtn: TButton
-    Left = 266
+    Left = 77
     Top = 1
     Width = 75
     Height = 25
     Caption = 'Cargar Texto'
-    TabOrder = 3
+    TabOrder = 2
     OnClick = textBtnClick
+  end
+  inline TFrame11: TFrame1
+    Left = 0
+    Top = 48
+    Width = 417
+    Height = 448
+    AutoScroll = True
+    TabOrder = 3
+    ExplicitTop = 48
+    ExplicitWidth = 417
+    ExplicitHeight = 448
+    inherited Memo1: TMemo
+      Width = 417
+    end
+    inherited Memo2: TMemo
+      Width = 417
+    end
+    inherited Memo4: TMemo
+      Width = 417
+    end
   end
   object audioDialog: TOpenDialog
     Filter = 'MP3 Audio|*.mp3'
-    Left = 88
+    Left = 333
   end
   object textDialog: TOpenDialog
     Filter = 'JSON Content|*.json'
-    Left = 264
+    Left = 149
   end
 end
