@@ -114,7 +114,13 @@ let cargarTexto = (revision, root) => {
         timeStamp.append("["+element.from+" - "+element.to+"]")
         speaker.append(timeStamp)
 
+        let silencio = document.createElement("div")
+        silencio.id= "si-"+index
+        silencio.append("Duración del silencio: ")
+        silencio.append((revision.texto[index+1].from - element.to).toFixed(2) )
+
         parrafo.append(speaker)
+        parrafo.append(silencio)
 
         let palabras = document.createElement("div")
         palabras.id = "w-"+index
@@ -134,7 +140,8 @@ let cargarTexto = (revision, root) => {
             palabra.addEventListener('keydown', e => console.log(e.target))
         })
         parrafo.append(palabras)
-
+        let espacio = document.createElement("br")
+        parrafo.append(espacio);
         root.append(parrafo);
     })
 }
