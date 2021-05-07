@@ -1,0 +1,56 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, article, aside, footer, header, menu, nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+    min-height: 94vh;
+}
+a, a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+/* GENERALES */
+body{
+    background: #e6e6e688;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+main{
+    margin: 0 auto;
+    padding: 2em 1em;
+    width: 80%;
+    align-items: center;
+}
+.buttonsContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+#root{
+    width: 80%;
+    margin: 20px auto;
+}
+#root div{
+    margin: 20px 0px;
+    color: red
+}
+label{
+    background-color: #ff8800bb;
+    color: #fcfcfc;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.red{
+    color: red;
+    text-decoration: underline;
+}
