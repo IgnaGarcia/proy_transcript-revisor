@@ -30,7 +30,6 @@ let cargarTexto = (e) => {
     if (file) readFile(file).then(json => {
         json = JSON.parse(json)
 
-        let to = json[0].to
         json.forEach( (p, i) => {
             let parrafo = document.createElement("P")
 
@@ -65,9 +64,9 @@ let cargarTexto = (e) => {
             p1.append("Cambios de Hablante = " + speakerChanges)
             extras.append(p1)
 
-            if(to != p.to) {
+            if(i+1 < json.length) {
                 let p2 = document.createElement("p")
-                p2.append("Diferencia con prox = " + (p.from - to))
+                p2.append("Diferencia con prox = " + (json[i+1].from - p.to).toFixed(2) + 'segs')
                 extras.append(p2)
                 to = p.to
             }
