@@ -8,44 +8,6 @@ from ibm_watson import SpeechToTextV1
 from ibm_watson.websocket import RecognizeCallback, AudioSource
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
-def wordFactory(word, desde, to, confidence, speaker):
-    return {
-        'word': word,
-        'from': desde,
-        'to': to,
-        'confidence': confidence,
-        'speaker': speaker
-    }
-
-def paragraphFactory(desde):
-    return { 
-        'from': desde, 
-        'to': -1, 
-        'words': []
-    }
-
-def cleanJson(data):
-    wordCount = 0
-    cleared = []
-
-    for result in data['results']:
-        paragraph = paragraphFactory(result['alternatives'][0]['timestamps'][0][1])
-        i = 0
-
-        for word in result['alternatives'][0]['timestamps']:
-            if(len(result['alternatives'][0]['timestamps']) -1 == i):
-                word[0] = word[0]+"."
-            
-            nWord = wordFactory(word[0], word[1], word[2], result['alternatives'][0]['word_confidence'][i][1], data['speaker_labels'][wordCount]['speaker'])            
-            
-            paragraph['to'] = word[2]
-            paragraph['words'].append(nWord)
-            
-            wordCount += 1
-            i += 1  
-        cleared.append(paragraph)
-    return cleared
-
 class MyRecognizeCallback(RecognizeCallback):
     def __init__(self):
         RecognizeCallback.__init__(self)
@@ -60,11 +22,6 @@ class MyRecognizeCallback(RecognizeCallback):
 
         # Archivo para todo el resultado (Timestamps, Keywords, ETC)
         f = open(f"{pathlib.Path(output_dir)}/data.json", "w")
-        f.write(jsonText) 
-        f.close()
-
-        f = open(f"{pathlib.Path(output_dir)}/clean.json", "w")
-        jsonText = json.dumps(cleanJson(jsonDictonary), indent=2)
         f.write(jsonText) 
         f.close()
 
