@@ -11,29 +11,13 @@ https://www.python.org/downloads/
 
 ## 2- Instalar dependencias de VOSK:
 
+python -m pip install cffi
 pip3 install vosk
 
 	Corroborar en consola: pip show vosk
 
 
-## 3-Descargar ffmpeg para convertir archivos de audio
-
-	https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z
-
-### 3.1 Descomprimir y renombrar por "ffmpeg"
-### 3.2 Mover a carpeta familiar. Ej: C:\ProgramFiles
-### 3.3 Agregar al Path 
-#### 3.3.1 Configuracion Avanzada del Sistema
-#### 3.3.2 Variables de Entorno
-#### 3.3.3 Variables de Sistema = "Path"
-#### 3.3.4 Editar
-#### 3.3.5 Agregar la ruta donde se guardo la carpeta ffmpeg concatenando \bin
-#### 3.3.6 Aceptar...
-
-	Corroborar en consola: ffmpeg -version
-
-
-## 4-Ejecutar desde cmd con el comando:
+## 3-Ejecutar desde cmd con el comando:
 	
 	py ./transciptor.py ARCHIVO
 

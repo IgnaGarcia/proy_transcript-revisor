@@ -20,7 +20,7 @@ model = Model("model")
 rec = KaldiRecognizer(model, sample_rate)
 
 print("Convirtiendo el archivo de entrada...")
-process = subprocess.Popen(['ffmpeg', '-loglevel', 'quiet', '-i',
+process = subprocess.Popen(['./ffmpeg/bin/ffmpeg', '-loglevel', 'quiet', '-i',
                             sys.argv[1], '-ar', str(sample_rate),
                             '-ac', '1', '-f', 's16le', '-'], stdout=subprocess.PIPE)
 
