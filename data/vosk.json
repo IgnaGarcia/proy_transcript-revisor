@@ -1,0 +1,5879 @@
+{
+  "result": [
+    {
+      "conf": 0.400482,
+      "end": 1.26,
+      "start": 1.05,
+      "word": "aunque"
+    },
+    {
+      "conf": 0.747345,
+      "end": 2.61,
+      "start": 2.55,
+      "word": "es"
+    },
+    {
+      "conf": 0.982326,
+      "end": 2.76,
+      "start": 2.610022,
+      "word": "un"
+    },
+    {
+      "conf": 0.999708,
+      "end": 3.20974,
+      "start": 2.76,
+      "word": "poco"
+    },
+    {
+      "conf": 1.0,
+      "end": 3.84,
+      "start": 3.210013,
+      "word": "entonces"
+    },
+    {
+      "conf": 1.0,
+      "end": 4.35,
+      "start": 4.14,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 4.98,
+      "start": 4.35,
+      "word": "escenario"
+    },
+    {
+      "conf": 0.981724,
+      "end": 5.31,
+      "start": 5.13,
+      "word": "con"
+    },
+    {
+      "conf": 0.617776,
+      "end": 5.577803,
+      "start": 5.31,
+      "word": "ello"
+    },
+    {
+      "conf": 0.512965,
+      "end": 5.94,
+      "start": 5.584394,
+      "word": "cuentan"
+    },
+    {
+      "conf": 0.914397,
+      "end": 6.6,
+      "start": 5.940317,
+      "word": "ustedes"
+    },
+    {
+      "conf": 0.947165,
+      "end": 7.030456,
+      "start": 6.883626,
+      "word": "en"
+    },
+    {
+      "conf": 0.855146,
+      "end": 7.262104,
+      "start": 7.078818,
+      "word": "el"
+    },
+    {
+      "conf": 0.785705,
+      "end": 7.497787,
+      "start": 7.262104,
+      "word": "d\u00eda"
+    },
+    {
+      "conf": 0.735296,
+      "end": 7.53,
+      "start": 7.5,
+      "word": "a"
+    },
+    {
+      "conf": 0.97286,
+      "end": 7.77,
+      "start": 7.59,
+      "word": "d\u00eda"
+    },
+    {
+      "conf": 1.0,
+      "end": 7.89,
+      "start": 7.77,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 8.129789,
+      "start": 7.89,
+      "word": "hoy"
+    },
+    {
+      "conf": 0.668396,
+      "end": 9.42,
+      "start": 9.27,
+      "word": "que"
+    },
+    {
+      "conf": 0.880875,
+      "end": 9.48,
+      "start": 9.42,
+      "word": "es"
+    },
+    {
+      "conf": 0.964733,
+      "end": 9.598183,
+      "start": 9.48,
+      "word": "lo"
+    },
+    {
+      "conf": 1.0,
+      "end": 9.687975,
+      "start": 9.598183,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 10.05,
+      "start": 9.689775,
+      "word": "estar\u00eda"
+    },
+    {
+      "conf": 1.0,
+      "end": 10.92,
+      "start": 10.05,
+      "word": "buscando"
+    },
+    {
+      "conf": 0.606606,
+      "end": 14.162593,
+      "start": 13.98,
+      "word": "con"
+    },
+    {
+      "conf": 0.782517,
+      "end": 14.308059,
+      "start": 14.162593,
+      "word": "el"
+    },
+    {
+      "conf": 0.990796,
+      "end": 14.49,
+      "start": 14.308059,
+      "word": "nuevo"
+    },
+    {
+      "conf": 0.9965,
+      "end": 15.03,
+      "start": 14.490343,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.922636,
+      "end": 15.419592,
+      "start": 15.3,
+      "word": "a"
+    },
+    {
+      "conf": 0.625534,
+      "end": 15.688035,
+      "start": 15.419592,
+      "word": "donde"
+    },
+    {
+      "conf": 0.977851,
+      "end": 16.348636,
+      "start": 15.72,
+      "word": "apuntas"
+    },
+    {
+      "conf": 1.0,
+      "end": 17.64,
+      "start": 17.49,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 18.18,
+      "start": 17.64,
+      "word": "necesidad"
+    },
+    {
+      "conf": 1.0,
+      "end": 19.02,
+      "start": 18.21,
+      "word": "concreta"
+    },
+    {
+      "conf": 0.922136,
+      "end": 19.77,
+      "start": 19.65,
+      "word": "que"
+    },
+    {
+      "conf": 0.486069,
+      "end": 20.22,
+      "start": 19.7715,
+      "word": "justifica"
+    },
+    {
+      "conf": 0.536169,
+      "end": 20.311838,
+      "start": 20.224715,
+      "word": "la"
+    },
+    {
+      "conf": 0.867696,
+      "end": 20.789995,
+      "start": 20.311838,
+      "word": "adquisici\u00f3n"
+    },
+    {
+      "conf": 0.460929,
+      "end": 21.6,
+      "start": 21.24,
+      "word": "quema"
+    },
+    {
+      "conf": 0.999312,
+      "end": 22.08,
+      "start": 21.69,
+      "word": "es"
+    },
+    {
+      "conf": 0.987843,
+      "end": 22.38,
+      "start": 22.26,
+      "word": "la"
+    },
+    {
+      "conf": 0.99793,
+      "end": 23.730172,
+      "start": 23.069832,
+      "word": "promulgaci\u00f3n"
+    },
+    {
+      "conf": 0.66544,
+      "end": 23.788938,
+      "start": 23.730172,
+      "word": "de"
+    },
+    {
+      "conf": 0.601661,
+      "end": 23.87766,
+      "start": 23.788938,
+      "word": "la"
+    },
+    {
+      "conf": 0.590654,
+      "end": 24.027444,
+      "start": 23.88,
+      "word": "ley"
+    },
+    {
+      "conf": 0.877379,
+      "end": 24.629916,
+      "start": 24.03,
+      "word": "veintis\u00e9is"
+    },
+    {
+      "conf": 0.986127,
+      "end": 25.02,
+      "start": 24.63,
+      "word": "quinientos"
+    },
+    {
+      "conf": 1.0,
+      "end": 25.71,
+      "start": 25.02,
+      "word": "veintinueve"
+    },
+    {
+      "conf": 0.592839,
+      "end": 26.1,
+      "start": 25.95,
+      "word": "del"
+    },
+    {
+      "conf": 1.0,
+      "end": 26.340754,
+      "start": 26.1,
+      "word": "a\u00f1o"
+    },
+    {
+      "conf": 0.953499,
+      "end": 26.43,
+      "start": 26.340754,
+      "word": "dos"
+    },
+    {
+      "conf": 1.0,
+      "end": 26.67,
+      "start": 26.46,
+      "word": "mil"
+    },
+    {
+      "conf": 1.0,
+      "end": 27.206772,
+      "start": 26.67,
+      "word": "nueve"
+    },
+    {
+      "conf": 0.991665,
+      "end": 29.94,
+      "start": 29.79,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 30.12,
+      "start": 29.94,
+      "word": "habla"
+    },
+    {
+      "conf": 1.0,
+      "end": 30.21,
+      "start": 30.12,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 30.3,
+      "start": 30.21,
+      "word": "la"
+    },
+    {
+      "conf": 0.962625,
+      "end": 30.99,
+      "start": 30.3,
+      "word": "informaci\u00f3n"
+    },
+    {
+      "conf": 0.971495,
+      "end": 31.08,
+      "start": 30.99,
+      "word": "que"
+    },
+    {
+      "conf": 0.961534,
+      "end": 31.200623,
+      "start": 31.08,
+      "word": "los"
+    },
+    {
+      "conf": 0.825054,
+      "end": 31.469813,
+      "start": 31.200623,
+      "word": "centros"
+    },
+    {
+      "conf": 0.984729,
+      "end": 31.529938,
+      "start": 31.469813,
+      "word": "de"
+    },
+    {
+      "conf": 0.998418,
+      "end": 31.77,
+      "start": 31.529938,
+      "word": "salud"
+    },
+    {
+      "conf": 0.929348,
+      "end": 32.279897,
+      "start": 31.77,
+      "word": "manejan"
+    },
+    {
+      "conf": 0.944859,
+      "end": 32.88,
+      "start": 32.730165,
+      "word": "la"
+    },
+    {
+      "conf": 0.972059,
+      "end": 33.204108,
+      "start": 32.880161,
+      "word": "salud"
+    },
+    {
+      "conf": 0.947528,
+      "end": 33.626554,
+      "start": 33.211121,
+      "word": "manejar"
+    },
+    {
+      "conf": 0.843561,
+      "end": 33.719982,
+      "start": 33.629583,
+      "word": "los"
+    },
+    {
+      "conf": 1.0,
+      "end": 34.41,
+      "start": 33.719982,
+      "word": "pacientes"
+    },
+    {
+      "conf": 0.7901,
+      "end": 34.64889,
+      "start": 34.518831,
+      "word": "que"
+    },
+    {
+      "conf": 0.973627,
+      "end": 35.159846,
+      "start": 34.989943,
+      "word": "los"
+    },
+    {
+      "conf": 0.984515,
+      "end": 35.399637,
+      "start": 35.159846,
+      "word": "centros"
+    },
+    {
+      "conf": 0.999594,
+      "end": 35.46,
+      "start": 35.399637,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 35.73,
+      "start": 35.46,
+      "word": "salud"
+    },
+    {
+      "conf": 1.0,
+      "end": 37.08,
+      "start": 36.84,
+      "word": "entre"
+    },
+    {
+      "conf": 1.0,
+      "end": 37.38,
+      "start": 37.08,
+      "word": "muchas"
+    },
+    {
+      "conf": 1.0,
+      "end": 37.77,
+      "start": 37.38,
+      "word": "otras"
+    },
+    {
+      "conf": 1.0,
+      "end": 38.286394,
+      "start": 37.77,
+      "word": "cosas"
+    },
+    {
+      "conf": 0.57605,
+      "end": 39.09,
+      "start": 38.7,
+      "word": "m\u00e1s"
+    },
+    {
+      "conf": 0.844766,
+      "end": 39.3,
+      "start": 39.150081,
+      "word": "una"
+    },
+    {
+      "conf": 0.888171,
+      "end": 39.600242,
+      "start": 39.3,
+      "word": "autoridad"
+    },
+    {
+      "conf": 0.903451,
+      "end": 39.749747,
+      "start": 39.600242,
+      "word": "esta"
+    },
+    {
+      "conf": 0.921868,
+      "end": 39.957301,
+      "start": 39.749747,
+      "word": "ley"
+    },
+    {
+      "conf": 0.988,
+      "end": 40.11,
+      "start": 39.99,
+      "word": "que"
+    },
+    {
+      "conf": 0.994259,
+      "end": 40.56,
+      "start": 40.110271,
+      "word": "pide"
+    },
+    {
+      "conf": 1.0,
+      "end": 40.74,
+      "start": 40.62,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 41.64,
+      "start": 40.74,
+      "word": "unificaci\u00f3n"
+    },
+    {
+      "conf": 1.0,
+      "end": 41.73,
+      "start": 41.64,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 41.79,
+      "start": 41.73,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 42.119923,
+      "start": 41.79,
+      "word": "historia"
+    },
+    {
+      "conf": 0.994918,
+      "end": 42.51,
+      "start": 42.12,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.826771,
+      "end": 42.656488,
+      "start": 42.51,
+      "word": "por"
+    },
+    {
+      "conf": 0.756795,
+      "end": 43.101738,
+      "start": 42.669404,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.739691,
+      "end": 44.19,
+      "start": 43.8,
+      "word": "osea"
+    },
+    {
+      "conf": 0.587592,
+      "end": 44.7,
+      "start": 44.58,
+      "word": "yo"
+    },
+    {
+      "conf": 0.877765,
+      "end": 44.88,
+      "start": 44.7,
+      "word": "tengo"
+    },
+    {
+      "conf": 0.925658,
+      "end": 44.969524,
+      "start": 44.88,
+      "word": "que"
+    },
+    {
+      "conf": 0.968834,
+      "end": 45.21,
+      "start": 44.97,
+      "word": "tener"
+    },
+    {
+      "conf": 1.0,
+      "end": 45.36,
+      "start": 45.21,
+      "word": "por"
+    },
+    {
+      "conf": 1.0,
+      "end": 45.54,
+      "start": 45.36,
+      "word": "cada"
+    },
+    {
+      "conf": 0.998534,
+      "end": 45.870059,
+      "start": 45.54,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.876698,
+      "end": 45.953829,
+      "start": 45.870059,
+      "word": "que"
+    },
+    {
+      "conf": 0.417985,
+      "end": 46.05,
+      "start": 45.96,
+      "word": "sea"
+    },
+    {
+      "conf": 0.782158,
+      "end": 46.339384,
+      "start": 46.056544,
+      "word": "tienen"
+    },
+    {
+      "conf": 1.0,
+      "end": 47.189938,
+      "start": 46.470059,
+      "word": "sanatorio"
+    },
+    {
+      "conf": 0.997919,
+      "end": 47.369868,
+      "start": 47.190135,
+      "word": "una"
+    },
+    {
+      "conf": 0.942492,
+      "end": 47.729769,
+      "start": 47.369868,
+      "word": "\u00fanica"
+    },
+    {
+      "conf": 1.0,
+      "end": 48.03,
+      "start": 47.73,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 48.51,
+      "start": 48.03,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 1.0,
+      "end": 49.53,
+      "start": 49.38,
+      "word": "que"
+    },
+    {
+      "conf": 0.990528,
+      "end": 50.01,
+      "start": 49.53,
+      "word": "tenga"
+    },
+    {
+      "conf": 0.924207,
+      "end": 50.73,
+      "start": 50.22,
+      "word": "informaci\u00f3n"
+    },
+    {
+      "conf": 1.0,
+      "end": 50.79,
+      "start": 50.73,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 51.03,
+      "start": 50.79,
+      "word": "todas"
+    },
+    {
+      "conf": 1.0,
+      "end": 51.18,
+      "start": 51.03,
+      "word": "las"
+    },
+    {
+      "conf": 1.0,
+      "end": 51.96,
+      "start": 51.18,
+      "word": "atenciones"
+    },
+    {
+      "conf": 0.677861,
+      "end": 52.137184,
+      "start": 52.02,
+      "word": "que"
+    },
+    {
+      "conf": 0.444548,
+      "end": 52.29,
+      "start": 52.14,
+      "word": "ser"
+    },
+    {
+      "conf": 0.91297,
+      "end": 53.159821,
+      "start": 52.5,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.922267,
+      "end": 55.8,
+      "start": 55.32,
+      "word": "recibe"
+    },
+    {
+      "conf": 0.404416,
+      "end": 56.79,
+      "start": 56.7,
+      "word": "una"
+    },
+    {
+      "conf": 0.525185,
+      "end": 57.18,
+      "start": 56.79,
+      "word": "moratoria"
+    },
+    {
+      "conf": 0.224564,
+      "end": 57.995845,
+      "start": 57.3,
+      "word": "internaci\u00f3n"
+    },
+    {
+      "conf": 0.620379,
+      "end": 58.14,
+      "start": 57.995845,
+      "word": "una"
+    },
+    {
+      "conf": 0.959003,
+      "end": 58.5,
+      "start": 58.14,
+      "word": "placa"
+    },
+    {
+      "conf": 0.995452,
+      "end": 58.62,
+      "start": 58.500557,
+      "word": "lo"
+    },
+    {
+      "conf": 0.999035,
+      "end": 58.71,
+      "start": 58.62,
+      "word": "que"
+    },
+    {
+      "conf": 0.938771,
+      "end": 58.92,
+      "start": 58.71,
+      "word": "sea"
+    },
+    {
+      "conf": 0.723015,
+      "end": 60.574131,
+      "start": 60.42,
+      "word": "como"
+    },
+    {
+      "conf": 0.55103,
+      "end": 60.941741,
+      "start": 60.630502,
+      "word": "potencia"
+    },
+    {
+      "conf": 0.517035,
+      "end": 61.058331,
+      "start": 60.941741,
+      "word": "te"
+    },
+    {
+      "conf": 1.0,
+      "end": 61.70981,
+      "start": 61.113574,
+      "word": "sistema"
+    },
+    {
+      "conf": 1.0,
+      "end": 62.97,
+      "start": 62.7,
+      "word": "cada"
+    },
+    {
+      "conf": 0.993027,
+      "end": 63.66,
+      "start": 62.97,
+      "word": "prestaci\u00f3n"
+    },
+    {
+      "conf": 0.611271,
+      "end": 64.95,
+      "start": 64.59,
+      "word": "registra"
+    },
+    {
+      "conf": 0.804173,
+      "end": 65.1,
+      "start": 64.961484,
+      "word": "con"
+    },
+    {
+      "conf": 1.0,
+      "end": 65.28,
+      "start": 65.108606,
+      "word": "una"
+    },
+    {
+      "conf": 0.942052,
+      "end": 65.52,
+      "start": 65.28,
+      "word": "\u00fanica"
+    },
+    {
+      "conf": 0.815616,
+      "end": 65.940681,
+      "start": 65.52,
+      "word": "prestaci\u00f3n"
+    },
+    {
+      "conf": 0.7148,
+      "end": 66.000176,
+      "start": 65.940681,
+      "word": "y"
+    },
+    {
+      "conf": 0.780867,
+      "end": 66.320566,
+      "start": 66.006189,
+      "word": "general"
+    },
+    {
+      "conf": 0.224291,
+      "end": 66.66011,
+      "start": 66.3326,
+      "word": "oposici\u00f3n"
+    },
+    {
+      "conf": 0.990982,
+      "end": 66.779883,
+      "start": 66.66011,
+      "word": "una"
+    },
+    {
+      "conf": 1.0,
+      "end": 67.074243,
+      "start": 66.779883,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 68.538267,
+      "start": 68.005818,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.760145,
+      "end": 69.989172,
+      "start": 69.33,
+      "word": "temporal"
+    },
+    {
+      "conf": 0.387365,
+      "end": 70.742351,
+      "start": 70.289553,
+      "word": "sea"
+    },
+    {
+      "conf": 0.587918,
+      "end": 71.01,
+      "start": 70.86,
+      "word": "se"
+    },
+    {
+      "conf": 0.901815,
+      "end": 71.31,
+      "start": 71.022539,
+      "word": "abre"
+    },
+    {
+      "conf": 0.991954,
+      "end": 71.34,
+      "start": 71.31,
+      "word": "y"
+    },
+    {
+      "conf": 0.901815,
+      "end": 71.969729,
+      "start": 71.489905,
+      "word": "cierra"
+    },
+    {
+      "conf": 0.999036,
+      "end": 72.387891,
+      "start": 71.973047,
+      "word": "mientras"
+    },
+    {
+      "conf": 0.323701,
+      "end": 72.660754,
+      "start": 72.600688,
+      "word": "el"
+    },
+    {
+      "conf": 0.31413,
+      "end": 72.99,
+      "start": 72.665339,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.633297,
+      "end": 73.62,
+      "start": 73.020234,
+      "word": "exacto"
+    },
+    {
+      "conf": 0.618436,
+      "end": 73.86323,
+      "start": 73.694048,
+      "word": "es"
+    },
+    {
+      "conf": 1.0,
+      "end": 74.61,
+      "start": 73.893596,
+      "word": "ambulatorio"
+    },
+    {
+      "conf": 0.919405,
+      "end": 74.91,
+      "start": 74.7,
+      "word": "tiene"
+    },
+    {
+      "conf": 1.0,
+      "end": 75.0,
+      "start": 74.912417,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 75.09,
+      "start": 75.0,
+      "word": "ver"
+    },
+    {
+      "conf": 1.0,
+      "end": 75.210044,
+      "start": 75.09,
+      "word": "con"
+    },
+    {
+      "conf": 0.996883,
+      "end": 75.299963,
+      "start": 75.210044,
+      "word": "la"
+    },
+    {
+      "conf": 0.782121,
+      "end": 75.779685,
+      "start": 75.299963,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.966689,
+      "end": 77.22,
+      "start": 76.83,
+      "word": "\u00fanica"
+    },
+    {
+      "conf": 0.438102,
+      "end": 77.67,
+      "start": 77.22,
+      "word": "excepci\u00f3n"
+    },
+    {
+      "conf": 0.803792,
+      "end": 77.76,
+      "start": 77.67,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 78.06,
+      "start": 77.76,
+      "word": "hoy"
+    },
+    {
+      "conf": 0.939051,
+      "end": 78.27,
+      "start": 78.15,
+      "word": "y"
+    },
+    {
+      "conf": 0.433678,
+      "end": 78.54,
+      "start": 78.27,
+      "word": "ciencia"
+    },
+    {
+      "conf": 0.839226,
+      "end": 79.14,
+      "start": 78.540066,
+      "word": "internaci\u00f3n"
+    },
+    {
+      "conf": 0.539383,
+      "end": 79.59,
+      "start": 79.140125,
+      "word": "siendo"
+    },
+    {
+      "conf": 0.39129,
+      "end": 79.68,
+      "start": 79.598855,
+      "word": "en"
+    },
+    {
+      "conf": 0.990371,
+      "end": 79.86,
+      "start": 79.680154,
+      "word": "una"
+    },
+    {
+      "conf": 0.994602,
+      "end": 80.197573,
+      "start": 79.860161,
+      "word": "cantidad"
+    },
+    {
+      "conf": 0.825343,
+      "end": 80.256709,
+      "start": 80.197573,
+      "word": "de"
+    },
+    {
+      "conf": 0.626778,
+      "end": 80.735317,
+      "start": 80.279832,
+      "word": "prestaciones"
+    },
+    {
+      "conf": 0.791537,
+      "end": 81.209993,
+      "start": 80.939312,
+      "word": "equipo"
+    },
+    {
+      "conf": 0.98826,
+      "end": 81.36,
+      "start": 81.209993,
+      "word": "est\u00e1"
+    },
+    {
+      "conf": 0.501111,
+      "end": 81.96,
+      "start": 81.360264,
+      "word": "internado"
+    },
+    {
+      "conf": 0.585247,
+      "end": 82.680542,
+      "start": 82.38,
+      "word": "arag\u00f3n"
+    },
+    {
+      "conf": 0.839155,
+      "end": 83.49,
+      "start": 83.07,
+      "word": "alta"
+    },
+    {
+      "conf": 0.769749,
+      "end": 83.699949,
+      "start": 83.549956,
+      "word": "se"
+    },
+    {
+      "conf": 0.73606,
+      "end": 84.05729,
+      "start": 83.7,
+      "word": "cierra"
+    },
+    {
+      "conf": 0.282031,
+      "end": 84.176777,
+      "start": 84.05729,
+      "word": "se"
+    },
+    {
+      "conf": 0.475077,
+      "end": 85.2,
+      "start": 84.69,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.818119,
+      "end": 85.530168,
+      "start": 85.380212,
+      "word": "al"
+    },
+    {
+      "conf": 0.687015,
+      "end": 86.01,
+      "start": 85.533435,
+      "word": "volverse"
+    },
+    {
+      "conf": 0.995773,
+      "end": 86.22,
+      "start": 86.010117,
+      "word": "abre"
+    },
+    {
+      "conf": 0.799455,
+      "end": 86.459224,
+      "start": 86.22,
+      "word": "otro"
+    },
+    {
+      "conf": 0.993138,
+      "end": 90.059736,
+      "start": 89.85,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 90.42,
+      "start": 90.059736,
+      "word": "ley"
+    },
+    {
+      "conf": 0.992644,
+      "end": 92.219963,
+      "start": 92.13,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 92.34,
+      "start": 92.219963,
+      "word": "dos"
+    },
+    {
+      "conf": 1.0,
+      "end": 92.52,
+      "start": 92.34,
+      "word": "mil"
+    },
+    {
+      "conf": 1.0,
+      "end": 93.0,
+      "start": 92.52,
+      "word": "nueve"
+    },
+    {
+      "conf": 0.986289,
+      "end": 93.329839,
+      "start": 93.09,
+      "word": "pero"
+    },
+    {
+      "conf": 0.219072,
+      "end": 93.42,
+      "start": 93.33,
+      "word": "a\u00fan"
+    },
+    {
+      "conf": 0.978686,
+      "end": 94.17,
+      "start": 93.425156,
+      "word": "proceso"
+    },
+    {
+      "conf": 0.996702,
+      "end": 94.41,
+      "start": 94.26,
+      "word": "los"
+    },
+    {
+      "conf": 0.99061,
+      "end": 94.68011,
+      "start": 94.41,
+      "word": "centros"
+    },
+    {
+      "conf": 0.988058,
+      "end": 94.74,
+      "start": 94.68011,
+      "word": "de"
+    },
+    {
+      "conf": 0.963016,
+      "end": 94.982241,
+      "start": 94.74,
+      "word": "salud"
+    },
+    {
+      "conf": 0.359581,
+      "end": 95.518374,
+      "start": 95.127437,
+      "word": "ciudadano"
+    },
+    {
+      "conf": 0.642485,
+      "end": 95.609868,
+      "start": 95.53407,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 95.88,
+      "start": 95.609868,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 96.42,
+      "start": 95.88,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 1.0,
+      "end": 96.63,
+      "start": 96.51,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 96.87,
+      "start": 96.63,
+      "word": "un"
+    },
+    {
+      "conf": 0.970562,
+      "end": 97.29,
+      "start": 96.9,
+      "word": "\u00fanico"
+    },
+    {
+      "conf": 0.754197,
+      "end": 97.74,
+      "start": 97.290718,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.713088,
+      "end": 97.889993,
+      "start": 97.74,
+      "word": "por"
+    },
+    {
+      "conf": 0.550117,
+      "end": 98.010176,
+      "start": 97.889993,
+      "word": "qu\u00e9"
+    },
+    {
+      "conf": 1.0,
+      "end": 98.28,
+      "start": 98.193435,
+      "word": "es"
+    },
+    {
+      "conf": 1.0,
+      "end": 98.759941,
+      "start": 98.28,
+      "word": "imposible"
+    },
+    {
+      "conf": 0.918873,
+      "end": 98.91,
+      "start": 98.762205,
+      "word": "una"
+    },
+    {
+      "conf": 0.999424,
+      "end": 99.419553,
+      "start": 98.91,
+      "word": "persona"
+    },
+    {
+      "conf": 1.0,
+      "end": 100.47,
+      "start": 99.96,
+      "word": "seguir"
+    },
+    {
+      "conf": 0.992368,
+      "end": 100.62,
+      "start": 100.47,
+      "word": "la"
+    },
+    {
+      "conf": 0.98862,
+      "end": 101.88,
+      "start": 101.309766,
+      "word": "evoluci\u00f3n"
+    },
+    {
+      "conf": 0.962794,
+      "end": 102.18,
+      "start": 101.97,
+      "word": "si"
+    },
+    {
+      "conf": 0.813954,
+      "end": 102.426226,
+      "start": 102.18,
+      "word": "viene"
+    },
+    {
+      "conf": 0.275387,
+      "end": 102.651716,
+      "start": 102.487295,
+      "word": "dos"
+    },
+    {
+      "conf": 0.952771,
+      "end": 104.63825,
+      "start": 104.4,
+      "word": "tres"
+    },
+    {
+      "conf": 1.0,
+      "end": 105.0,
+      "start": 104.649697,
+      "word": "cuatro"
+    },
+    {
+      "conf": 1.0,
+      "end": 105.509062,
+      "start": 105.0,
+      "word": "veces"
+    },
+    {
+      "conf": 0.887142,
+      "end": 106.02,
+      "start": 105.57,
+      "word": "en"
+    },
+    {
+      "conf": 0.436174,
+      "end": 106.65,
+      "start": 106.53,
+      "word": "un"
+    },
+    {
+      "conf": 0.979258,
+      "end": 107.13,
+      "start": 106.65,
+      "word": "semestre"
+    },
+    {
+      "conf": 0.492018,
+      "end": 107.67,
+      "start": 107.449885,
+      "word": "equipo"
+    },
+    {
+      "conf": 0.99278,
+      "end": 107.88,
+      "start": 107.670688,
+      "word": "tiene"
+    },
+    {
+      "conf": 1.0,
+      "end": 107.97,
+      "start": 107.88022,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 108.50918,
+      "start": 107.97,
+      "word": "seguir"
+    },
+    {
+      "conf": 0.944278,
+      "end": 109.56,
+      "start": 109.32,
+      "word": "toda"
+    },
+    {
+      "conf": 0.953416,
+      "end": 109.65,
+      "start": 109.56,
+      "word": "la"
+    },
+    {
+      "conf": 0.953416,
+      "end": 110.009436,
+      "start": 109.65,
+      "word": "historia"
+    },
+    {
+      "conf": 0.905004,
+      "end": 110.13,
+      "start": 110.009854,
+      "word": "esta"
+    },
+    {
+      "conf": 0.919464,
+      "end": 110.64,
+      "start": 110.13022,
+      "word": "persona"
+    },
+    {
+      "conf": 0.686428,
+      "end": 111.119993,
+      "start": 110.879993,
+      "word": "toma"
+    },
+    {
+      "conf": 0.636429,
+      "end": 111.212959,
+      "start": 111.123948,
+      "word": "la"
+    },
+    {
+      "conf": 0.97737,
+      "end": 112.022827,
+      "start": 111.51,
+      "word": "informaci\u00f3n"
+    },
+    {
+      "conf": 0.55532,
+      "end": 112.08,
+      "start": 112.022827,
+      "word": "o"
+    },
+    {
+      "conf": 0.88572,
+      "end": 112.289993,
+      "start": 112.091089,
+      "word": "saber"
+    },
+    {
+      "conf": 0.90707,
+      "end": 112.413142,
+      "start": 112.294636,
+      "word": "si"
+    },
+    {
+      "conf": 0.456209,
+      "end": 112.889604,
+      "start": 112.413142,
+      "word": "card\u00edacos"
+    },
+    {
+      "conf": 0.997778,
+      "end": 114.298828,
+      "start": 113.78937,
+      "word": "navegaci\u00f3n"
+    },
+    {
+      "conf": 0.282925,
+      "end": 114.509128,
+      "start": 114.3,
+      "word": "tiene"
+    },
+    {
+      "conf": 0.99354,
+      "end": 115.65,
+      "start": 115.44,
+      "word": "todo"
+    },
+    {
+      "conf": 0.995005,
+      "end": 116.1,
+      "start": 115.650037,
+      "word": "eso"
+    },
+    {
+      "conf": 0.977909,
+      "end": 116.541541,
+      "start": 116.25,
+      "word": "va"
+    },
+    {
+      "conf": 0.954486,
+      "end": 116.94,
+      "start": 116.58,
+      "word": "fichas"
+    },
+    {
+      "conf": 0.997304,
+      "end": 117.059604,
+      "start": 116.94,
+      "word": "en"
+    },
+    {
+      "conf": 0.983874,
+      "end": 117.45,
+      "start": 117.060403,
+      "word": "papel"
+    },
+    {
+      "conf": 0.569357,
+      "end": 118.14,
+      "start": 118.02,
+      "word": "o"
+    },
+    {
+      "conf": 0.569357,
+      "end": 118.41,
+      "start": 118.14,
+      "word": "sea"
+    },
+    {
+      "conf": 1.0,
+      "end": 118.86,
+      "start": 118.65,
+      "word": "cuando"
+    },
+    {
+      "conf": 0.962493,
+      "end": 118.95,
+      "start": 118.86,
+      "word": "la"
+    },
+    {
+      "conf": 0.981228,
+      "end": 119.34,
+      "start": 118.95,
+      "word": "persona"
+    },
+    {
+      "conf": 0.605218,
+      "end": 119.908389,
+      "start": 119.768254,
+      "word": "se"
+    },
+    {
+      "conf": 0.765403,
+      "end": 120.448828,
+      "start": 119.908389,
+      "word": "atiende"
+    },
+    {
+      "conf": 0.979741,
+      "end": 122.55,
+      "start": 122.434731,
+      "word": "un"
+    },
+    {
+      "conf": 0.751188,
+      "end": 122.819993,
+      "start": 122.55,
+      "word": "duelo"
+    },
+    {
+      "conf": 1.0,
+      "end": 122.97,
+      "start": 122.822498,
+      "word": "por"
+    },
+    {
+      "conf": 1.0,
+      "end": 123.211406,
+      "start": 122.97,
+      "word": "ejemplo"
+    },
+    {
+      "conf": 0.862449,
+      "end": 123.329604,
+      "start": 123.211406,
+      "word": "con"
+    },
+    {
+      "conf": 0.858158,
+      "end": 124.012793,
+      "start": 123.330205,
+      "word": "especialistas"
+    },
+    {
+      "conf": 0.994502,
+      "end": 124.14,
+      "start": 124.012793,
+      "word": "se"
+    },
+    {
+      "conf": 1.0,
+      "end": 124.65,
+      "start": 124.14,
+      "word": "presenta"
+    },
+    {
+      "conf": 1.0,
+      "end": 124.8,
+      "start": 124.65,
+      "word": "se"
+    },
+    {
+      "conf": 0.969676,
+      "end": 125.339648,
+      "start": 124.8,
+      "word": "confirma"
+    },
+    {
+      "conf": 0.55526,
+      "end": 125.52,
+      "start": 125.344087,
+      "word": "ese"
+    },
+    {
+      "conf": 0.878569,
+      "end": 125.94,
+      "start": 125.52041,
+      "word": "turno"
+    },
+    {
+      "conf": 0.983108,
+      "end": 126.180352,
+      "start": 126.03,
+      "word": "con"
+    },
+    {
+      "conf": 0.995189,
+      "end": 126.389971,
+      "start": 126.180381,
+      "word": "el"
+    },
+    {
+      "conf": 0.994972,
+      "end": 126.69,
+      "start": 126.389971,
+      "word": "n\u00famero"
+    },
+    {
+      "conf": 1.0,
+      "end": 126.78,
+      "start": 126.69,
+      "word": "de"
+    },
+    {
+      "conf": 0.993308,
+      "end": 127.38,
+      "start": 126.78,
+      "word": "pacientes"
+    },
+    {
+      "conf": 0.957835,
+      "end": 127.62,
+      "start": 127.5,
+      "word": "que"
+    },
+    {
+      "conf": 0.956967,
+      "end": 128.003247,
+      "start": 127.62,
+      "word": "sale"
+    },
+    {
+      "conf": 0.895312,
+      "end": 128.22,
+      "start": 128.007656,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 128.818594,
+      "start": 128.4,
+      "word": "registro"
+    },
+    {
+      "conf": 0.947134,
+      "end": 128.88,
+      "start": 128.82,
+      "word": "de"
+    },
+    {
+      "conf": 0.694202,
+      "end": 129.25979,
+      "start": 128.88,
+      "word": "pacientes"
+    },
+    {
+      "conf": 0.683516,
+      "end": 129.39,
+      "start": 129.25979,
+      "word": "del"
+    },
+    {
+      "conf": 0.999935,
+      "end": 129.81,
+      "start": 129.39,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.900075,
+      "end": 130.41,
+      "start": 130.309028,
+      "word": "un"
+    },
+    {
+      "conf": 0.934989,
+      "end": 130.776548,
+      "start": 130.41,
+      "word": "fichero"
+    },
+    {
+      "conf": 0.391861,
+      "end": 131.13,
+      "start": 131.02541,
+      "word": "la"
+    },
+    {
+      "conf": 0.880157,
+      "end": 131.489121,
+      "start": 131.135977,
+      "word": "fichar"
+    },
+    {
+      "conf": 0.856534,
+      "end": 131.88,
+      "start": 131.490864,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.41113,
+      "end": 132.419707,
+      "start": 132.36,
+      "word": "y"
+    },
+    {
+      "conf": 0.572482,
+      "end": 132.6,
+      "start": 132.423574,
+      "word": "quiero"
+    },
+    {
+      "conf": 0.933307,
+      "end": 132.899678,
+      "start": 132.611191,
+      "word": "papel"
+    },
+    {
+      "conf": 0.996318,
+      "end": 134.19,
+      "start": 133.98,
+      "word": "si"
+    },
+    {
+      "conf": 1.0,
+      "end": 134.28,
+      "start": 134.19,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 134.670029,
+      "start": 134.28,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.499734,
+      "end": 135.06,
+      "start": 134.670029,
+      "word": "est\u00e1"
+    },
+    {
+      "conf": 0.91073,
+      "end": 135.27,
+      "start": 135.12,
+      "word": "se"
+    },
+    {
+      "conf": 0.965058,
+      "end": 135.48,
+      "start": 135.27,
+      "word": "toma"
+    },
+    {
+      "conf": 1.0,
+      "end": 135.57,
+      "start": 135.48,
+      "word": "la"
+    },
+    {
+      "conf": 0.99718,
+      "end": 135.96,
+      "start": 135.57,
+      "word": "ficha"
+    },
+    {
+      "conf": 0.776806,
+      "end": 136.5,
+      "start": 136.404507,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 136.830454,
+      "start": 136.5,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.898161,
+      "end": 136.978931,
+      "start": 136.830454,
+      "word": "no"
+    },
+    {
+      "conf": 0.455783,
+      "end": 137.19,
+      "start": 136.979019,
+      "word": "alta"
+    },
+    {
+      "conf": 0.997656,
+      "end": 137.31,
+      "start": 137.191553,
+      "word": "se"
+    },
+    {
+      "conf": 0.964159,
+      "end": 137.61,
+      "start": 137.310015,
+      "word": "genera"
+    },
+    {
+      "conf": 0.999878,
+      "end": 137.738071,
+      "start": 137.617397,
+      "word": "una"
+    },
+    {
+      "conf": 0.346305,
+      "end": 138.17978,
+      "start": 137.91416,
+      "word": "fecha"
+    },
+    {
+      "conf": 0.462353,
+      "end": 138.78,
+      "start": 138.266353,
+      "word": "reservaci\u00f3n"
+    },
+    {
+      "conf": 0.956638,
+      "end": 139.581211,
+      "start": 139.461182,
+      "word": "para"
+    },
+    {
+      "conf": 0.929472,
+      "end": 139.647612,
+      "start": 139.587612,
+      "word": "el"
+    },
+    {
+      "conf": 0.934249,
+      "end": 140.129414,
+      "start": 139.65,
+      "word": "profesional"
+    },
+    {
+      "conf": 0.769534,
+      "end": 140.34,
+      "start": 140.161479,
+      "word": "la"
+    },
+    {
+      "conf": 0.80128,
+      "end": 140.61,
+      "start": 140.343252,
+      "word": "ve"
+    },
+    {
+      "conf": 0.987787,
+      "end": 140.789253,
+      "start": 140.7,
+      "word": "a"
+    },
+    {
+      "conf": 1.0,
+      "end": 140.87959,
+      "start": 140.789253,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 141.42,
+      "start": 140.88,
+      "word": "persona"
+    },
+    {
+      "conf": 1.0,
+      "end": 142.2,
+      "start": 141.78,
+      "word": "recibe"
+    },
+    {
+      "conf": 0.985682,
+      "end": 142.35,
+      "start": 142.2,
+      "word": "esta"
+    },
+    {
+      "conf": 0.965884,
+      "end": 142.71,
+      "start": 142.35,
+      "word": "ficha"
+    },
+    {
+      "conf": 0.909362,
+      "end": 143.159824,
+      "start": 142.92,
+      "word": "iba"
+    },
+    {
+      "conf": 0.824496,
+      "end": 143.46,
+      "start": 143.159824,
+      "word": "haciendo"
+    },
+    {
+      "conf": 1.0,
+      "end": 143.58,
+      "start": 143.46,
+      "word": "las"
+    },
+    {
+      "conf": 1.0,
+      "end": 144.39,
+      "start": 143.58,
+      "word": "anotaciones"
+    },
+    {
+      "conf": 0.388213,
+      "end": 145.257715,
+      "start": 144.81,
+      "word": "corresponde"
+    },
+    {
+      "conf": 0.625404,
+      "end": 145.83,
+      "start": 145.257715,
+      "word": "inmediata"
+    },
+    {
+      "conf": 0.962976,
+      "end": 146.939971,
+      "start": 146.37,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.49793,
+      "end": 146.967363,
+      "start": 146.94,
+      "word": "a"
+    },
+    {
+      "conf": 0.953312,
+      "end": 147.09,
+      "start": 146.967363,
+      "word": "esta"
+    },
+    {
+      "conf": 0.978458,
+      "end": 147.300176,
+      "start": 147.090103,
+      "word": "nueva"
+    },
+    {
+      "conf": 0.935294,
+      "end": 147.72,
+      "start": 147.300176,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 1.0,
+      "end": 148.65,
+      "start": 148.47,
+      "word": "al"
+    },
+    {
+      "conf": 1.0,
+      "end": 149.19,
+      "start": 148.65,
+      "word": "terminar"
+    },
+    {
+      "conf": 0.513297,
+      "end": 149.932573,
+      "start": 149.28,
+      "word": "devuelve"
+    },
+    {
+      "conf": 0.900089,
+      "end": 150.09,
+      "start": 149.93521,
+      "word": "esta"
+    },
+    {
+      "conf": 0.984684,
+      "end": 150.45,
+      "start": 150.090703,
+      "word": "ficha"
+    },
+    {
+      "conf": 0.985539,
+      "end": 154.229839,
+      "start": 153.552393,
+      "word": "administrativo"
+    },
+    {
+      "conf": 0.995391,
+      "end": 154.38,
+      "start": 154.23,
+      "word": "de"
+    },
+    {
+      "conf": 0.990029,
+      "end": 154.8,
+      "start": 154.38,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.51728,
+      "end": 154.86,
+      "start": 154.8,
+      "word": "a"
+    },
+    {
+      "conf": 0.516607,
+      "end": 155.246206,
+      "start": 154.86,
+      "word": "clientes"
+    },
+    {
+      "conf": 0.624868,
+      "end": 155.34,
+      "start": 155.249297,
+      "word": "lo"
+    },
+    {
+      "conf": 0.63959,
+      "end": 155.43,
+      "start": 155.34,
+      "word": "que"
+    },
+    {
+      "conf": 0.390094,
+      "end": 155.64,
+      "start": 155.43,
+      "word": "hace"
+    },
+    {
+      "conf": 0.99857,
+      "end": 156.27,
+      "start": 156.0,
+      "word": "tomar"
+    },
+    {
+      "conf": 0.99857,
+      "end": 156.36,
+      "start": 156.27,
+      "word": "la"
+    },
+    {
+      "conf": 0.988223,
+      "end": 156.78,
+      "start": 156.36,
+      "word": "ficha"
+    },
+    {
+      "conf": 0.633083,
+      "end": 156.96,
+      "start": 156.87,
+      "word": "y"
+    },
+    {
+      "conf": 0.356306,
+      "end": 157.188706,
+      "start": 156.96,
+      "word": "carrera"
+    },
+    {
+      "conf": 0.700135,
+      "end": 157.29,
+      "start": 157.188706,
+      "word": "del"
+    },
+    {
+      "conf": 1.0,
+      "end": 157.86,
+      "start": 157.290293,
+      "word": "diagn\u00f3stico"
+    },
+    {
+      "conf": 0.986543,
+      "end": 157.919854,
+      "start": 157.86,
+      "word": "en"
+    },
+    {
+      "conf": 0.992742,
+      "end": 158.01,
+      "start": 157.919854,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 158.34,
+      "start": 158.01,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.997654,
+      "end": 158.46,
+      "start": 158.34,
+      "word": "con"
+    },
+    {
+      "conf": 0.919167,
+      "end": 158.52,
+      "start": 158.46,
+      "word": "lo"
+    },
+    {
+      "conf": 1.0,
+      "end": 158.61,
+      "start": 158.522432,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 158.729824,
+      "start": 158.61,
+      "word": "se"
+    },
+    {
+      "conf": 0.986571,
+      "end": 159.09,
+      "start": 158.73,
+      "word": "cierra"
+    },
+    {
+      "conf": 0.993155,
+      "end": 159.21,
+      "start": 159.090176,
+      "word": "en"
+    },
+    {
+      "conf": 1.0,
+      "end": 159.33,
+      "start": 159.210205,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 159.778301,
+      "start": 159.33,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.977113,
+      "end": 159.839985,
+      "start": 159.78,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 160.11,
+      "start": 159.839985,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 160.5,
+      "start": 160.11,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.51704,
+      "end": 161.250425,
+      "start": 161.13,
+      "word": "en"
+    },
+    {
+      "conf": 0.56595,
+      "end": 161.34,
+      "start": 161.258013,
+      "word": "un"
+    },
+    {
+      "conf": 0.998901,
+      "end": 161.669692,
+      "start": 161.352524,
+      "word": "papel"
+    },
+    {
+      "conf": 0.996219,
+      "end": 161.76,
+      "start": 161.67,
+      "word": "no"
+    },
+    {
+      "conf": 1.0,
+      "end": 161.91,
+      "start": 161.760117,
+      "word": "se"
+    },
+    {
+      "conf": 0.718951,
+      "end": 162.311616,
+      "start": 161.91,
+      "word": "cierra"
+    },
+    {
+      "conf": 0.943846,
+      "end": 162.870059,
+      "start": 162.750132,
+      "word": "es"
+    },
+    {
+      "conf": 0.994395,
+      "end": 162.99,
+      "start": 162.871582,
+      "word": "un"
+    },
+    {
+      "conf": 0.994333,
+      "end": 163.559956,
+      "start": 162.99,
+      "word": "continuo"
+    },
+    {
+      "conf": 0.874761,
+      "end": 164.54458,
+      "start": 164.43,
+      "word": "lo"
+    },
+    {
+      "conf": 0.668803,
+      "end": 164.609678,
+      "start": 164.549678,
+      "word": "que"
+    },
+    {
+      "conf": 0.660048,
+      "end": 164.699854,
+      "start": 164.61,
+      "word": "no"
+    },
+    {
+      "conf": 0.534362,
+      "end": 164.91,
+      "start": 164.703589,
+      "word": "s\u00f3lo"
+    },
+    {
+      "conf": 1.0,
+      "end": 165.63,
+      "start": 164.910029,
+      "word": "necesitamos"
+    },
+    {
+      "conf": 1.0,
+      "end": 165.9,
+      "start": 165.63,
+      "word": "es"
+    },
+    {
+      "conf": 0.91159,
+      "end": 167.61,
+      "start": 167.31,
+      "word": "debido"
+    },
+    {
+      "conf": 0.797954,
+      "end": 167.638945,
+      "start": 167.61,
+      "word": "a"
+    },
+    {
+      "conf": 0.846735,
+      "end": 167.698726,
+      "start": 167.638945,
+      "word": "que"
+    },
+    {
+      "conf": 0.951537,
+      "end": 167.85,
+      "start": 167.698726,
+      "word": "esta"
+    },
+    {
+      "conf": 0.905944,
+      "end": 167.995298,
+      "start": 167.85,
+      "word": "ley"
+    },
+    {
+      "conf": 0.801173,
+      "end": 168.09,
+      "start": 167.999956,
+      "word": "lo"
+    },
+    {
+      "conf": 0.593496,
+      "end": 168.69,
+      "start": 168.090703,
+      "word": "solicita"
+    },
+    {
+      "conf": 0.541677,
+      "end": 170.340015,
+      "start": 169.860015,
+      "word": "llevar"
+    },
+    {
+      "conf": 0.985283,
+      "end": 170.52,
+      "start": 170.37,
+      "word": "a"
+    },
+    {
+      "conf": 0.614222,
+      "end": 171.3,
+      "start": 170.52,
+      "word": "sistematizar"
+    },
+    {
+      "conf": 0.601031,
+      "end": 171.388521,
+      "start": 171.309478,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 171.84,
+      "start": 171.388521,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 172.439692,
+      "start": 171.99,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.908514,
+      "end": 173.1,
+      "start": 172.5,
+      "word": "\u00fanica"
+    },
+    {
+      "conf": 0.997099,
+      "end": 173.90978,
+      "start": 173.55,
+      "word": "por"
+    },
+    {
+      "conf": 0.921783,
+      "end": 174.45,
+      "start": 173.91,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.485477,
+      "end": 175.2,
+      "start": 174.78,
+      "word": "osea"
+    },
+    {
+      "conf": 0.732852,
+      "end": 175.65,
+      "start": 175.56,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 175.83,
+      "start": 175.65,
+      "word": "cuando"
+    },
+    {
+      "conf": 1.0,
+      "end": 175.89,
+      "start": 175.83,
+      "word": "un"
+    },
+    {
+      "conf": 1.0,
+      "end": 176.46,
+      "start": 175.89,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.52222,
+      "end": 176.849941,
+      "start": 176.46,
+      "word": "viene"
+    },
+    {
+      "conf": 0.380919,
+      "end": 177.329868,
+      "start": 176.94,
+      "word": "solicit\u00f3"
+    },
+    {
+      "conf": 0.520782,
+      "end": 177.419985,
+      "start": 177.330879,
+      "word": "un"
+    },
+    {
+      "conf": 0.964633,
+      "end": 178.017803,
+      "start": 177.419985,
+      "word": "turno"
+    },
+    {
+      "conf": 0.849527,
+      "end": 178.50041,
+      "start": 178.08,
+      "word": "personas"
+    },
+    {
+      "conf": 0.39222,
+      "end": 179.030669,
+      "start": 178.770352,
+      "word": "espont\u00e1neo"
+    },
+    {
+      "conf": 0.468853,
+      "end": 179.276221,
+      "start": 179.030669,
+      "word": "espont\u00e1nea"
+    },
+    {
+      "conf": 0.981739,
+      "end": 179.91,
+      "start": 179.46,
+      "word": "guardia"
+    },
+    {
+      "conf": 0.646147,
+      "end": 180.451113,
+      "start": 180.388945,
+      "word": "el"
+    },
+    {
+      "conf": 0.961281,
+      "end": 180.780117,
+      "start": 180.451113,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.825175,
+      "end": 180.868711,
+      "start": 180.780117,
+      "word": "me"
+    },
+    {
+      "conf": 0.643509,
+      "end": 181.141904,
+      "start": 180.87,
+      "word": "traiga"
+    },
+    {
+      "conf": 0.808396,
+      "end": 181.201904,
+      "start": 181.141904,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 181.77,
+      "start": 181.202329,
+      "word": "historia"
+    },
+    {
+      "conf": 0.981552,
+      "end": 182.130278,
+      "start": 182.01,
+      "word": "de"
+    },
+    {
+      "conf": 0.63714,
+      "end": 182.25,
+      "start": 182.130278,
+      "word": "ese"
+    },
+    {
+      "conf": 0.887066,
+      "end": 182.7,
+      "start": 182.250103,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.364354,
+      "end": 183.539971,
+      "start": 183.24,
+      "word": "media"
+    },
+    {
+      "conf": 0.280309,
+      "end": 183.840542,
+      "start": 183.570557,
+      "word": "cuanto"
+    },
+    {
+      "conf": 0.699726,
+      "end": 184.112446,
+      "start": 183.87,
+      "word": "veces"
+    },
+    {
+      "conf": 0.882847,
+      "end": 184.44,
+      "start": 184.118145,
+      "word": "vino"
+    },
+    {
+      "conf": 0.573958,
+      "end": 184.696216,
+      "start": 184.619985,
+      "word": "fue"
+    },
+    {
+      "conf": 0.487352,
+      "end": 184.741509,
+      "start": 184.696216,
+      "word": "el"
+    },
+    {
+      "conf": 0.908278,
+      "end": 185.519971,
+      "start": 184.790054,
+      "word": "diagn\u00f3stico"
+    },
+    {
+      "conf": 0.680669,
+      "end": 185.579282,
+      "start": 185.52,
+      "word": "que"
+    },
+    {
+      "conf": 0.568958,
+      "end": 185.850117,
+      "start": 185.579282,
+      "word": "estudio"
+    },
+    {
+      "conf": 0.48253,
+      "end": 185.93959,
+      "start": 185.863872,
+      "word": "se"
+    },
+    {
+      "conf": 0.288259,
+      "end": 186.029985,
+      "start": 185.93959,
+      "word": "ser"
+    },
+    {
+      "conf": 0.999123,
+      "end": 186.51,
+      "start": 186.050962,
+      "word": "hicieron"
+    },
+    {
+      "conf": 0.977318,
+      "end": 186.9,
+      "start": 186.78,
+      "word": "que"
+    },
+    {
+      "conf": 0.963404,
+      "end": 186.9877,
+      "start": 186.9,
+      "word": "me"
+    },
+    {
+      "conf": 0.905176,
+      "end": 187.11,
+      "start": 186.99,
+      "word": "sea"
+    },
+    {
+      "conf": 0.933263,
+      "end": 187.44,
+      "start": 187.14,
+      "word": "posible"
+    },
+    {
+      "conf": 1.0,
+      "end": 187.98,
+      "start": 187.44,
+      "word": "digitalizar"
+    },
+    {
+      "conf": 1.0,
+      "end": 188.31,
+      "start": 187.981582,
+      "word": "algunos"
+    },
+    {
+      "conf": 0.993175,
+      "end": 188.695591,
+      "start": 188.31,
+      "word": "estudios"
+    },
+    {
+      "conf": 0.816261,
+      "end": 188.88,
+      "start": 188.699868,
+      "word": "como"
+    },
+    {
+      "conf": 1.0,
+      "end": 189.570029,
+      "start": 188.884673,
+      "word": "radiograf\u00edas"
+    },
+    {
+      "conf": 0.959105,
+      "end": 190.17334,
+      "start": 189.570029,
+      "word": "ecograf\u00eda"
+    },
+    {
+      "conf": 0.650902,
+      "end": 190.71,
+      "start": 190.233149,
+      "word": "electro"
+    },
+    {
+      "conf": 1.0,
+      "end": 192.148535,
+      "start": 191.43,
+      "word": "tomograf\u00eda"
+    },
+    {
+      "conf": 0.97093,
+      "end": 193.11,
+      "start": 192.84,
+      "word": "tener"
+    },
+    {
+      "conf": 0.598077,
+      "end": 193.343027,
+      "start": 193.110015,
+      "word": "dudas"
+    },
+    {
+      "conf": 1.0,
+      "end": 193.83,
+      "start": 193.350894,
+      "word": "informaci\u00f3n"
+    },
+    {
+      "conf": 0.990451,
+      "end": 194.28,
+      "start": 193.83,
+      "word": "disponible"
+    },
+    {
+      "conf": 1.0,
+      "end": 195.36,
+      "start": 195.21,
+      "word": "y"
+    },
+    {
+      "conf": 1.0,
+      "end": 195.48,
+      "start": 195.36,
+      "word": "no"
+    },
+    {
+      "conf": 1.0,
+      "end": 195.9,
+      "start": 195.48,
+      "word": "solamente"
+    },
+    {
+      "conf": 0.765278,
+      "end": 196.26,
+      "start": 196.136294,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 197.19,
+      "start": 196.26,
+      "word": "diagn\u00f3stico"
+    },
+    {
+      "conf": 1.0,
+      "end": 197.88,
+      "start": 197.49,
+      "word": "m\u00e9dico"
+    },
+    {
+      "conf": 0.993881,
+      "end": 198.0,
+      "start": 197.88,
+      "word": "le"
+    },
+    {
+      "conf": 0.927692,
+      "end": 198.329839,
+      "start": 198.0,
+      "word": "da"
+    },
+    {
+      "conf": 1.0,
+      "end": 198.81,
+      "start": 198.51,
+      "word": "sobre"
+    },
+    {
+      "conf": 0.993447,
+      "end": 199.17,
+      "start": 198.81,
+      "word": "esta"
+    },
+    {
+      "conf": 1.0,
+      "end": 200.4,
+      "start": 200.04,
+      "word": "visita"
+    },
+    {
+      "conf": 1.0,
+      "end": 200.46,
+      "start": 200.4,
+      "word": "en"
+    },
+    {
+      "conf": 1.0,
+      "end": 200.94,
+      "start": 200.46,
+      "word": "particular"
+    },
+    {
+      "conf": 1.0,
+      "end": 201.39,
+      "start": 200.94,
+      "word": "sino"
+    },
+    {
+      "conf": 0.991106,
+      "end": 201.9,
+      "start": 201.63,
+      "word": "tambi\u00e9n"
+    },
+    {
+      "conf": 0.964388,
+      "end": 202.526411,
+      "start": 202.14,
+      "word": "permite"
+    },
+    {
+      "conf": 0.305476,
+      "end": 202.735459,
+      "start": 202.53,
+      "word": "mezcla"
+    },
+    {
+      "conf": 0.30724,
+      "end": 203.009561,
+      "start": 202.735459,
+      "word": "placer"
+    },
+    {
+      "conf": 0.967996,
+      "end": 203.159839,
+      "start": 203.062061,
+      "word": "un"
+    },
+    {
+      "conf": 1.0,
+      "end": 203.34,
+      "start": 203.160762,
+      "word": "poco"
+    },
+    {
+      "conf": 0.584159,
+      "end": 203.520029,
+      "start": 203.340015,
+      "word": "m\u00e1s"
+    },
+    {
+      "conf": 0.796364,
+      "end": 203.82,
+      "start": 203.520029,
+      "word": "hay"
+    },
+    {
+      "conf": 0.9989,
+      "end": 204.27,
+      "start": 204.0,
+      "word": "tener"
+    },
+    {
+      "conf": 0.917309,
+      "end": 204.48,
+      "start": 204.27,
+      "word": "m\u00e1s"
+    },
+    {
+      "conf": 0.95305,
+      "end": 204.99,
+      "start": 204.48,
+      "word": "informaci\u00f3n"
+    },
+    {
+      "conf": 1.0,
+      "end": 205.29,
+      "start": 204.99,
+      "word": "acerca"
+    },
+    {
+      "conf": 0.879336,
+      "end": 205.532505,
+      "start": 205.469985,
+      "word": "de"
+    },
+    {
+      "conf": 0.517815,
+      "end": 205.919985,
+      "start": 205.532505,
+      "word": "diagn\u00f3stico"
+    },
+    {
+      "conf": 0.328909,
+      "end": 206.400015,
+      "start": 206.310015,
+      "word": "se"
+    },
+    {
+      "conf": 0.362436,
+      "end": 206.879209,
+      "start": 206.400015,
+      "word": "suscitaron"
+    },
+    {
+      "conf": 0.825393,
+      "end": 207.330249,
+      "start": 206.880425,
+      "word": "determinados"
+    },
+    {
+      "conf": 0.66784,
+      "end": 207.93,
+      "start": 207.3323,
+      "word": "estudio"
+    },
+    {
+      "conf": 0.48888,
+      "end": 208.05,
+      "start": 207.930088,
+      "word": "del"
+    },
+    {
+      "conf": 0.965333,
+      "end": 208.469458,
+      "start": 208.23,
+      "word": "dinero"
+    },
+    {
+      "conf": 0.904091,
+      "end": 208.71022,
+      "start": 208.469678,
+      "word": "volver"
+    },
+    {
+      "conf": 0.432469,
+      "end": 208.824229,
+      "start": 208.710527,
+      "word": "en"
+    },
+    {
+      "conf": 0.434337,
+      "end": 208.98,
+      "start": 208.829678,
+      "word": "tal"
+    },
+    {
+      "conf": 0.99534,
+      "end": 209.73,
+      "start": 209.010337,
+      "word": "fecha"
+    },
+    {
+      "conf": 0.762891,
+      "end": 210.78,
+      "start": 210.63,
+      "word": "no"
+    },
+    {
+      "conf": 0.890761,
+      "end": 210.989648,
+      "start": 210.78,
+      "word": "se"
+    },
+    {
+      "conf": 0.981693,
+      "end": 211.5,
+      "start": 211.02,
+      "word": "tiene"
+    },
+    {
+      "conf": 0.794712,
+      "end": 212.22,
+      "start": 211.68,
+      "word": "diagnosticado"
+    },
+    {
+      "conf": 0.98699,
+      "end": 212.788433,
+      "start": 212.22312,
+      "word": "reposo"
+    },
+    {
+      "conf": 0.865006,
+      "end": 212.96959,
+      "start": 212.79022,
+      "word": "por"
+    },
+    {
+      "conf": 0.87013,
+      "end": 213.24,
+      "start": 212.97,
+      "word": "tanto"
+    },
+    {
+      "conf": 0.917527,
+      "end": 213.62978,
+      "start": 213.24,
+      "word": "tiempo"
+    },
+    {
+      "conf": 1.0,
+      "end": 214.26,
+      "start": 213.860171,
+      "word": "informaci\u00f3n"
+    },
+    {
+      "conf": 1.0,
+      "end": 215.399399,
+      "start": 214.71,
+      "word": "disponible"
+    },
+    {
+      "conf": 0.466395,
+      "end": 216.96,
+      "start": 216.42,
+      "word": "este"
+    },
+    {
+      "conf": 1.0,
+      "end": 217.38,
+      "start": 217.23,
+      "word": "no"
+    },
+    {
+      "conf": 0.602378,
+      "end": 217.59,
+      "start": 217.38,
+      "word": "s\u00f3lo"
+    },
+    {
+      "conf": 0.991867,
+      "end": 217.8,
+      "start": 217.59,
+      "word": "porque"
+    },
+    {
+      "conf": 0.992617,
+      "end": 217.859883,
+      "start": 217.8,
+      "word": "a"
+    },
+    {
+      "conf": 0.608933,
+      "end": 217.979985,
+      "start": 217.859883,
+      "word": "mi"
+    },
+    {
+      "conf": 0.778382,
+      "end": 218.576558,
+      "start": 217.980396,
+      "word": "operativamente"
+    },
+    {
+      "conf": 0.70695,
+      "end": 218.67,
+      "start": 218.579985,
+      "word": "me"
+    },
+    {
+      "conf": 0.659831,
+      "end": 219.047212,
+      "start": 218.670161,
+      "word": "sirven"
+    },
+    {
+      "conf": 0.542828,
+      "end": 219.131704,
+      "start": 219.047212,
+      "word": "de"
+    },
+    {
+      "conf": 0.494092,
+      "end": 219.335273,
+      "start": 219.151406,
+      "word": "nada"
+    },
+    {
+      "conf": 0.352778,
+      "end": 219.480015,
+      "start": 219.335273,
+      "word": "la"
+    },
+    {
+      "conf": 0.995374,
+      "end": 219.72,
+      "start": 219.487793,
+      "word": "sino"
+    },
+    {
+      "conf": 0.999466,
+      "end": 219.900059,
+      "start": 219.72,
+      "word": "porque"
+    },
+    {
+      "conf": 0.931307,
+      "end": 220.08,
+      "start": 219.900059,
+      "word": "adem\u00e1s"
+    },
+    {
+      "conf": 0.922365,
+      "end": 220.574209,
+      "start": 220.446313,
+      "word": "un"
+    },
+    {
+      "conf": 0.869136,
+      "end": 221.010234,
+      "start": 220.59,
+      "word": "rendimiento"
+    },
+    {
+      "conf": 0.916262,
+      "end": 221.1,
+      "start": 221.010234,
+      "word": "de"
+    },
+    {
+      "conf": 0.995927,
+      "end": 221.37,
+      "start": 221.101743,
+      "word": "ley"
+    },
+    {
+      "conf": 0.905232,
+      "end": 222.059971,
+      "start": 221.969971,
+      "word": "de"
+    },
+    {
+      "conf": 0.865731,
+      "end": 222.179663,
+      "start": 222.061362,
+      "word": "que"
+    },
+    {
+      "conf": 0.438716,
+      "end": 222.238931,
+      "start": 222.179663,
+      "word": "en"
+    },
+    {
+      "conf": 1.0,
+      "end": 222.449663,
+      "start": 222.238931,
+      "word": "caso"
+    },
+    {
+      "conf": 0.729173,
+      "end": 222.569839,
+      "start": 222.450454,
+      "word": "del"
+    },
+    {
+      "conf": 1.0,
+      "end": 223.23,
+      "start": 222.72,
+      "word": "paciente"
+    },
+    {
+      "conf": 1.0,
+      "end": 224.07,
+      "start": 223.77,
+      "word": "atendido"
+    },
+    {
+      "conf": 1.0,
+      "end": 224.13,
+      "start": 224.07,
+      "word": "en"
+    },
+    {
+      "conf": 0.992427,
+      "end": 224.37,
+      "start": 224.13,
+      "word": "otros"
+    },
+    {
+      "conf": 0.732114,
+      "end": 224.63647,
+      "start": 224.37,
+      "word": "centros"
+    },
+    {
+      "conf": 0.56454,
+      "end": 224.73019,
+      "start": 224.640015,
+      "word": "o"
+    },
+    {
+      "conf": 0.508062,
+      "end": 225.21,
+      "start": 224.735889,
+      "word": "pueda"
+    },
+    {
+      "conf": 0.941456,
+      "end": 225.924082,
+      "start": 225.33,
+      "word": "r\u00e1pidamente"
+    },
+    {
+      "conf": 0.982469,
+      "end": 226.229487,
+      "start": 225.93,
+      "word": "obtener"
+    },
+    {
+      "conf": 0.776207,
+      "end": 227.22186,
+      "start": 226.68,
+      "word": "compartirla"
+    },
+    {
+      "conf": 0.57623,
+      "end": 227.309912,
+      "start": 227.22186,
+      "word": "al"
+    },
+    {
+      "conf": 0.852039,
+      "end": 227.49,
+      "start": 227.309912,
+      "word": "otro"
+    },
+    {
+      "conf": 0.32117,
+      "end": 227.669897,
+      "start": 227.491538,
+      "word": "sin"
+    },
+    {
+      "conf": 0.62539,
+      "end": 229.079985,
+      "start": 228.689985,
+      "word": "bien"
+    },
+    {
+      "conf": 1.0,
+      "end": 230.22,
+      "start": 230.04,
+      "word": "con"
+    },
+    {
+      "conf": 1.0,
+      "end": 230.31,
+      "start": 230.22,
+      "word": "lo"
+    },
+    {
+      "conf": 0.995069,
+      "end": 230.600156,
+      "start": 230.31,
+      "word": "cual"
+    },
+    {
+      "conf": 0.68424,
+      "end": 230.879678,
+      "start": 230.61,
+      "word": "bueno"
+    },
+    {
+      "conf": 0.976208,
+      "end": 230.999985,
+      "start": 230.881729,
+      "word": "que"
+    },
+    {
+      "conf": 0.733886,
+      "end": 231.239897,
+      "start": 230.999985,
+      "word": "est\u00e1s"
+    },
+    {
+      "conf": 1.0,
+      "end": 231.72,
+      "start": 231.239897,
+      "word": "buscando"
+    },
+    {
+      "conf": 0.905018,
+      "end": 231.78,
+      "start": 231.72,
+      "word": "es"
+    },
+    {
+      "conf": 1.0,
+      "end": 232.02,
+      "start": 231.78,
+      "word": "una"
+    },
+    {
+      "conf": 0.99016,
+      "end": 232.62,
+      "start": 232.02,
+      "word": "soluci\u00f3n"
+    },
+    {
+      "conf": 0.767235,
+      "end": 232.791064,
+      "start": 232.62,
+      "word": "m\u00e1s"
+    },
+    {
+      "conf": 0.553954,
+      "end": 233.19,
+      "start": 232.8,
+      "word": "bien"
+    },
+    {
+      "conf": 0.975794,
+      "end": 234.24,
+      "start": 233.64,
+      "word": "global"
+    },
+    {
+      "conf": 0.988146,
+      "end": 236.67,
+      "start": 235.355112,
+      "word": "de"
+    },
+    {
+      "conf": 0.707447,
+      "end": 237.959956,
+      "start": 237.81,
+      "word": "que"
+    },
+    {
+      "conf": 0.999158,
+      "end": 238.05,
+      "start": 237.959956,
+      "word": "va"
+    },
+    {
+      "conf": 0.92358,
+      "end": 238.23,
+      "start": 238.05,
+      "word": "m\u00e1s"
+    },
+    {
+      "conf": 0.995756,
+      "end": 238.471436,
+      "start": 238.23,
+      "word": "all\u00e1"
+    },
+    {
+      "conf": 0.90307,
+      "end": 238.62,
+      "start": 238.471436,
+      "word": "del"
+    },
+    {
+      "conf": 0.973084,
+      "end": 238.86,
+      "start": 238.62,
+      "word": "turno"
+    },
+    {
+      "conf": 0.580213,
+      "end": 239.110679,
+      "start": 238.861099,
+      "word": "sino"
+    },
+    {
+      "conf": 0.943264,
+      "end": 239.490249,
+      "start": 239.19,
+      "word": "tambi\u00e9n"
+    },
+    {
+      "conf": 0.9606,
+      "end": 239.64,
+      "start": 239.490249,
+      "word": "es"
+    },
+    {
+      "conf": 0.975954,
+      "end": 240.12,
+      "start": 239.640527,
+      "word": "un"
+    },
+    {
+      "conf": 0.996828,
+      "end": 240.93,
+      "start": 240.18,
+      "word": "v\u00ednculo"
+    },
+    {
+      "conf": 1.0,
+      "end": 241.08,
+      "start": 240.982515,
+      "word": "en"
+    },
+    {
+      "conf": 1.0,
+      "end": 241.589868,
+      "start": 241.08,
+      "word": "realidad"
+    },
+    {
+      "conf": 0.677039,
+      "end": 242.19,
+      "start": 242.1,
+      "word": "por"
+    },
+    {
+      "conf": 1.0,
+      "end": 242.28,
+      "start": 242.19,
+      "word": "lo"
+    },
+    {
+      "conf": 1.0,
+      "end": 242.37,
+      "start": 242.28,
+      "word": "que"
+    },
+    {
+      "conf": 0.607601,
+      "end": 242.789985,
+      "start": 242.37,
+      "word": "dec\u00eds"
+    },
+    {
+      "conf": 0.91901,
+      "end": 243.324639,
+      "start": 243.06,
+      "word": "en"
+    },
+    {
+      "conf": 0.994764,
+      "end": 243.51,
+      "start": 243.324639,
+      "word": "la"
+    },
+    {
+      "conf": 0.992927,
+      "end": 243.881367,
+      "start": 243.51,
+      "word": "calle"
+    },
+    {
+      "conf": 0.998796,
+      "end": 244.17,
+      "start": 243.96,
+      "word": "el"
+    },
+    {
+      "conf": 0.975135,
+      "end": 244.44,
+      "start": 244.17,
+      "word": "punto"
+    },
+    {
+      "conf": 0.905449,
+      "end": 244.861201,
+      "start": 244.440029,
+      "word": "principal"
+    },
+    {
+      "conf": 1.0,
+      "end": 245.34,
+      "start": 244.952183,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 246.0,
+      "start": 245.34,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 1.0,
+      "end": 246.36,
+      "start": 246.12,
+      "word": "y"
+    },
+    {
+      "conf": 1.0,
+      "end": 247.02,
+      "start": 246.45,
+      "word": "todo"
+    },
+    {
+      "conf": 1.0,
+      "end": 247.98,
+      "start": 247.44,
+      "word": "gira"
+    },
+    {
+      "conf": 0.800249,
+      "end": 248.16,
+      "start": 248.04,
+      "word": "en"
+    },
+    {
+      "conf": 0.800249,
+      "end": 248.46,
+      "start": 248.16,
+      "word": "torno"
+    },
+    {
+      "conf": 1.0,
+      "end": 248.580059,
+      "start": 248.460146,
+      "word": "de"
+    },
+    {
+      "conf": 0.995411,
+      "end": 248.88,
+      "start": 248.580059,
+      "word": "eso"
+    },
+    {
+      "conf": 0.997266,
+      "end": 249.69,
+      "start": 248.886006,
+      "word": "y"
+    },
+    {
+      "conf": 1.0,
+      "end": 250.707217,
+      "start": 250.495576,
+      "word": "y"
+    },
+    {
+      "conf": 0.850797,
+      "end": 250.948564,
+      "start": 250.71,
+      "word": "ella"
+    },
+    {
+      "conf": 0.50821,
+      "end": 251.219854,
+      "start": 250.948564,
+      "word": "hacia"
+    },
+    {
+      "conf": 0.885286,
+      "end": 251.31,
+      "start": 251.22,
+      "word": "el"
+    },
+    {
+      "conf": 0.97482,
+      "end": 253.020029,
+      "start": 251.310176,
+      "word": "turno"
+    },
+    {
+      "conf": 0.99064,
+      "end": 253.17,
+      "start": 253.020029,
+      "word": "o"
+    },
+    {
+      "conf": 0.950678,
+      "end": 253.5,
+      "start": 253.17085,
+      "word": "alg\u00fan"
+    },
+    {
+      "conf": 1.0,
+      "end": 253.86,
+      "start": 253.5,
+      "word": "otro"
+    },
+    {
+      "conf": 0.68507,
+      "end": 254.37,
+      "start": 253.86,
+      "word": "evento"
+    },
+    {
+      "conf": 0.60727,
+      "end": 254.723203,
+      "start": 254.407002,
+      "word": "son"
+    },
+    {
+      "conf": 0.50255,
+      "end": 254.85,
+      "start": 254.73,
+      "word": "los"
+    },
+    {
+      "conf": 1.0,
+      "end": 255.6,
+      "start": 255.12,
+      "word": "paradores"
+    },
+    {
+      "conf": 0.996945,
+      "end": 255.78,
+      "start": 255.6,
+      "word": "que"
+    },
+    {
+      "conf": 0.944284,
+      "end": 256.319268,
+      "start": 255.81,
+      "word": "caen"
+    },
+    {
+      "conf": 0.843699,
+      "end": 256.47,
+      "start": 256.38,
+      "word": "a"
+    },
+    {
+      "conf": 0.802827,
+      "end": 256.589912,
+      "start": 256.470088,
+      "word": "la"
+    },
+    {
+      "conf": 0.787962,
+      "end": 256.856895,
+      "start": 256.589912,
+      "word": "historia"
+    },
+    {
+      "conf": 0.993541,
+      "end": 259.075605,
+      "start": 258.569619,
+      "word": "buscamos"
+    },
+    {
+      "conf": 1.0,
+      "end": 259.2,
+      "start": 259.080088,
+      "word": "un"
+    },
+    {
+      "conf": 1.0,
+      "end": 259.68,
+      "start": 259.2,
+      "word": "sistema"
+    },
+    {
+      "conf": 1.0,
+      "end": 259.89,
+      "start": 259.68,
+      "word": "que"
+    },
+    {
+      "conf": 0.989076,
+      "end": 260.52,
+      "start": 259.89,
+      "word": "integre"
+    },
+    {
+      "conf": 1.0,
+      "end": 261.54,
+      "start": 261.42,
+      "word": "que"
+    },
+    {
+      "conf": 0.980474,
+      "end": 261.78,
+      "start": 261.54,
+      "word": "tenga"
+    },
+    {
+      "conf": 1.0,
+      "end": 262.02,
+      "start": 261.780586,
+      "word": "como"
+    },
+    {
+      "conf": 0.873413,
+      "end": 262.35,
+      "start": 262.02,
+      "word": "objeto"
+    },
+    {
+      "conf": 1.0,
+      "end": 262.979883,
+      "start": 262.35,
+      "word": "principal"
+    },
+    {
+      "conf": 1.0,
+      "end": 263.49,
+      "start": 263.31,
+      "word": "al"
+    },
+    {
+      "conf": 1.0,
+      "end": 264.18,
+      "start": 263.49,
+      "word": "paciente"
+    },
+    {
+      "conf": 1.0,
+      "end": 264.42,
+      "start": 264.3,
+      "word": "y"
+    },
+    {
+      "conf": 1.0,
+      "end": 264.57,
+      "start": 264.42,
+      "word": "su"
+    },
+    {
+      "conf": 1.0,
+      "end": 264.87,
+      "start": 264.57,
+      "word": "historia"
+    },
+    {
+      "conf": 0.987674,
+      "end": 265.2,
+      "start": 264.87,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.890485,
+      "end": 265.8,
+      "start": 265.200234,
+      "word": "social"
+    },
+    {
+      "conf": 0.690834,
+      "end": 266.119805,
+      "start": 265.89,
+      "word": "y"
+    },
+    {
+      "conf": 0.656359,
+      "end": 266.49,
+      "start": 266.129678,
+      "word": "cualquier"
+    },
+    {
+      "conf": 0.655977,
+      "end": 266.64,
+      "start": 266.490322,
+      "word": "otro"
+    },
+    {
+      "conf": 0.995207,
+      "end": 267.15,
+      "start": 266.640732,
+      "word": "interacci\u00f3n"
+    },
+    {
+      "conf": 0.72852,
+      "end": 267.239707,
+      "start": 267.15,
+      "word": "que"
+    },
+    {
+      "conf": 0.776527,
+      "end": 267.3,
+      "start": 267.239707,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 267.63,
+      "start": 267.3,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.991721,
+      "end": 268.169736,
+      "start": 267.63,
+      "word": "tenga"
+    },
+    {
+      "conf": 0.845558,
+      "end": 268.439854,
+      "start": 268.32,
+      "word": "de"
+    },
+    {
+      "conf": 0.998377,
+      "end": 268.89,
+      "start": 268.439854,
+      "word": "cualquiera"
+    },
+    {
+      "conf": 0.998377,
+      "end": 268.98,
+      "start": 268.89,
+      "word": "de"
+    },
+    {
+      "conf": 0.998377,
+      "end": 269.1,
+      "start": 268.98,
+      "word": "los"
+    },
+    {
+      "conf": 0.972088,
+      "end": 269.339326,
+      "start": 269.1,
+      "word": "centros"
+    },
+    {
+      "conf": 1.0,
+      "end": 269.4,
+      "start": 269.339326,
+      "word": "de"
+    },
+    {
+      "conf": 0.996563,
+      "end": 269.94,
+      "start": 269.4,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.597104,
+      "end": 271.44,
+      "start": 271.14,
+      "word": "base"
+    },
+    {
+      "conf": 0.616903,
+      "end": 271.786699,
+      "start": 271.558623,
+      "word": "para"
+    },
+    {
+      "conf": 0.903896,
+      "end": 271.98,
+      "start": 271.821943,
+      "word": "esa"
+    },
+    {
+      "conf": 0.983202,
+      "end": 272.28,
+      "start": 271.982051,
+      "word": "\u00fanica"
+    },
+    {
+      "conf": 0.995195,
+      "end": 272.85,
+      "start": 272.281084,
+      "word": "historia"
+    },
+    {
+      "conf": 0.275843,
+      "end": 275.37,
+      "start": 274.89,
+      "word": "alessandro"
+    },
+    {
+      "conf": 0.953883,
+      "end": 276.24,
+      "start": 275.370205,
+      "word": "informaci\u00f3n"
+    },
+    {
+      "conf": 0.999621,
+      "end": 276.930469,
+      "start": 276.48126,
+      "word": "y"
+    },
+    {
+      "conf": 0.221813,
+      "end": 277.56,
+      "start": 277.29,
+      "word": "viviendo"
+    },
+    {
+      "conf": 0.996056,
+      "end": 278.069766,
+      "start": 277.56,
+      "word": "consulta"
+    },
+    {
+      "conf": 0.958658,
+      "end": 278.159795,
+      "start": 278.070117,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 278.58,
+      "start": 278.161436,
+      "word": "cualquier"
+    },
+    {
+      "conf": 1.0,
+      "end": 279.03,
+      "start": 278.58,
+      "word": "punto"
+    },
+    {
+      "conf": 0.910604,
+      "end": 279.463887,
+      "start": 279.130664,
+      "word": "el"
+    },
+    {
+      "conf": 0.970254,
+      "end": 280.47,
+      "start": 280.156699,
+      "word": "centro"
+    },
+    {
+      "conf": 0.908445,
+      "end": 280.56,
+      "start": 280.47,
+      "word": "que"
+    },
+    {
+      "conf": 0.597569,
+      "end": 280.68873,
+      "start": 280.560059,
+      "word": "se"
+    },
+    {
+      "conf": 0.33368,
+      "end": 281.069912,
+      "start": 280.68873,
+      "word": "necesita"
+    },
+    {
+      "conf": 0.945752,
+      "end": 281.579795,
+      "start": 281.467061,
+      "word": "un"
+    },
+    {
+      "conf": 0.999882,
+      "end": 281.880264,
+      "start": 281.579795,
+      "word": "momento"
+    },
+    {
+      "conf": 0.852117,
+      "end": 281.97,
+      "start": 281.880264,
+      "word": "de"
+    },
+    {
+      "conf": 0.769391,
+      "end": 282.624111,
+      "start": 282.03,
+      "word": "itv"
+    },
+    {
+      "conf": 0.753731,
+      "end": 282.688477,
+      "start": 282.624111,
+      "word": "y"
+    },
+    {
+      "conf": 0.996663,
+      "end": 283.049941,
+      "start": 282.95877,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 283.38,
+      "start": 283.049941,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 283.92,
+      "start": 283.38,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.997062,
+      "end": 284.04,
+      "start": 283.92,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 284.728916,
+      "start": 284.040088,
+      "word": "papel"
+    },
+    {
+      "conf": 0.987478,
+      "end": 285.78,
+      "start": 284.91,
+      "word": "termina"
+    },
+    {
+      "conf": 0.569193,
+      "end": 286.35,
+      "start": 285.87,
+      "word": "serrano"
+    },
+    {
+      "conf": 0.364508,
+      "end": 286.495078,
+      "start": 286.353018,
+      "word": "ser"
+    },
+    {
+      "conf": 0.617776,
+      "end": 286.56,
+      "start": 286.495078,
+      "word": "un"
+    },
+    {
+      "conf": 0.940635,
+      "end": 286.919326,
+      "start": 286.56,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.847641,
+      "end": 287.339648,
+      "start": 286.955918,
+      "word": "historia"
+    },
+    {
+      "conf": 0.471951,
+      "end": 287.969883,
+      "start": 287.34,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.957474,
+      "end": 288.84,
+      "start": 288.750146,
+      "word": "un"
+    },
+    {
+      "conf": 0.999997,
+      "end": 289.32,
+      "start": 288.84,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.587276,
+      "end": 290.49,
+      "start": 289.71,
+      "word": "registral"
+    },
+    {
+      "conf": 0.960818,
+      "end": 291.302373,
+      "start": 290.97,
+      "word": "algo"
+    },
+    {
+      "conf": 0.198181,
+      "end": 291.600205,
+      "start": 291.302373,
+      "word": "bikini"
+    },
+    {
+      "conf": 0.848554,
+      "end": 292.919062,
+      "start": 292.685391,
+      "word": "gama"
+    },
+    {
+      "conf": 0.652675,
+      "end": 293.308682,
+      "start": 292.919062,
+      "word": "haciendo"
+    },
+    {
+      "conf": 0.739195,
+      "end": 293.459912,
+      "start": 293.336689,
+      "word": "del"
+    },
+    {
+      "conf": 1.0,
+      "end": 293.88,
+      "start": 293.459912,
+      "word": "sistema"
+    },
+    {
+      "conf": 1.0,
+      "end": 293.97,
+      "start": 293.88,
+      "word": "de"
+    },
+    {
+      "conf": 0.760229,
+      "end": 294.54,
+      "start": 293.97,
+      "word": "turnos"
+    },
+    {
+      "conf": 0.932566,
+      "end": 295.8,
+      "start": 295.410293,
+      "word": "sistema"
+    },
+    {
+      "conf": 1.0,
+      "end": 295.89,
+      "start": 295.8,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 296.31,
+      "start": 295.89,
+      "word": "gesti\u00f3n"
+    },
+    {
+      "conf": 0.942429,
+      "end": 296.670322,
+      "start": 296.31,
+      "word": "sabemos"
+    },
+    {
+      "conf": 0.977254,
+      "end": 298.83,
+      "start": 298.71,
+      "word": "que"
+    },
+    {
+      "conf": 0.988554,
+      "end": 299.099912,
+      "start": 298.83,
+      "word": "tiene"
+    },
+    {
+      "conf": 0.513061,
+      "end": 299.429385,
+      "start": 299.099912,
+      "word": "tienen"
+    },
+    {
+      "conf": 1.0,
+      "end": 300.21,
+      "start": 300.06,
+      "word": "un"
+    },
+    {
+      "conf": 0.991892,
+      "end": 300.45,
+      "start": 300.21,
+      "word": "n\u00famero"
+    },
+    {
+      "conf": 0.981942,
+      "end": 300.51,
+      "start": 300.45,
+      "word": "de"
+    },
+    {
+      "conf": 0.967014,
+      "end": 301.078037,
+      "start": 300.51,
+      "word": "pacientes"
+    },
+    {
+      "conf": 0.53535,
+      "end": 301.41,
+      "start": 301.35,
+      "word": "de"
+    },
+    {
+      "conf": 0.991867,
+      "end": 302.309326,
+      "start": 301.41,
+      "word": "profesional"
+    },
+    {
+      "conf": 0.997185,
+      "end": 302.52,
+      "start": 302.34,
+      "word": "un"
+    },
+    {
+      "conf": 0.84878,
+      "end": 303.09,
+      "start": 302.52,
+      "word": "n\u00famero"
+    },
+    {
+      "conf": 0.987049,
+      "end": 303.3,
+      "start": 303.09,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 304.14,
+      "start": 303.3,
+      "word": "habitaci\u00f3n"
+    },
+    {
+      "conf": 0.927397,
+      "end": 304.44,
+      "start": 304.210312,
+      "word": "n\u00famero"
+    },
+    {
+      "conf": 0.988717,
+      "end": 304.53,
+      "start": 304.44,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 305.37,
+      "start": 304.53,
+      "word": "consultorio"
+    },
+    {
+      "conf": 0.622113,
+      "end": 306.700576,
+      "start": 306.282539,
+      "word": "cada"
+    },
+    {
+      "conf": 0.534461,
+      "end": 307.209053,
+      "start": 306.81,
+      "word": "elemento"
+    },
+    {
+      "conf": 0.844866,
+      "end": 307.38,
+      "start": 307.26085,
+      "word": "un"
+    },
+    {
+      "conf": 0.952011,
+      "end": 307.680703,
+      "start": 307.381582,
+      "word": "objeto"
+    },
+    {
+      "conf": 0.91383,
+      "end": 307.884404,
+      "start": 307.680703,
+      "word": "dentro"
+    },
+    {
+      "conf": 0.953274,
+      "end": 307.972002,
+      "start": 307.884404,
+      "word": "del"
+    },
+    {
+      "conf": 1.0,
+      "end": 308.46,
+      "start": 307.98,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.796683,
+      "end": 309.54,
+      "start": 309.42,
+      "word": "y"
+    },
+    {
+      "conf": 0.684523,
+      "end": 309.594082,
+      "start": 309.54,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 309.869854,
+      "start": 309.594082,
+      "word": "historia"
+    },
+    {
+      "conf": 0.995033,
+      "end": 310.14,
+      "start": 309.87,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.934124,
+      "end": 310.38,
+      "start": 310.14,
+      "word": "tambi\u00e9n"
+    },
+    {
+      "conf": 0.795779,
+      "end": 310.47,
+      "start": 310.38,
+      "word": "es"
+    },
+    {
+      "conf": 0.582604,
+      "end": 310.589414,
+      "start": 310.471377,
+      "word": "un"
+    },
+    {
+      "conf": 0.737949,
+      "end": 310.949854,
+      "start": 310.589414,
+      "word": "objeto"
+    },
+    {
+      "conf": 0.612397,
+      "end": 312.39,
+      "start": 312.21,
+      "word": "cu\u00e1l"
+    },
+    {
+      "conf": 0.994896,
+      "end": 312.48,
+      "start": 312.39,
+      "word": "es"
+    },
+    {
+      "conf": 1.0,
+      "end": 312.6,
+      "start": 312.48,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 313.019941,
+      "start": 312.6,
+      "word": "problema"
+    },
+    {
+      "conf": 0.982896,
+      "end": 313.8,
+      "start": 313.47,
+      "word": "que"
+    },
+    {
+      "conf": 0.702052,
+      "end": 314.98248,
+      "start": 314.64,
+      "word": "una"
+    },
+    {
+      "conf": 0.642445,
+      "end": 315.719971,
+      "start": 315.12,
+      "word": "tensi\u00f3n"
+    },
+    {
+      "conf": 0.96495,
+      "end": 317.19,
+      "start": 316.955361,
+      "word": "a"
+    },
+    {
+      "conf": 0.965182,
+      "end": 317.401348,
+      "start": 317.19,
+      "word": "un"
+    },
+    {
+      "conf": 0.748317,
+      "end": 317.655,
+      "start": 317.401348,
+      "word": "n\u00famero"
+    },
+    {
+      "conf": 0.547733,
+      "end": 317.927783,
+      "start": 317.686113,
+      "word": "historia"
+    },
+    {
+      "conf": 0.393666,
+      "end": 317.982598,
+      "start": 317.927783,
+      "word": "de"
+    },
+    {
+      "conf": 0.628423,
+      "end": 320.487393,
+      "start": 320.27918,
+      "word": "un"
+    },
+    {
+      "conf": 0.371038,
+      "end": 322.95,
+      "start": 322.68,
+      "word": "osea"
+    },
+    {
+      "conf": 0.999944,
+      "end": 323.07,
+      "start": 322.95,
+      "word": "es"
+    },
+    {
+      "conf": 0.997324,
+      "end": 323.279971,
+      "start": 323.07,
+      "word": "una"
+    },
+    {
+      "conf": 0.649816,
+      "end": 324.229805,
+      "start": 323.85,
+      "word": "relaci\u00f3n"
+    },
+    {
+      "conf": 1.0,
+      "end": 324.81,
+      "start": 324.45,
+      "word": "entre"
+    },
+    {
+      "conf": 1.0,
+      "end": 325.2,
+      "start": 324.81,
+      "word": "una"
+    },
+    {
+      "conf": 0.940493,
+      "end": 325.62,
+      "start": 325.2,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.973221,
+      "end": 325.71,
+      "start": 325.62,
+      "word": "a"
+    },
+    {
+      "conf": 0.588705,
+      "end": 325.92,
+      "start": 325.710615,
+      "word": "una"
+    },
+    {
+      "conf": 1.0,
+      "end": 326.16,
+      "start": 325.92,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 326.58,
+      "start": 326.16,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 1.0,
+      "end": 327.24,
+      "start": 326.58,
+      "word": "siempre"
+    },
+    {
+      "conf": 0.813237,
+      "end": 327.449854,
+      "start": 327.27,
+      "word": "y"
+    },
+    {
+      "conf": 0.969644,
+      "end": 327.719824,
+      "start": 327.45,
+      "word": "una"
+    },
+    {
+      "conf": 0.350423,
+      "end": 328.260088,
+      "start": 327.988975,
+      "word": "vieja"
+    },
+    {
+      "conf": 0.953666,
+      "end": 328.496074,
+      "start": 328.265273,
+      "word": "una"
+    },
+    {
+      "conf": 0.723224,
+      "end": 328.92,
+      "start": 328.496074,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.772207,
+      "end": 329.25,
+      "start": 328.92,
+      "word": "siempre"
+    },
+    {
+      "conf": 0.602645,
+      "end": 330.03,
+      "start": 329.88,
+      "word": "yo"
+    },
+    {
+      "conf": 0.991639,
+      "end": 330.12,
+      "start": 330.03,
+      "word": "lo"
+    },
+    {
+      "conf": 1.0,
+      "end": 330.21,
+      "start": 330.12,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 330.72,
+      "start": 330.21,
+      "word": "necesito"
+    },
+    {
+      "conf": 1.0,
+      "end": 330.99,
+      "start": 330.72,
+      "word": "es"
+    },
+    {
+      "conf": 1.0,
+      "end": 331.35,
+      "start": 331.11,
+      "word": "una"
+    },
+    {
+      "conf": 1.0,
+      "end": 331.619678,
+      "start": 331.35,
+      "word": "base"
+    },
+    {
+      "conf": 0.894002,
+      "end": 331.709004,
+      "start": 331.619883,
+      "word": "de"
+    },
+    {
+      "conf": 0.98814,
+      "end": 332.13,
+      "start": 331.709004,
+      "word": "historias"
+    },
+    {
+      "conf": 0.98814,
+      "end": 332.73,
+      "start": 332.13,
+      "word": "cl\u00ednicas"
+    },
+    {
+      "conf": 1.0,
+      "end": 334.23,
+      "start": 333.84,
+      "word": "por"
+    },
+    {
+      "conf": 0.926904,
+      "end": 334.8,
+      "start": 334.23,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.897033,
+      "end": 334.92,
+      "start": 334.800996,
+      "word": "no"
+    },
+    {
+      "conf": 0.642437,
+      "end": 335.100029,
+      "start": 334.922695,
+      "word": "por"
+    },
+    {
+      "conf": 0.971434,
+      "end": 335.61,
+      "start": 335.105947,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.943368,
+      "end": 336.689854,
+      "start": 336.326689,
+      "word": "que"
+    },
+    {
+      "conf": 0.961067,
+      "end": 337.32,
+      "start": 337.14,
+      "word": "la"
+    },
+    {
+      "conf": 0.808997,
+      "end": 337.68,
+      "start": 337.32,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 338.339531,
+      "start": 337.682461,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.872659,
+      "end": 338.702725,
+      "start": 338.34,
+      "word": "actual"
+    },
+    {
+      "conf": 0.416869,
+      "end": 338.849795,
+      "start": 338.702725,
+      "word": "ley"
+    },
+    {
+      "conf": 0.98273,
+      "end": 339.3,
+      "start": 338.88,
+      "word": "como"
+    },
+    {
+      "conf": 1.0,
+      "end": 339.63,
+      "start": 339.3,
+      "word": "una"
+    },
+    {
+      "conf": 1.0,
+      "end": 340.47,
+      "start": 339.63,
+      "word": "descripci\u00f3n"
+    },
+    {
+      "conf": 1.0,
+      "end": 340.62,
+      "start": 340.5,
+      "word": "de"
+    },
+    {
+      "conf": 1.0,
+      "end": 340.74,
+      "start": 340.62,
+      "word": "la"
+    },
+    {
+      "conf": 0.864664,
+      "end": 341.219736,
+      "start": 340.74,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.608281,
+      "end": 341.61,
+      "start": 341.28,
+      "word": "esa"
+    },
+    {
+      "conf": 0.999084,
+      "end": 342.09,
+      "start": 341.85,
+      "word": "nada"
+    },
+    {
+      "conf": 0.930319,
+      "end": 342.329795,
+      "start": 342.09,
+      "word": "m\u00e1s"
+    },
+    {
+      "conf": 0.999798,
+      "end": 342.569414,
+      "start": 342.329795,
+      "word": "nada"
+    },
+    {
+      "conf": 0.756501,
+      "end": 342.749443,
+      "start": 342.569414,
+      "word": "m\u00e1s"
+    },
+    {
+      "conf": 1.0,
+      "end": 342.84,
+      "start": 342.749971,
+      "word": "que"
+    },
+    {
+      "conf": 0.976495,
+      "end": 342.988037,
+      "start": 342.84,
+      "word": "eso"
+    },
+    {
+      "conf": 1.0,
+      "end": 343.106484,
+      "start": 342.988037,
+      "word": "se"
+    },
+    {
+      "conf": 1.0,
+      "end": 343.35,
+      "start": 343.14,
+      "word": "llama"
+    },
+    {
+      "conf": 1.0,
+      "end": 343.62,
+      "start": 343.35,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 344.01,
+      "start": 343.62,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.96964,
+      "end": 344.21959,
+      "start": 344.01,
+      "word": "pero"
+    },
+    {
+      "conf": 0.993627,
+      "end": 344.279971,
+      "start": 344.21959,
+      "word": "en"
+    },
+    {
+      "conf": 1.0,
+      "end": 344.82,
+      "start": 344.279971,
+      "word": "realidad"
+    },
+    {
+      "conf": 0.519053,
+      "end": 345.50335,
+      "start": 345.39,
+      "word": "en"
+    },
+    {
+      "conf": 0.968843,
+      "end": 345.569971,
+      "start": 345.50335,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 345.93,
+      "start": 345.569971,
+      "word": "historia"
+    },
+    {
+      "conf": 0.999193,
+      "end": 346.021699,
+      "start": 345.93,
+      "word": "de"
+    },
+    {
+      "conf": 0.344802,
+      "end": 346.289561,
+      "start": 346.021699,
+      "word": "estas"
+    },
+    {
+      "conf": 0.827386,
+      "end": 346.41,
+      "start": 346.292051,
+      "word": "un"
+    },
+    {
+      "conf": 1.0,
+      "end": 347.01,
+      "start": 346.410029,
+      "word": "reporte"
+    },
+    {
+      "conf": 0.698207,
+      "end": 347.37,
+      "start": 347.01,
+      "word": "delante"
+    },
+    {
+      "conf": 0.998234,
+      "end": 347.579971,
+      "start": 347.37668,
+      "word": "un"
+    },
+    {
+      "conf": 1.0,
+      "end": 348.120059,
+      "start": 347.579971,
+      "word": "informe"
+    },
+    {
+      "conf": 0.985426,
+      "end": 348.18,
+      "start": 348.120059,
+      "word": "de"
+    },
+    {
+      "conf": 0.993971,
+      "end": 348.27041,
+      "start": 348.18,
+      "word": "la"
+    },
+    {
+      "conf": 0.967439,
+      "end": 348.962109,
+      "start": 348.27041,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.964349,
+      "end": 349.379678,
+      "start": 349.257451,
+      "word": "que"
+    },
+    {
+      "conf": 0.993274,
+      "end": 349.53,
+      "start": 349.379678,
+      "word": "se"
+    },
+    {
+      "conf": 0.897356,
+      "end": 349.89,
+      "start": 349.53,
+      "word": "dio"
+    },
+    {
+      "conf": 0.442293,
+      "end": 350.46,
+      "start": 350.160703,
+      "word": "esa"
+    },
+    {
+      "conf": 0.991506,
+      "end": 352.92,
+      "start": 352.62,
+      "word": "aunque"
+    },
+    {
+      "conf": 0.360064,
+      "end": 353.43,
+      "start": 353.293916,
+      "word": "s\u00e9"
+    },
+    {
+      "conf": 0.922623,
+      "end": 353.579971,
+      "start": 353.430879,
+      "word": "que"
+    },
+    {
+      "conf": 0.918152,
+      "end": 353.82,
+      "start": 353.580088,
+      "word": "hoy"
+    },
+    {
+      "conf": 0.931603,
+      "end": 354.239707,
+      "start": 353.88,
+      "word": "usted"
+    },
+    {
+      "conf": 0.887985,
+      "end": 354.719531,
+      "start": 354.27,
+      "word": "tiene"
+    },
+    {
+      "conf": 0.96691,
+      "end": 354.81,
+      "start": 354.723135,
+      "word": "un"
+    },
+    {
+      "conf": 1.0,
+      "end": 355.29,
+      "start": 354.810439,
+      "word": "sistema"
+    },
+    {
+      "conf": 1.0,
+      "end": 355.5,
+      "start": 355.29,
+      "word": "para"
+    },
+    {
+      "conf": 1.0,
+      "end": 356.13,
+      "start": 355.5,
+      "word": "turnos"
+    },
+    {
+      "conf": 0.997452,
+      "end": 357.089854,
+      "start": 356.97,
+      "word": "y"
+    },
+    {
+      "conf": 0.866744,
+      "end": 357.301055,
+      "start": 357.09,
+      "word": "adem\u00e1s"
+    },
+    {
+      "conf": 0.569283,
+      "end": 357.564346,
+      "start": 357.301055,
+      "word": "tiene"
+    },
+    {
+      "conf": 0.598684,
+      "end": 357.959531,
+      "start": 357.683408,
+      "word": "triste"
+    },
+    {
+      "conf": 0.906543,
+      "end": 358.14,
+      "start": 357.959531,
+      "word": "otro"
+    },
+    {
+      "conf": 0.984687,
+      "end": 358.590352,
+      "start": 358.142344,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.164572,
+      "end": 358.888916,
+      "start": 358.590732,
+      "word": "donde"
+    },
+    {
+      "conf": 0.672273,
+      "end": 359.219854,
+      "start": 358.92,
+      "word": "carrera"
+    },
+    {
+      "conf": 0.382457,
+      "end": 359.274404,
+      "start": 359.219854,
+      "word": "en"
+    },
+    {
+      "conf": 1.0,
+      "end": 359.4,
+      "start": 359.274404,
+      "word": "las"
+    },
+    {
+      "conf": 1.0,
+      "end": 360.09,
+      "start": 359.4,
+      "word": "atenciones"
+    },
+    {
+      "conf": 0.997417,
+      "end": 360.21,
+      "start": 360.09,
+      "word": "y"
+    },
+    {
+      "conf": 0.931592,
+      "end": 360.63,
+      "start": 360.54,
+      "word": "no"
+    },
+    {
+      "conf": 0.481183,
+      "end": 360.9,
+      "start": 360.630908,
+      "word": "s\u00f3lo"
+    },
+    {
+      "conf": 1.0,
+      "end": 361.378477,
+      "start": 361.14,
+      "word": "eso"
+    },
+    {
+      "conf": 1.0,
+      "end": 361.94751,
+      "start": 361.771113,
+      "word": "es"
+    },
+    {
+      "conf": 1.0,
+      "end": 362.16,
+      "start": 362.04,
+      "word": "un"
+    },
+    {
+      "conf": 0.993461,
+      "end": 362.4,
+      "start": 362.16,
+      "word": "solo"
+    },
+    {
+      "conf": 0.970489,
+      "end": 362.760088,
+      "start": 362.4,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.832975,
+      "end": 363.226406,
+      "start": 362.910439,
+      "word": "aunque"
+    },
+    {
+      "conf": 0.982828,
+      "end": 363.448975,
+      "start": 363.3,
+      "word": "y"
+    },
+    {
+      "conf": 0.998742,
+      "end": 363.6,
+      "start": 363.448975,
+      "word": "el"
+    },
+    {
+      "conf": 1.0,
+      "end": 364.069658,
+      "start": 363.600029,
+      "word": "turno"
+    },
+    {
+      "conf": 0.498248,
+      "end": 364.168564,
+      "start": 364.080498,
+      "word": "y"
+    },
+    {
+      "conf": 0.384409,
+      "end": 364.231318,
+      "start": 364.17,
+      "word": "la"
+    },
+    {
+      "conf": 0.79068,
+      "end": 364.62,
+      "start": 364.231318,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.891906,
+      "end": 364.83,
+      "start": 364.620029,
+      "word": "est\u00e1n"
+    },
+    {
+      "conf": 0.944866,
+      "end": 365.489707,
+      "start": 364.83,
+      "word": "vinculadas"
+    },
+    {
+      "conf": 0.976367,
+      "end": 365.97,
+      "start": 365.76,
+      "word": "el"
+    },
+    {
+      "conf": 0.907927,
+      "end": 366.245156,
+      "start": 365.97,
+      "word": "turno"
+    },
+    {
+      "conf": 0.552133,
+      "end": 366.303223,
+      "start": 366.245156,
+      "word": "de"
+    },
+    {
+      "conf": 0.923262,
+      "end": 366.389238,
+      "start": 366.303223,
+      "word": "la"
+    },
+    {
+      "conf": 0.73606,
+      "end": 366.72,
+      "start": 366.389238,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.760384,
+      "end": 366.96,
+      "start": 366.720059,
+      "word": "est\u00e1n"
+    },
+    {
+      "conf": 0.624832,
+      "end": 367.41,
+      "start": 366.96,
+      "word": "vinculadas"
+    },
+    {
+      "conf": 0.790564,
+      "end": 368.16,
+      "start": 367.92085,
+      "word": "aunque"
+    },
+    {
+      "conf": 0.999607,
+      "end": 368.4,
+      "start": 368.22,
+      "word": "como"
+    },
+    {
+      "conf": 0.922688,
+      "end": 368.699619,
+      "start": 368.4,
+      "word": "dec\u00eda"
+    },
+    {
+      "conf": 0.584807,
+      "end": 368.76,
+      "start": 368.699619,
+      "word": "hay"
+    },
+    {
+      "conf": 0.983499,
+      "end": 368.849854,
+      "start": 368.760498,
+      "word": "un"
+    },
+    {
+      "conf": 0.857484,
+      "end": 369.060322,
+      "start": 368.849854,
+      "word": "n\u00famero"
+    },
+    {
+      "conf": 0.94598,
+      "end": 369.119824,
+      "start": 369.060322,
+      "word": "de"
+    },
+    {
+      "conf": 0.98369,
+      "end": 369.529395,
+      "start": 369.119824,
+      "word": "turno"
+    },
+    {
+      "conf": 0.864124,
+      "end": 369.810059,
+      "start": 369.551016,
+      "word": "n\u00famero"
+    },
+    {
+      "conf": 1.0,
+      "end": 369.900293,
+      "start": 369.810322,
+      "word": "de"
+    },
+    {
+      "conf": 0.951003,
+      "end": 370.559971,
+      "start": 369.900293,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.482286,
+      "end": 371.053154,
+      "start": 370.807764,
+      "word": "no"
+    },
+    {
+      "conf": 0.287252,
+      "end": 371.247539,
+      "start": 371.13,
+      "word": "est\u00e1"
+    },
+    {
+      "conf": 0.468152,
+      "end": 371.577627,
+      "start": 371.247539,
+      "word": "haciendo"
+    },
+    {
+      "conf": 0.54943,
+      "end": 371.798643,
+      "start": 371.584687,
+      "word": "n\u00famero"
+    },
+    {
+      "conf": 0.432255,
+      "end": 372.0,
+      "start": 371.798643,
+      "word": "obra"
+    },
+    {
+      "conf": 0.867416,
+      "end": 372.300088,
+      "start": 372.007295,
+      "word": "social"
+    },
+    {
+      "conf": 0.414342,
+      "end": 372.415166,
+      "start": 372.301582,
+      "word": "un"
+    },
+    {
+      "conf": 0.952848,
+      "end": 373.105869,
+      "start": 372.622412,
+      "word": "consultorio"
+    },
+    {
+      "conf": 0.381229,
+      "end": 373.370332,
+      "start": 373.105869,
+      "word": "n\u00famero"
+    },
+    {
+      "conf": 0.997844,
+      "end": 374.07,
+      "start": 373.38,
+      "word": "profesional"
+    },
+    {
+      "conf": 0.847427,
+      "end": 375.048311,
+      "start": 374.96915,
+      "word": "y"
+    },
+    {
+      "conf": 0.316238,
+      "end": 375.329092,
+      "start": 375.26874,
+      "word": "la"
+    },
+    {
+      "conf": 1.0,
+      "end": 375.66,
+      "start": 375.329092,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 376.227334,
+      "start": 375.66,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.796167,
+      "end": 376.44,
+      "start": 376.23,
+      "word": "mal"
+    },
+    {
+      "conf": 0.344488,
+      "end": 376.776504,
+      "start": 376.441494,
+      "word": "llamada"
+    },
+    {
+      "conf": 0.536701,
+      "end": 376.896592,
+      "start": 376.836123,
+      "word": "de"
+    },
+    {
+      "conf": 0.712635,
+      "end": 377.757686,
+      "start": 377.640088,
+      "word": "su"
+    },
+    {
+      "conf": 0.761911,
+      "end": 378.024492,
+      "start": 377.757686,
+      "word": "sistema"
+    },
+    {
+      "conf": 0.256111,
+      "end": 378.359736,
+      "start": 378.117744,
+      "word": "onda"
+    },
+    {
+      "conf": 0.648998,
+      "end": 378.417275,
+      "start": 378.359736,
+      "word": "y"
+    },
+    {
+      "conf": 0.778676,
+      "end": 378.71959,
+      "start": 378.417275,
+      "word": "cuatro"
+    },
+    {
+      "conf": 0.554773,
+      "end": 378.9,
+      "start": 378.747363,
+      "word": "ese"
+    },
+    {
+      "conf": 0.632168,
+      "end": 379.199941,
+      "start": 378.90208,
+      "word": "momento"
+    },
+    {
+      "conf": 0.78098,
+      "end": 379.35,
+      "start": 379.200117,
+      "word": "tal"
+    },
+    {
+      "conf": 0.778736,
+      "end": 379.59,
+      "start": 379.35,
+      "word": "vez"
+    },
+    {
+      "conf": 1.0,
+      "end": 382.71,
+      "start": 382.56,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 382.83,
+      "start": 382.71,
+      "word": "lo"
+    },
+    {
+      "conf": 0.996718,
+      "end": 382.95,
+      "start": 382.83,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 383.460732,
+      "start": 382.95,
+      "word": "refleja"
+    },
+    {
+      "conf": 0.958751,
+      "end": 383.73,
+      "start": 383.460732,
+      "word": "es"
+    },
+    {
+      "conf": 1.0,
+      "end": 384.0,
+      "start": 383.82,
+      "word": "la"
+    },
+    {
+      "conf": 0.877673,
+      "end": 384.54,
+      "start": 384.0,
+      "word": "tensi\u00f3n"
+    },
+    {
+      "conf": 0.999127,
+      "end": 385.53,
+      "start": 385.007344,
+      "word": "historia"
+    },
+    {
+      "conf": 0.576335,
+      "end": 386.1,
+      "start": 385.533076,
+      "word": "desatenci\u00f3n"
+    },
+    {
+      "conf": 0.922195,
+      "end": 386.37,
+      "start": 386.249971,
+      "word": "es"
+    },
+    {
+      "conf": 0.956976,
+      "end": 386.519824,
+      "start": 386.370791,
+      "word": "una"
+    },
+    {
+      "conf": 0.891127,
+      "end": 386.82,
+      "start": 386.519824,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.55916,
+      "end": 386.969883,
+      "start": 386.82,
+      "word": "por"
+    },
+    {
+      "conf": 0.367609,
+      "end": 387.09,
+      "start": 386.97,
+      "word": "todo"
+    },
+    {
+      "conf": 0.317694,
+      "end": 387.6,
+      "start": 387.149854,
+      "word": "dormitorio"
+    },
+    {
+      "conf": 0.962517,
+      "end": 388.23,
+      "start": 388.02,
+      "word": "nada"
+    },
+    {
+      "conf": 0.501185,
+      "end": 388.41,
+      "start": 388.23,
+      "word": "m\u00e1s"
+    },
+    {
+      "conf": 1.0,
+      "end": 388.500176,
+      "start": 388.41,
+      "word": "va"
+    },
+    {
+      "conf": 0.976483,
+      "end": 388.53,
+      "start": 388.500176,
+      "word": "a"
+    },
+    {
+      "conf": 0.974422,
+      "end": 388.71,
+      "start": 388.53,
+      "word": "ser"
+    },
+    {
+      "conf": 0.983364,
+      "end": 388.92,
+      "start": 388.71,
+      "word": "un"
+    },
+    {
+      "conf": 1.0,
+      "end": 389.670117,
+      "start": 389.34,
+      "word": "vino"
+    },
+    {
+      "conf": 0.948439,
+      "end": 389.969414,
+      "start": 389.670117,
+      "word": "con"
+    },
+    {
+      "conf": 0.392499,
+      "end": 390.18,
+      "start": 390.09,
+      "word": "el"
+    },
+    {
+      "conf": 0.824677,
+      "end": 390.87,
+      "start": 390.181641,
+      "word": "s\u00edntoma"
+    },
+    {
+      "conf": 0.956785,
+      "end": 391.26,
+      "start": 391.08,
+      "word": "se"
+    },
+    {
+      "conf": 0.915179,
+      "end": 391.399248,
+      "start": 391.26,
+      "word": "fue"
+    },
+    {
+      "conf": 0.298072,
+      "end": 391.749287,
+      "start": 391.41,
+      "word": "contarle"
+    },
+    {
+      "conf": 0.682639,
+      "end": 392.64,
+      "start": 392.07,
+      "word": "diagn\u00f3stico"
+    },
+    {
+      "conf": 0.430115,
+      "end": 392.894443,
+      "start": 392.75877,
+      "word": "si"
+    },
+    {
+      "conf": 0.467232,
+      "end": 393.06,
+      "start": 392.910527,
+      "word": "su"
+    },
+    {
+      "conf": 0.978726,
+      "end": 393.899531,
+      "start": 393.092373,
+      "word": "internaci\u00f3n"
+    },
+    {
+      "conf": 0.671056,
+      "end": 394.350439,
+      "start": 394.2,
+      "word": "va"
+    },
+    {
+      "conf": 0.598695,
+      "end": 394.380234,
+      "start": 394.350439,
+      "word": "a"
+    },
+    {
+      "conf": 0.699015,
+      "end": 394.587979,
+      "start": 394.380234,
+      "word": "tener"
+    },
+    {
+      "conf": 1.0,
+      "end": 394.71,
+      "start": 394.587979,
+      "word": "una"
+    },
+    {
+      "conf": 1.0,
+      "end": 394.980029,
+      "start": 394.71,
+      "word": "serie"
+    },
+    {
+      "conf": 0.99617,
+      "end": 395.04,
+      "start": 394.980029,
+      "word": "de"
+    },
+    {
+      "conf": 0.985922,
+      "end": 395.79,
+      "start": 395.04,
+      "word": "prestaciones"
+    },
+    {
+      "conf": 0.998734,
+      "end": 396.18,
+      "start": 395.79,
+      "word": "con"
+    },
+    {
+      "conf": 0.788429,
+      "end": 396.36,
+      "start": 396.27,
+      "word": "o"
+    },
+    {
+      "conf": 0.76501,
+      "end": 396.509971,
+      "start": 396.36,
+      "word": "sin"
+    },
+    {
+      "conf": 0.708491,
+      "end": 397.26,
+      "start": 396.593906,
+      "word": "diagn\u00f3sticos"
+    },
+    {
+      "conf": 0.536423,
+      "end": 397.340215,
+      "start": 397.260381,
+      "word": "y"
+    },
+    {
+      "conf": 1.0,
+      "end": 398.22,
+      "start": 397.98,
+      "word": "hasta"
+    },
+    {
+      "conf": 1.0,
+      "end": 398.34,
+      "start": 398.22,
+      "word": "su"
+    },
+    {
+      "conf": 1.0,
+      "end": 398.88,
+      "start": 398.34,
+      "word": "finalizaci\u00f3n"
+    },
+    {
+      "conf": 0.985883,
+      "end": 399.088594,
+      "start": 398.91,
+      "word": "en"
+    },
+    {
+      "conf": 0.954564,
+      "end": 399.21,
+      "start": 399.088594,
+      "word": "el"
+    },
+    {
+      "conf": 0.933643,
+      "end": 399.629385,
+      "start": 399.211201,
+      "word": "alta"
+    },
+    {
+      "conf": 0.975499,
+      "end": 400.38,
+      "start": 400.26041,
+      "word": "lo"
+    },
+    {
+      "conf": 1.0,
+      "end": 400.47,
+      "start": 400.38,
+      "word": "que"
+    },
+    {
+      "conf": 1.0,
+      "end": 401.1,
+      "start": 400.47,
+      "word": "necesitamos"
+    },
+    {
+      "conf": 0.996493,
+      "end": 401.34,
+      "start": 401.1,
+      "word": "es"
+    },
+    {
+      "conf": 1.0,
+      "end": 401.64,
+      "start": 401.52,
+      "word": "en"
+    },
+    {
+      "conf": 1.0,
+      "end": 401.82,
+      "start": 401.64,
+      "word": "este"
+    },
+    {
+      "conf": 1.0,
+      "end": 402.120703,
+      "start": 401.82,
+      "word": "momento"
+    },
+    {
+      "conf": 0.523348,
+      "end": 402.630029,
+      "start": 402.120703,
+      "word": "esta"
+    },
+    {
+      "conf": 0.579367,
+      "end": 403.14,
+      "start": 402.75,
+      "word": "seudo"
+    },
+    {
+      "conf": 1.0,
+      "end": 403.41,
+      "start": 403.14,
+      "word": "historia"
+    },
+    {
+      "conf": 1.0,
+      "end": 403.83,
+      "start": 403.41,
+      "word": "cl\u00ednica"
+    },
+    {
+      "conf": 0.832725,
+      "end": 404.04,
+      "start": 403.831084,
+      "word": "est\u00e1"
+    },
+    {
+      "conf": 0.91347,
+      "end": 404.686377,
+      "start": 404.040908,
+      "word": "relacionada"
+    },
+    {
+      "conf": 0.726432,
+      "end": 404.728154,
+      "start": 404.686377,
+      "word": "a"
+    },
+    {
+      "conf": 0.980725,
+      "end": 404.940059,
+      "start": 404.728154,
+      "word": "la"
+    },
+    {
+      "conf": 0.928904,
+      "end": 405.63,
+      "start": 404.940059,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.742787,
+      "end": 406.63459,
+      "start": 406.5,
+      "word": "lo"
+    },
+    {
+      "conf": 0.303611,
+      "end": 407.61,
+      "start": 407.1,
+      "word": "relacionado"
+    },
+    {
+      "conf": 0.991605,
+      "end": 407.85,
+      "start": 407.650195,
+      "word": "al"
+    },
+    {
+      "conf": 1.0,
+      "end": 408.72,
+      "start": 407.88,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.995231,
+      "end": 409.38,
+      "start": 409.26,
+      "word": "y"
+    },
+    {
+      "conf": 0.91372,
+      "end": 409.53,
+      "start": 409.38,
+      "word": "que"
+    },
+    {
+      "conf": 0.724548,
+      "end": 409.948447,
+      "start": 409.59,
+      "word": "total"
+    },
+    {
+      "conf": 0.258832,
+      "end": 410.279678,
+      "start": 409.950029,
+      "word": "hice"
+    },
+    {
+      "conf": 0.997626,
+      "end": 410.58,
+      "start": 410.37,
+      "word": "las"
+    },
+    {
+      "conf": 0.994334,
+      "end": 411.15,
+      "start": 410.58,
+      "word": "atenciones"
+    },
+    {
+      "conf": 0.634997,
+      "end": 411.899971,
+      "start": 411.779971,
+      "word": "que"
+    },
+    {
+      "conf": 0.911435,
+      "end": 412.289941,
+      "start": 412.08,
+      "word": "hoy"
+    },
+    {
+      "conf": 0.6364,
+      "end": 412.553027,
+      "start": 412.289941,
+      "word": "tienen"
+    },
+    {
+      "conf": 0.987712,
+      "end": 412.71,
+      "start": 412.553027,
+      "word": "una"
+    },
+    {
+      "conf": 0.9769,
+      "end": 413.039766,
+      "start": 412.71,
+      "word": "relaci\u00f3n"
+    },
+    {
+      "conf": 0.820103,
+      "end": 413.108994,
+      "start": 413.04,
+      "word": "de"
+    },
+    {
+      "conf": 0.874335,
+      "end": 413.28,
+      "start": 413.177549,
+      "word": "un"
+    },
+    {
+      "conf": 1.0,
+      "end": 414.0,
+      "start": 413.280557,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.98011,
+      "end": 414.18,
+      "start": 414.06,
+      "word": "y"
+    },
+    {
+      "conf": 0.61612,
+      "end": 414.299971,
+      "start": 414.180117,
+      "word": "mi"
+    },
+    {
+      "conf": 0.719773,
+      "end": 414.84,
+      "start": 414.3,
+      "word": "atenci\u00f3n"
+    },
+    {
+      "conf": 0.756054,
+      "end": 415.08,
+      "start": 414.84,
+      "word": "es"
+    },
+    {
+      "conf": 0.989773,
+      "end": 415.29,
+      "start": 415.14,
+      "word": "lo"
+    },
+    {
+      "conf": 1.0,
+      "end": 415.44,
+      "start": 415.290293,
+      "word": "que"
+    },
+    {
+      "conf": 0.958924,
+      "end": 415.59,
+      "start": 415.44,
+      "word": "hace"
+    },
+    {
+      "conf": 1.0,
+      "end": 415.86,
+      "start": 415.62,
+      "word": "falta"
+    },
+    {
+      "conf": 1.0,
+      "end": 415.95,
+      "start": 415.86,
+      "word": "es"
+    },
+    {
+      "conf": 1.0,
+      "end": 416.07,
+      "start": 415.95,
+      "word": "un"
+    },
+    {
+      "conf": 1.0,
+      "end": 416.7,
+      "start": 416.07,
+      "word": "paciente"
+    },
+    {
+      "conf": 0.357283,
+      "end": 418.573301,
+      "start": 418.344082,
+      "word": "una"
+    },
+    {
+      "conf": 0.381494,
+      "end": 420.149648,
+      "start": 420.03,
+      "word": "o"
+    },
+    {
+      "conf": 0.778385,
+      "end": 420.39,
+      "start": 420.165586,
+      "word": "que"
+    },
+    {
+      "conf": 0.498667,
+      "end": 422.64,
+      "start": 422.16,
+      "word": "viene"
+    }
+  ],
+  "text": "aunque es un poco entonces el escenario con ello cuentan ustedes en el d\u00eda a d\u00eda de hoy que es lo que estar\u00eda buscando con el nuevo sistema a donde apuntas la necesidad concreta que justifica la adquisici\u00f3n quema es la promulgaci\u00f3n de la ley veintis\u00e9is quinientos veintinueve del a\u00f1o dos mil nueve que habla de la informaci\u00f3n que los centros de salud manejan la salud manejar los pacientes que los centros de salud entre muchas otras cosas m\u00e1s una autoridad esta ley que pide la unificaci\u00f3n de la historia cl\u00ednica por paciente osea yo tengo que tener por cada paciente que sea tienen sanatorio una \u00fanica historia cl\u00ednica que tenga informaci\u00f3n de todas las atenciones que ser paciente recibe una moratoria internaci\u00f3n una placa lo que sea como potencia te sistema cada prestaci\u00f3n registra con una \u00fanica prestaci\u00f3n y general oposici\u00f3n una historia cl\u00ednica temporal sea se abre y cierra mientras el paciente exacto es ambulatorio tiene que ver con la atenci\u00f3n \u00fanica excepci\u00f3n de hoy y ciencia internaci\u00f3n siendo en una cantidad de prestaciones equipo est\u00e1 internado arag\u00f3n alta se cierra se cl\u00ednica al volverse abre otro la ley de dos mil nueve pero a\u00fan proceso los centros de salud ciudadano la historia cl\u00ednica de un \u00fanico paciente por qu\u00e9 es imposible una persona seguir la evoluci\u00f3n si viene dos tres cuatro veces en un semestre equipo tiene que seguir toda la historia esta persona toma la informaci\u00f3n o saber si card\u00edacos navegaci\u00f3n tiene todo eso va fichas en papel o sea cuando la persona se atiende un duelo por ejemplo con especialistas se presenta se confirma ese turno con el n\u00famero de pacientes que sale el registro de pacientes del sistema un fichero la fichar paciente y quiero papel si el paciente est\u00e1 se toma la ficha el paciente no alta se genera una fecha reservaci\u00f3n para el profesional la ve a la persona recibe esta ficha iba haciendo las anotaciones corresponde inmediata atenci\u00f3n a esta nueva atenci\u00f3n al terminar devuelve esta ficha administrativo de atenci\u00f3n a clientes lo que hace tomar la ficha y carrera del diagn\u00f3stico en el sistema con lo que se cierra en el sistema la historia cl\u00ednica en un papel no se cierra es un continuo lo que no s\u00f3lo necesitamos es debido a que esta ley lo solicita llevar a sistematizar la historia cl\u00ednica \u00fanica por paciente osea que cuando un paciente viene solicit\u00f3 un turno personas espont\u00e1neo espont\u00e1nea guardia el sistema me traiga la historia de ese paciente media cuanto veces vino fue el diagn\u00f3stico que estudio se ser hicieron que me sea posible digitalizar algunos estudios como radiograf\u00edas ecograf\u00eda electro tomograf\u00eda tener dudas informaci\u00f3n disponible y no solamente el diagn\u00f3stico m\u00e9dico le da sobre esta visita en particular sino tambi\u00e9n permite mezcla placer un poco m\u00e1s hay tener m\u00e1s informaci\u00f3n acerca de diagn\u00f3stico se suscitaron determinados estudio del dinero volver en tal fecha no se tiene diagnosticado reposo por tanto tiempo informaci\u00f3n disponible este no s\u00f3lo porque a mi operativamente me sirven de nada la sino porque adem\u00e1s un rendimiento de ley de que en caso del paciente atendido en otros centros o pueda r\u00e1pidamente obtener compartirla al otro sin bien con lo cual bueno que est\u00e1s buscando es una soluci\u00f3n m\u00e1s bien global de que va m\u00e1s all\u00e1 del turno sino tambi\u00e9n es un v\u00ednculo en realidad por lo que dec\u00eds en la calle el punto principal historia cl\u00ednica y todo gira en torno de eso y y ella hacia el turno o alg\u00fan otro evento son los paradores que caen a la historia buscamos un sistema que integre que tenga como objeto principal al paciente y su historia cl\u00ednica social y cualquier otro interacci\u00f3n que el sistema tenga de cualquiera de los centros de atenci\u00f3n base para esa \u00fanica historia alessandro informaci\u00f3n y viviendo consulta de cualquier punto el centro que se necesita un momento de itv y la historia cl\u00ednica de papel termina serrano ser un sistema historia cl\u00ednica un sistema registral algo bikini gama haciendo del sistema de turnos sistema de gesti\u00f3n sabemos que tiene tienen un n\u00famero de pacientes de profesional un n\u00famero de habitaci\u00f3n n\u00famero de consultorio cada elemento un objeto dentro del sistema y la historia cl\u00ednica tambi\u00e9n es un objeto cu\u00e1l es el problema que una tensi\u00f3n a un n\u00famero historia de un osea es una relaci\u00f3n entre una atenci\u00f3n a una historia cl\u00ednica siempre y una vieja una atenci\u00f3n siempre yo lo que necesito es una base de historias cl\u00ednicas por paciente no por atenci\u00f3n que la historia cl\u00ednica actual ley como una descripci\u00f3n de la atenci\u00f3n esa nada m\u00e1s nada m\u00e1s que eso se llama historia cl\u00ednica pero en realidad en la historia de estas un reporte delante un informe de la atenci\u00f3n que se dio esa aunque s\u00e9 que hoy usted tiene un sistema para turnos y adem\u00e1s tiene triste otro sistema donde carrera en las atenciones y no s\u00f3lo eso es un solo sistema aunque y el turno y la atenci\u00f3n est\u00e1n vinculadas el turno de la atenci\u00f3n est\u00e1n vinculadas aunque como dec\u00eda hay un n\u00famero de turno n\u00famero de atenci\u00f3n no est\u00e1 haciendo n\u00famero obra social un consultorio n\u00famero profesional y la historia cl\u00ednica mal llamada de su sistema onda y cuatro ese momento tal vez que lo que refleja es la tensi\u00f3n historia desatenci\u00f3n es una atenci\u00f3n por todo dormitorio nada m\u00e1s va a ser un vino con el s\u00edntoma se fue contarle diagn\u00f3stico si su internaci\u00f3n va a tener una serie de prestaciones con o sin diagn\u00f3sticos y hasta su finalizaci\u00f3n en el alta lo que necesitamos es en este momento esta seudo historia cl\u00ednica est\u00e1 relacionada a la atenci\u00f3n lo relacionado al paciente y que total hice las atenciones que hoy tienen una relaci\u00f3n de un paciente y mi atenci\u00f3n es lo que hace falta es un paciente una o que viene"
+}
