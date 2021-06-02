@@ -14,11 +14,14 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object MediaPlayer1: TMediaPlayer
-    Left = 77
-    Top = 510
+    Left = 0
+    Top = 486
     Width = 253
     Height = 30
+    ColoredButtons = [btPlay, btPause, btStop]
+    EnabledButtons = [btPlay, btPause, btStop]
     DoubleBuffered = True
+    Visible = False
     ParentDoubleBuffered = False
     TabOrder = 0
   end
@@ -42,23 +45,49 @@ object Form1: TForm1
   end
   inline TFrame11: TFrame1
     Left = 0
-    Top = 48
+    Top = 40
     Width = 417
     Height = 448
-    AutoScroll = True
     TabOrder = 3
-    ExplicitTop = 48
+    ExplicitTop = 40
     ExplicitWidth = 417
     ExplicitHeight = 448
-    inherited Memo1: TMemo
+    inherited Panel1: TPanel
       Width = 417
     end
-    inherited Memo2: TMemo
+    inherited Panel2: TPanel
       Width = 417
+      Height = 407
     end
-    inherited Memo4: TMemo
-      Width = 417
-    end
+  end
+  object playpauseBtn: TButton
+    Left = 178
+    Top = 510
+    Width = 75
+    Height = 25
+    Caption = 'Play/Pause'
+    TabOrder = 4
+    OnClick = playpauseBtnClick
+  end
+  object rewindBtn: TButton
+    Left = 128
+    Top = 510
+    Width = 44
+    Height = 25
+    Caption = '-5 seg'
+    ModalResult = 1
+    TabOrder = 5
+    OnClick = rewindBtnClick
+  end
+  object passBtn: TButton
+    Left = 259
+    Top = 510
+    Width = 44
+    Height = 25
+    Caption = '+5 seg'
+    ModalResult = 1
+    TabOrder = 6
+    OnClick = passBtnClick
   end
   object audioDialog: TOpenDialog
     Filter = 'MP3 Audio|*.mp3'

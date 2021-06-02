@@ -1,0 +1,16 @@
+object Frame1: TFrame1
+  Left = 0
+  Top = 0
+  Width = 347
+  Height = 302
+  TabOrder = 0
+  object joinBtn: TButton
+    Left = 0
+    Top = 0
+    Width = 75
+    Height = 25
+    Caption = 'join'
+    TabOrder = 0
+    OnClick = joinBtnClick
+  end
+end
