@@ -1,0 +1,17 @@
+unit TextContainer;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  System.JSON, Vcl.StdCtrls, Vcl.MPlayer, Vcl.ExtCtrls;
+
+type
+  
+
+implementation
+
+{$R *.dfm}
+
+end.

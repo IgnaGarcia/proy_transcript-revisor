@@ -1,4 +1,6 @@
 # USO:
+*NOTA: se debe tener instalado python*
+
 python cleanJson.py -i <input_file> -o <output_file> [-d <break_paragraph>] [--ibm]
 
 **<input_file>** = direccion del archivo json a limpiar

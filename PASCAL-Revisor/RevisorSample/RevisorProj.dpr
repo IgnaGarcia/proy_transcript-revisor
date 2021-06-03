@@ -2,8 +2,7 @@ program RevisorProj;
 
 uses
   Vcl.Forms,
-  Revisor in 'Revisor.pas' {Form1},
-  TextContainer in 'TextContainer.pas' {Frame1: TFrame};
+  Revisor in 'Revisor.pas' {Form1};
 
 {$R *.res}
 
