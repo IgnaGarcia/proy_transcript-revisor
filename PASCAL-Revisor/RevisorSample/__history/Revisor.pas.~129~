@@ -28,9 +28,7 @@ type
     passBtn: TButton;
 
     content: TPanel;
-
-
-    ScrollBar1: TScrollBar;    procedure audioBtnClick(Sender: TObject);
+    procedure audioBtnClick(Sender: TObject);
     procedure textBtnClick(Sender: TObject);
     procedure exportBtnClick(Sender: TObject);
     procedure saveBtnClick(Sender: TObject);
@@ -129,6 +127,7 @@ begin
   setLength(startTimeArray, 20);
   cont := 0;
   {TODO Listar el json alrevez}
+  showmessage(jData.Count.ToString);
   for jValue in jData do
   begin
     Memo := TMemo.Create(Self);

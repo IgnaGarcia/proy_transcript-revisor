@@ -27,7 +27,8 @@ type
     rewindBtn: TButton;
     passBtn: TButton;
 
-    content: TPanel;    procedure audioBtnClick(Sender: TObject);
+    content: TPanel;
+    procedure audioBtnClick(Sender: TObject);
     procedure textBtnClick(Sender: TObject);
     procedure exportBtnClick(Sender: TObject);
     procedure saveBtnClick(Sender: TObject);
@@ -120,12 +121,15 @@ var Memo: TMemo;
     word: TJSONValue;
     words: String;
     cont : Integer;
+    size : Integer;
 begin
   {TODO Arrays dinamicos}
-  setLength(memoArray, 20);
-  setLength(startTimeArray, 20);
+  size := jData.Count;
+  setLength(memoArray, size);
+  setLength(startTimeArray, size);
   cont := 0;
   {TODO Listar el json alrevez}
+
   for jValue in jData do
   begin
     Memo := TMemo.Create(Self);
