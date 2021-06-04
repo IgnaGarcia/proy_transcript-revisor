@@ -1,10 +1,10 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  VertScrollBar.Visible = False
+  Width = 434
+  Height = 563
+  AutoScroll = True
   Caption = 'Form1'
-  ClientHeight = 524
-  ClientWidth = 418
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

@@ -105,7 +105,6 @@ end;
 procedure TForm1.joinBtnClick(Sender: TObject);
 {Juntar parrafos}
 begin
-  {TODO Juntar a partir del ultimo parrafo clickeado}
   if lastMemoClicked = -1 then
   begin
     showMessage('No se ha seleccionado un parrafo');
@@ -123,6 +122,7 @@ begin
 end;
 
 procedure TForm1.deleteX(index: Integer);
+{Elimina un elemento y colapsa los array 1 posicion}
 var
   I: Integer;
 begin
@@ -156,10 +156,10 @@ begin
   while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
-    Memo.Parent:= content;
     with Memo do
     begin
       Name := 'memoEj'+I.ToString;
+      Parent := Self;
       Align := alBottom;
     end;
 
@@ -179,6 +179,7 @@ begin
 
     I := I-1;
   end;
+  content.Free;
   AutoScroll := true;
 end;
 

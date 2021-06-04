@@ -151,10 +151,6 @@ object Form1: TForm1
     Align = alClient
     Caption = 'Texto aun no Cargado'
     TabOrder = 3
-    ExplicitLeft = 128
-    ExplicitTop = 264
-    ExplicitWidth = 185
-    ExplicitHeight = 41
   end
   object audioDialog: TOpenDialog
     Filter = 'MP3 Audio|*.mp3'

@@ -126,10 +126,11 @@ procedure TForm1.deleteX(index: Integer);
 var
   I: Integer;
 begin
-  for I := index to size-2 do
+  for I := index+1 to size-1 do
   begin
-    startTimeArray[I] := startTimeArray[I+1];
-    memoArray[I] := memoArray[I+1];
+    startTimeArray[I-1] := startTimeArray[I];
+    memoArray[I].Tag := memoArray[I].Tag - 1;
+    memoArray[I-1] := memoArray[I];
   end;
   size := size - 1;
 
@@ -172,7 +173,7 @@ begin
     end;
 
     Memo.Text := words;
-    Memo.Tag := Integer(I);
+    Memo.Tag := I;
     Memo.OnClick := memoClick;
     memoArray[I] := Memo;
     startTimeArray[I] := Round(jValue.GetValue<Double>('from') * 1000);
