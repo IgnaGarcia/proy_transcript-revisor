@@ -49,7 +49,7 @@ type
 
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
     procedure memoClick(Sender: TObject);
-    procedure shiftArray(index : Integer);
+    procedure deleteX(index : Integer);
   end;
 
 var
@@ -116,15 +116,13 @@ begin
   end
   else
   begin
-     memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
-     shiftArray(lastMemoClicked+1);
-
+    memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
+    memoArray[lastMemoClicked+1].Free;
+    deleteX(lastMemoClicked+1);
   end;
-
-  {TODO safe delete paragraph }
 end;
 
-procedure TForm1.shiftArray(index: Integer);
+procedure TForm1.deleteX(index: Integer);
 var
   I: Integer;
 begin
@@ -134,8 +132,9 @@ begin
     memoArray[I] := memoArray[I+1];
   end;
   size := size - 1;
-  startTimeArray[size]
-  memoArray[size].Free;
+
+  SetLength(memoArray, size);
+  SetLength(startTimeArray, size);
 end;
 
 {Funciones del Content}
@@ -157,7 +156,6 @@ begin
   while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
-    Memo.Parent:= content;
     with Memo do
     begin
       Name := 'memoEj'+I.ToString;
@@ -181,6 +179,7 @@ begin
 
     I := I-1;
   end;
+  content.Free;
   AutoScroll := true;
 end;
 

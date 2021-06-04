@@ -156,7 +156,6 @@ begin
   while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
-    Memo.Parent:= content;
     with Memo do
     begin
       Name := 'memoEj'+I.ToString;
@@ -180,6 +179,7 @@ begin
 
     I := I-1;
   end;
+  content.Free;
   AutoScroll := true;
 end;
 

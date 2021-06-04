@@ -49,7 +49,7 @@ type
 
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
     procedure memoClick(Sender: TObject);
-    procedure shiftArray(index : Integer);
+    procedure deleteX(index : Integer);
   end;
 
 var
@@ -116,12 +116,25 @@ begin
   end
   else
   begin
-     memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
-     shiftArray(lastMemoClicked+1);
-
+    memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
+    memoArray[lastMemoClicked+1].Free;
+    deleteX(lastMemoClicked+1);
   end;
+end;
 
-  {TODO safe delete paragraph }
+procedure TForm1.deleteX(index: Integer);
+var
+  I: Integer;
+begin
+  for I := index to size-2 do
+  begin
+    startTimeArray[I] := startTimeArray[I+1];
+    memoArray[I] := memoArray[I+1];
+  end;
+  size := size - 1;
+
+  SetLength(memoArray, size);
+  SetLength(startTimeArray, size);
 end;
 
 {Funciones del Content}
@@ -136,14 +149,13 @@ var Memo: TMemo;
 begin
   lastMemoClicked := -1;
   size := jData.Count;
-  setLength(memoArray, size);
-  setLength(startTimeArray, size);
+  SetLength(memoArray, size);
+  SetLength(startTimeArray, size);
 
   I := size-1;
   while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
-    Memo.Parent:= content;
     with Memo do
     begin
       Name := 'memoEj'+I.ToString;
@@ -162,28 +174,15 @@ begin
     Memo.Text := words;
     Memo.Tag := Integer(I);
     Memo.OnClick := memoClick;
+    AutoSize := True;
     memoArray[I] := Memo;
     startTimeArray[I] := Round(jValue.GetValue<Double>('from') * 1000);
 
     I := I-1;
   end;
+  content.Free;
   AutoScroll := true;
 end;
-
-procedure TForm1.shiftArray(index: Integer);
-var
-  I: Integer;
-begin
-  for I := index to size-2 do
-  begin
-    startTimeArray[I] := startTimeArray[I+1];
-    memoArray[I] := memoArray[I+1];
-  end;
-  size := size - 1;
-  startTimeArray[size] := nil;
-  memoArray[size].Free;
-end;
-
 
 procedure TForm1.memoClick(Sender: TObject);
 {Captar el click de un memo}

@@ -120,8 +120,6 @@ begin
     memoArray[lastMemoClicked+1].Free;
     deleteX(lastMemoClicked+1);
   end;
-
-  {TODO safe delete paragraph }
 end;
 
 procedure TForm1.deleteX(index: Integer);
@@ -158,12 +156,12 @@ begin
   while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
-    Memo.Parent:= content;
     with Memo do
     begin
       Name := 'memoEj'+I.ToString;
       Parent := Self;
       Align := alBottom;
+      AutoSize := True;
     end;
 
     Memo.Lines.Clear;
@@ -182,6 +180,7 @@ begin
 
     I := I-1;
   end;
+  content.Free;
   AutoScroll := true;
 end;
 
