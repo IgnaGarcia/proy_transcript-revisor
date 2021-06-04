@@ -49,6 +49,7 @@ type
 
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
     procedure memoClick(Sender: TObject);
+    procedure deleteX(index : Integer);
   end;
 
 var
@@ -105,13 +106,35 @@ procedure TForm1.joinBtnClick(Sender: TObject);
 {Juntar parrafos}
 begin
   {TODO Juntar a partir del ultimo parrafo clickeado}
-  memoArray[0].Text :=  memoArray[0].Text + memoArray[1].Text;
-  if startTimeArray[0] > startTimeArray[1] then
+  if lastMemoClicked = -1 then
   begin
-     startTimeArray[0]:= startTimeArray[1];
+    showMessage('No se ha seleccionado un parrafo');
+  end
+  else if size-1 = lastMemoClicked then
+  begin
+    showMessage('No se se puede unir el ultimo parrafo');
+  end
+  else
+  begin
+    memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
+    memoArray[lastMemoClicked+1].Free;
+    deleteX(lastMemoClicked+1);
   end;
-  memoArray[1].Free;
-  {TODO safe delete paragraph }
+end;
+
+procedure TForm1.deleteX(index: Integer);
+var
+  I: Integer;
+begin
+  for I := index to size-2 do
+  begin
+    startTimeArray[I] := startTimeArray[I+1];
+    memoArray[I] := memoArray[I+1];
+  end;
+  size := size - 1;
+
+  SetLength(memoArray, size);
+  SetLength(startTimeArray, size);
 end;
 
 {Funciones del Content}
@@ -124,9 +147,10 @@ var Memo: TMemo;
     words: String;
     I : Integer;
 begin
+  lastMemoClicked := -1;
   size := jData.Count;
-  setLength(memoArray, size);
-  setLength(startTimeArray, size);
+  SetLength(memoArray, size);
+  SetLength(startTimeArray, size);
 
   I := size-1;
   while(I>=0) do
