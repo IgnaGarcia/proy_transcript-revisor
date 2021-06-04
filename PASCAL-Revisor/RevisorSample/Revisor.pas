@@ -41,9 +41,11 @@ type
     procedure passBtnClick(Sender: TObject);
   private
   public
-    state: Boolean;
+    state : Boolean;
+    size : Integer;
+    lastMemoClicked : Integer;
     memoArray : array of TMemo;
-    startTimeArray: array of Integer;
+    startTimeArray : array of Integer;
 
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
     procedure memoClick(Sender: TObject);
@@ -120,7 +122,6 @@ var Memo: TMemo;
     jValue: TJSONValue;
     word: TJSONValue;
     words: String;
-    size : Integer;
     I : Integer;
 begin
   size := jData.Count;
@@ -161,10 +162,10 @@ end;
 procedure TForm1.memoClick(Sender: TObject);
 {Captar el click de un memo}
 begin
-    {TODO Guardar referencia del ultimo memo Clickeado}
     if Sender is TMemo then
     begin
       with Sender as TMemo do
+        lastMemoClicked := Tag;
         MediaPlayer1.Position := startTimeArray[Tag];
         MediaPlayer1.Play;
         state:= true;

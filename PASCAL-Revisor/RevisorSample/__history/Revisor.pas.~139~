@@ -120,41 +120,40 @@ var Memo: TMemo;
     jValue: TJSONValue;
     word: TJSONValue;
     words: String;
-    cont : Integer;
     size : Integer;
+    I : Integer;
 begin
-  {TODO Arrays dinamicos}
   size := jData.Count;
   setLength(memoArray, size);
   setLength(startTimeArray, size);
-  cont := 0;
-  {TODO Listar el json alrevez}
 
-  for jValue in jData do
+  I := size-1;
+  while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
     Memo.Parent:= content;
     with Memo do
     begin
-      Name := 'memoEj'+cont.ToString;
+      Name := 'memoEj'+I.ToString;
       Parent := Self;
       Align := alBottom;
     end;
 
     Memo.Lines.Clear;
     words := '';
+    jValue := jData.Items[I];
     for word in jValue.FindValue('words') as TJSONArray do
     begin
           words := words + ' ' + word.FindValue('word').Value;
     end;
 
     Memo.Text := words;
-    Memo.Tag := Integer(cont);
+    Memo.Tag := Integer(I);
     Memo.OnClick := memoClick;
-    memoArray[cont] := Memo;
-    startTimeArray[cont] := Round(jValue.GetValue<Double>('from') * 1000);
+    memoArray[I] := Memo;
+    startTimeArray[I] := Round(jValue.GetValue<Double>('from') * 1000);
 
-    cont := cont+1;
+    I := I-1;
   end;
   AutoScroll := true;
 end;
