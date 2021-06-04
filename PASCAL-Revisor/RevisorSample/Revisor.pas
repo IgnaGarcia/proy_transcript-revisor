@@ -105,7 +105,6 @@ end;
 procedure TForm1.joinBtnClick(Sender: TObject);
 {Juntar parrafos}
 begin
-  {TODO Juntar a partir del ultimo parrafo clickeado}
   if lastMemoClicked = -1 then
   begin
     showMessage('No se ha seleccionado un parrafo');
@@ -123,6 +122,7 @@ begin
 end;
 
 procedure TForm1.deleteX(index: Integer);
+{Elimina un elemento y colapsa los array 1 posicion}
 var
   I: Integer;
 begin
