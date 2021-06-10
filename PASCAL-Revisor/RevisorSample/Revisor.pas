@@ -192,8 +192,10 @@ begin
       with Sender as TMemo do
         lastMemoClicked := Tag;
         MediaPlayer1.Position := startTimeArray[Tag];
-        MediaPlayer1.Play;
-        state:= true;
+        if state then
+        begin
+          MediaPlayer1.Play;
+        end;
     end;
 end;
 
