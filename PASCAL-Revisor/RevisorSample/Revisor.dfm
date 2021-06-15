@@ -162,4 +162,8 @@ object Form1: TForm1
     Left = 5
     Top = 8
   end
+  object exportDialog: TSaveDialog
+    Left = 320
+    Top = 8
+  end
 end
