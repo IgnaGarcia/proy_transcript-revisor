@@ -16,6 +16,7 @@ type
     textDialog: TOpenDialog;
     saveBtn: TButton;
     exportBtn: TButton;
+    exportDialog: TSaveDialog;
 
     paragrapghBtns: TPanel;
     joinBtn: TButton;
@@ -28,7 +29,6 @@ type
     passBtn: TButton;
 
     content: TPanel;
-    exportDialog: TSaveDialog;
     procedure audioBtnClick(Sender: TObject);
     procedure textBtnClick(Sender: TObject);
     procedure exportBtnClick(Sender: TObject);
@@ -93,27 +93,13 @@ procedure TForm1.exportBtnClick(Sender: TObject);
 {Exportar el texto revisado}
 var
 Fichero: TextFile;
-AText: String;
 I: Integer;
-memoaux : TMemo;
-
 begin
-  { Execute a save file dialog. }
-  exportDialog.Execute();
   if exportDialog.Execute then
-    { First check if the file exists. }
     if FileExists(exportDialog.FileName) then
-      { If it exists, raise an exception. }
       raise Exception.Create('File already exists. Cannot overwrite.')
     else
-    { Otherwise, save the memo box lines into the file. }
-      // Set up the starting directory to be the current one
-      //exportDialog.InitialDir := GetCurrentDir;
-      // Allow only .txt and .doc file types to be saved
-      //exportDialog.Filter := '*.txt';
-      // Set the default extension
-      //exportDialog.DefaultExt := 'txt';
-      AssignFile(Fichero, exportDialog.FileName);
+      AssignFile(Fichero, exportDialog.FileName+'.txt');
       try
         Rewrite(Fichero);
         for I := 0 to Length(memoArray)-1 do
@@ -124,16 +110,7 @@ begin
       finally
       CloseFile(Fichero);
       end;
-
-
-//      for I := 0 to Length(memoArray)-1 do
-//      begin
-//        memoaux.Lines.Add(memoArray[I].Text);
-//      end;
-//
-//      memoaux.Lines.SaveToFile(exportDialog.FileName);
 end;
-
 
 
 {Funciones de SubHeader}
