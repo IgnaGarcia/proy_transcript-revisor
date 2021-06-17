@@ -45,8 +45,10 @@ type
     state : Boolean;
     size : Integer;
     lastMemoClicked : Integer;
+    lastTimeStamp : Integer;
+    audioSize : Integer;
     memoArray : array of TMemo;
-    startTimeArray : array of Integer;
+    startTimeArray : array of Double;
 
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
     procedure memoClick(Sender: TObject);
@@ -78,7 +80,7 @@ begin
   begin
     MediaPlayer1.FileName := audioDialog.FileName;
     MediaPlayer1.Open;
-    MediaPlayer1.TimeFormat := tfMilliseconds;
+    audioSize := MediaPlayer1.Length;
     state := false
   end;
 end;
@@ -173,6 +175,7 @@ begin
   SetLength(startTimeArray, size);
 
   I := size-1;
+  lastTimeStamp := Round(jData.Items[I].GetValue<Double>('to') * 1000);
   while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
@@ -195,8 +198,7 @@ begin
     Memo.Tag := I;
     Memo.OnClick := memoClick;
     memoArray[I] := Memo;
-    startTimeArray[I] := Round(jValue.GetValue<Double>('from') * 1000);
-
+    startTimeArray[I] := jValue.GetValue<Double>('from');
     I := I-1;
   end;
   content.Free;
@@ -209,12 +211,15 @@ begin
     if Sender is TMemo then
     begin
       with Sender as TMemo do
+      begin
         lastMemoClicked := Tag;
-        MediaPlayer1.Position := startTimeArray[Tag];
+        MediaPlayer1.Position := Round(startTimeArray[Tag]*(audioSize/lastTimeStamp))*1000 - 3000; //-3000 como epsilon
         if state then
         begin
           MediaPlayer1.Play;
         end;
+      end;
+
     end;
 end;
 
@@ -229,7 +234,7 @@ begin
     begin
      MediaPlayer1.Pause;
      {Cuando se pausa se revobina 3segs}
-     MediaPlayer1.Position := MediaPlayer1.Position - 3000;
+     MediaPlayer1.Position := MediaPlayer1.Position - 3000; //FIX THIS
      state := false ;
     end
     else
@@ -246,7 +251,7 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position - 5000;
+    MediaPlayer1.Position := MediaPlayer1.Position - 5000; //FIX THIS
     MediaPlayer1.Play;
   end;
 end;
@@ -257,7 +262,7 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position + 5000;
+    MediaPlayer1.Position := MediaPlayer1.Position + 5000; //FIX THIS
     MediaPlayer1.Play;
   end;
 end;
