@@ -90,7 +90,7 @@ object Form1: TForm1
       Top = 13
       Width = 44
       Height = 25
-      Caption = '-5 seg'
+      Caption = '-3 seg'
       ModalResult = 1
       TabOrder = 1
       OnClick = rewindBtnClick
@@ -109,7 +109,7 @@ object Form1: TForm1
       Top = 13
       Width = 44
       Height = 25
-      Caption = '+5 seg'
+      Caption = '+3 seg'
       ModalResult = 1
       TabOrder = 0
       OnClick = passBtnClick

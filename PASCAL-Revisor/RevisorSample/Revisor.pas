@@ -234,7 +234,7 @@ begin
     begin
      MediaPlayer1.Pause;
      {Cuando se pausa se revobina 3segs}
-     MediaPlayer1.Position := MediaPlayer1.Position - 3000; //FIX THIS
+     MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
      state := false ;
     end
     else
@@ -251,7 +251,7 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position - 5000; //FIX THIS
+    MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
     MediaPlayer1.Play;
   end;
 end;
@@ -262,7 +262,7 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position + 5000; //FIX THIS
+    MediaPlayer1.Position := MediaPlayer1.Position + 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
     MediaPlayer1.Play;
   end;
 end;
