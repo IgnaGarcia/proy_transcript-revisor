@@ -22,12 +22,13 @@ type
     joinBtn: TButton;
     divideBtn: TButton;
 
+    ScrollBox1: TScrollBox;
+
     footer: TPanel;
     MediaPlayer1: TMediaPlayer;
     playpauseBtn: TButton;
     rewindBtn: TButton;
     passBtn: TButton;
-    ScrollBox1: TScrollBox;
     procedure audioBtnClick(Sender: TObject);
     procedure textBtnClick(Sender: TObject);
     procedure exportBtnClick(Sender: TObject);
@@ -135,7 +136,9 @@ begin
   end
   else
   begin
+    showmessage(lastMemoClicked.ToString +' '+ (lastMemoClicked+1).toString)  ;
     memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
+    memoArray[lastMemoClicked].Height := 19 + memoArray[lastMemoClicked].Lines.Count * 13;
     memoArray[lastMemoClicked+1].Free;
     deleteX(lastMemoClicked+1);
   end;
@@ -164,6 +167,7 @@ procedure TForm1.linkData(jData: TJSONArray; sender: TMediaPlayer);
 {Cargar los parrafos creando Memo's}
 var Memo: TMemo;
     word: TJSONValue;
+    jValue: TJSONValue;
     words: String;
     I : Integer;
 begin
@@ -180,7 +184,8 @@ begin
     Memo.Name := 'memoEj'+I.ToString;
 
     words := '';
-    for word in jData.Items[I].FindValue('words') as TJSONArray do
+    jValue := jData.Items[I];
+    for word in jValue.FindValue('words') as TJSONArray do
     begin
           words := words + ' ' + word.FindValue('word').Value;
     end;
@@ -190,9 +195,10 @@ begin
     Memo.Align := alBottom;
     Memo.Tag := I;
     Memo.OnClick := memoClick;
+    Memo.Height := 19 + Memo.Lines.Count * 13;
 
     memoArray[I] := Memo;
-    startTimeArray[I] := jData.Items[I].GetValue<Double>('from');
+    startTimeArray[I] := jValue.GetValue<Double>('from');
     I := I-1;
 //    Sleep(100);
   end;
@@ -206,6 +212,7 @@ begin
     begin
       with Sender as TMemo do
       begin
+        showmessage(Tag.ToString);
         lastMemoClicked := Tag;
         MediaPlayer1.Position := Round(startTimeArray[Tag]*(audioSize/lastTimeStamp))*1000 - 3000; //-3000 como epsilon
         if state then

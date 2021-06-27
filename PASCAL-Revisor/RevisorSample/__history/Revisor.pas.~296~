@@ -22,13 +22,13 @@ type
     joinBtn: TButton;
     divideBtn: TButton;
 
+    ScrollBox1: TScrollBox;
+
     footer: TPanel;
     MediaPlayer1: TMediaPlayer;
     playpauseBtn: TButton;
     rewindBtn: TButton;
     passBtn: TButton;
-
-    content: TPanel;
     procedure audioBtnClick(Sender: TObject);
     procedure textBtnClick(Sender: TObject);
     procedure exportBtnClick(Sender: TObject);
@@ -53,13 +53,14 @@ type
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
     procedure memoClick(Sender: TObject);
     procedure deleteX(index : Integer);
+    procedure autosize();
   end;
 
 var
   Form1: TForm1;
 
 implementation
-
+{$MAXSTACKSIZE 41943040}
 {$R *.dfm}
 
 {Funciones del Header}
@@ -137,6 +138,7 @@ begin
   else
   begin
     memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
+    //memoArray[lastMemoClicked].Height := 19 + memoArray[lastMemoClicked].Lines.Count * 13;
     memoArray[lastMemoClicked+1].Free;
     deleteX(lastMemoClicked+1);
   end;
@@ -164,8 +166,8 @@ end;
 procedure TForm1.linkData(jData: TJSONArray; sender: TMediaPlayer);
 {Cargar los parrafos creando Memo's}
 var Memo: TMemo;
-    jValue: TJSONValue;
     word: TJSONValue;
+    jValue: TJSONValue;
     words: String;
     I : Integer;
 begin
@@ -179,14 +181,8 @@ begin
   while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
-    with Memo do
-    begin
-      Name := 'memoEj'+I.ToString;
-      Parent := Self;
-      Align := alBottom;
-    end;
+    Memo.Name := 'memoEj'+I.ToString;
 
-    Memo.Lines.Clear;
     words := '';
     jValue := jData.Items[I];
     for word in jValue.FindValue('words') as TJSONArray do
@@ -195,14 +191,27 @@ begin
     end;
 
     Memo.Text := words;
+    Memo.Parent := ScrollBox1;
+    Memo.Align := alBottom;
     Memo.Tag := I;
     Memo.OnClick := memoClick;
+
     memoArray[I] := Memo;
     startTimeArray[I] := jValue.GetValue<Double>('from');
     I := I-1;
   end;
-  content.Free;
   AutoScroll := true;
+  autosize();
+end;
+
+procedure TForm1.autosize();
+var Memo: TMemo;
+begin
+  for Memo in memoArray do
+  begin
+    Memo.Height := 19 + Memo.Lines.Count * 13;
+  end;
+
 end;
 
 procedure TForm1.memoClick(Sender: TObject);
@@ -212,8 +221,8 @@ begin
     begin
       with Sender as TMemo do
       begin
+        showmessage(Tag.ToString);
         lastMemoClicked := Tag;
-        showmessage(Tag.ToString + ' ' +  (Round(startTimeArray[Tag]*(audioSize/lastTimeStamp))*1000 - 3000).toString);
         MediaPlayer1.Position := Round(startTimeArray[Tag]*(audioSize/lastTimeStamp))*1000 - 3000; //-3000 como epsilon
         if state then
         begin
@@ -235,7 +244,7 @@ begin
     begin
      MediaPlayer1.Pause;
      {Cuando se pausa se revobina 3segs}
-     MediaPlayer1.Position := MediaPlayer1.Position - 3000; //FIX THIS
+     MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
      state := false ;
     end
     else
@@ -252,7 +261,7 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position - 5000; //FIX THIS
+    MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
     MediaPlayer1.Play;
   end;
 end;
@@ -263,7 +272,7 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position + 5000; //FIX THIS
+    MediaPlayer1.Position := MediaPlayer1.Position + 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
     MediaPlayer1.Play;
   end;
 end;

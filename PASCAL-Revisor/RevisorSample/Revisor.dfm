@@ -150,10 +150,6 @@ object Form1: TForm1
     Height = 394
     Align = alClient
     TabOrder = 3
-    ExplicitLeft = 168
-    ExplicitTop = 224
-    ExplicitWidth = 185
-    ExplicitHeight = 41
   end
   object audioDialog: TOpenDialog
     Filter = 'MP3 Audio|*.mp3'

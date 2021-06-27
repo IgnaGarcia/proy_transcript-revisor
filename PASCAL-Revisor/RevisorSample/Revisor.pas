@@ -137,6 +137,7 @@ begin
   else
   begin
     memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
+    //memoArray[lastMemoClicked].Height := 19 + memoArray[lastMemoClicked].Lines.Count * 13;
     memoArray[lastMemoClicked+1].Free;
     deleteX(lastMemoClicked+1);
   end;
@@ -190,14 +191,14 @@ begin
 
     Memo.Text := words;
     Memo.Parent := ScrollBox1;
-    Memo.Align := alBottom;
+    Memo.Align := alTop;
     Memo.Tag := I;
     Memo.OnClick := memoClick;
+    Memo.Height := 19 + Memo.Lines.Count * 13;
 
     memoArray[I] := Memo;
     startTimeArray[I] := jValue.GetValue<Double>('from');
     I := I-1;
-//    Sleep(100);
   end;
   AutoScroll := true;
 end;
