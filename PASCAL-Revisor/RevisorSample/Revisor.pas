@@ -22,13 +22,13 @@ type
     joinBtn: TButton;
     divideBtn: TButton;
 
+    ScrollBox1: TScrollBox;
+
     footer: TPanel;
     MediaPlayer1: TMediaPlayer;
     playpauseBtn: TButton;
     rewindBtn: TButton;
     passBtn: TButton;
-
-    content: TPanel;
     procedure audioBtnClick(Sender: TObject);
     procedure textBtnClick(Sender: TObject);
     procedure exportBtnClick(Sender: TObject);
@@ -59,7 +59,7 @@ var
   Form1: TForm1;
 
 implementation
-
+{$MAXSTACKSIZE 41943040}
 {$R *.dfm}
 
 {Funciones del Header}
@@ -164,8 +164,8 @@ end;
 procedure TForm1.linkData(jData: TJSONArray; sender: TMediaPlayer);
 {Cargar los parrafos creando Memo's}
 var Memo: TMemo;
-    jValue: TJSONValue;
     word: TJSONValue;
+    jValue: TJSONValue;
     words: String;
     I : Integer;
 begin
@@ -179,14 +179,8 @@ begin
   while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
-    with Memo do
-    begin
-      Name := 'memoEj'+I.ToString;
-      Parent := Self;
-      Align := alBottom;
-    end;
+    Memo.Name := 'memoEj'+I.ToString;
 
-    Memo.Lines.Clear;
     words := '';
     jValue := jData.Items[I];
     for word in jValue.FindValue('words') as TJSONArray do
@@ -195,13 +189,16 @@ begin
     end;
 
     Memo.Text := words;
+    Memo.Parent := ScrollBox1;
+    Memo.Align := alBottom;
     Memo.Tag := I;
     Memo.OnClick := memoClick;
+
     memoArray[I] := Memo;
     startTimeArray[I] := jValue.GetValue<Double>('from');
     I := I-1;
+//    Sleep(100);
   end;
-  content.Free;
   AutoScroll := true;
 end;
 

@@ -10,4 +10,5 @@
     <Transaction>2021/04/30 17:03:59.000.241,D:\Projects\LEL\DelphiRevisor\RevisorSample\TextContainer.pas=D:\Projects\LEL\DelphiRevisor\RevisorSample\Unit1.pas</Transaction>
     <Transaction>2021/06/03 17:54:25.000.007,C:\Users\ignag\Projects\proy_transcript-revisor\PASCAL-Revisor\RevisorSample\TextContainer.pas=</Transaction>
   </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
 </BorlandProject>

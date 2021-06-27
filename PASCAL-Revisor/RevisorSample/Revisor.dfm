@@ -143,14 +143,17 @@ object Form1: TForm1
       OnClick = divideBtnClick
     end
   end
-  object content: TPanel
+  object ScrollBox1: TScrollBox
     Left = 0
     Top = 85
     Width = 418
     Height = 394
     Align = alClient
-    Caption = 'Texto aun no Cargado'
     TabOrder = 3
+    ExplicitLeft = 168
+    ExplicitTop = 224
+    ExplicitWidth = 185
+    ExplicitHeight = 41
   end
   object audioDialog: TOpenDialog
     Filter = 'MP3 Audio|*.mp3'
