@@ -5,21 +5,11 @@ Usage:
 import json
 import sys, getopt
 
-def wordFactory(word, desde, to, confidence, speaker):
-    return {
-        'word': word,
-        'from': desde,
-        'to': to,
-        'confidence': confidence,
-        'speaker': speaker
-    }
-
-
 def paragraphFactory(desde):
     return { 
         'from': desde, 
-        'to': -1, 
-        'words': []
+        'words': "",
+        'to': -1
     }
 
 
@@ -30,47 +20,43 @@ def cleanVosk(data, dif):
     for w in data['result']:   
         if lastEnd == 0:
             paragraph = paragraphFactory(w['start'])
+            paragraph['words'] += w['word']
         elif (w['start'] - lastEnd) > dif:
-            paragraph['words'][-1]['word'] +=  "."
+            paragraph['words'] +=  "."
+            paragraph['to'] = lastEnd
             cleared.append(paragraph)
             paragraph = paragraphFactory(w['start'])
-
-        word = wordFactory(w['word'], w['start'], w['end'], w['conf'], 0)  
-
-        paragraph['words'].append(word)
-        paragraph['to'] = w['end']
+            paragraph['words'] += w['word']
+        else:
+            paragraph['words'] += ' '+w['word']
 
         lastEnd = w['end']
 
-    cleared.append(paragraph)
+    paragraph['to'] = lastEnd
     return cleared
 
 
 def cleanIbm(data, dif):
-    wordCount = 0
     lastEnd = 0
     cleared = []
 
     for result in data['results']:
-        i = 0
-
         for w in result['alternatives'][0]['timestamps']:
             if lastEnd == 0:
                 paragraph = paragraphFactory(w[1])
+                paragraph['words'] += w[0]
             elif (w[1] - lastEnd) > dif:
-                paragraph['words'][-1]['word'] += "."
+                paragraph['words'] += "."
+                paragraph['to'] = lastEnd
                 cleared.append(paragraph)
                 paragraph = paragraphFactory(w[1])
+                paragraph['words'] += w[0]
+            else:
+                paragraph['words'] += ' '+w[0]         
             
-            word = wordFactory(w[0], w[1], w[2], result['alternatives'][0]['word_confidence'][i][1], data['speaker_labels'][wordCount]['speaker'])            
-    
-            paragraph['words'].append(word)
-            paragraph['to'] = w[2]
-            
-            wordCount += 1
-            i += 1  
             lastEnd = w[2]
-            
+     
+    paragraph['to'] = lastEnd       
     cleared.append(paragraph)
     return cleared
 
