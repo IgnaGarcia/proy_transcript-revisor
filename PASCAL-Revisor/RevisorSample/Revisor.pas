@@ -137,7 +137,7 @@ begin
   else
   begin
     memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
-    //memoArray[lastMemoClicked].Height := 19 + memoArray[lastMemoClicked].Lines.Count * 13;
+    memoArray[lastMemoClicked].Height := 19 + memoArray[lastMemoClicked].Lines.Count * 13;
     memoArray[lastMemoClicked+1].Free;
     deleteX(lastMemoClicked+1);
   end;
@@ -182,14 +182,9 @@ begin
     Memo := TMemo.Create(Self);
     Memo.Name := 'memoEj'+I.ToString;
 
-    words := '';
     jValue := jData.Items[I];
-    for word in jValue.FindValue('words') as TJSONArray do
-    begin
-          words := words + ' ' + word.FindValue('word').Value;
-    end;
+    Memo.Text := jValue.FindValue('words').Value;
 
-    Memo.Text := words;
     Memo.Parent := ScrollBox1;
     Memo.Align := alTop;
     Memo.Tag := I;
@@ -211,7 +206,7 @@ begin
       with Sender as TMemo do
       begin
         lastMemoClicked := Tag;
-        MediaPlayer1.Position := Round(startTimeArray[Tag]*(audioSize/lastTimeStamp))*1000 - 3000; //-3000 como epsilon
+        MediaPlayer1.Position := Round(startTimeArray[Tag]*(audioSize/lastTimeStamp))*1000 - 3000;
         if state then
         begin
           MediaPlayer1.Play;
@@ -231,8 +226,7 @@ begin
     if state then
     begin
      MediaPlayer1.Pause;
-     {Cuando se pausa se revobina 3segs}
-     MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
+     MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp));
      state := false ;
     end
     else
@@ -249,7 +243,7 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
+    MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp));
     MediaPlayer1.Play;
   end;
 end;
@@ -260,7 +254,7 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position + 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
+    MediaPlayer1.Position := MediaPlayer1.Position + 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp));
     MediaPlayer1.Play;
   end;
 end;
