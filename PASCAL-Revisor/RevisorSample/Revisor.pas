@@ -56,6 +56,7 @@ type
     lastMemo : Integer;
     lastTStamp : Integer;
     audioSize : Integer;
+    lastSender : TObject;
     pArr : array of MyParagraph;
 
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
@@ -224,6 +225,7 @@ begin
   AutoScroll := true;
 end;
 
+
 procedure TForm1.memoClick(Sender: TObject);
 {Captar el click de un memo}
 begin
@@ -231,14 +233,17 @@ begin
     begin
       with Sender as TMemo do
       begin
-        lastMemo := Tag;
-        MediaPlayer1.Position := Round(pArr[Tag].from*(audioSize/lastTStamp))*1000 - 3000;
-        if state then
-        begin
-          MediaPlayer1.Play;
-        end;
+         if (lastSender <> Sender ) then
+          begin
+            lastSender:=Sender;
+            lastMemo := Tag;
+            MediaPlayer1.Position := Round(pArr[Tag].from*(audioSize/lastTStamp))*1000 - 3000;
+            if state then
+                begin
+                  MediaPlayer1.Play;
+                end;
+          end;
       end;
-
     end;
 end;
 
