@@ -8,6 +8,14 @@ uses
   System.JSON, Vcl.StdCtrls, Vcl.MPlayer, IOUtils, Vcl.ExtCtrls, Vcl.ComCtrls;
 
 type
+  MyParagraph = Class(TObject)
+    public
+      from: Double;
+      toTime: Double;
+      words: TMemo;
+end;
+
+type
   TForm1 = class(TForm)
     header: TPanel;
     audioBtn: TButton;
@@ -29,10 +37,11 @@ type
     playpauseBtn: TButton;
     rewindBtn: TButton;
     passBtn: TButton;
+    saveDialog: TSaveDialog;
     procedure audioBtnClick(Sender: TObject);
     procedure textBtnClick(Sender: TObject);
-    procedure exportBtnClick(Sender: TObject);
     procedure saveBtnClick(Sender: TObject);
+    procedure exportBtnClick(Sender: TObject);
 
     procedure joinBtnClick(Sender: TObject);
     procedure divideBtnClick(Sender: TObject);
@@ -44,11 +53,10 @@ type
   public
     state : Boolean;
     size : Integer;
-    lastMemoClicked : Integer;
-    lastTimeStamp : Integer;
+    lastMemo : Integer;
+    lastTStamp : Integer;
     audioSize : Integer;
-    memoArray : array of TMemo;
-    startTimeArray : array of Double;
+    pArr : array of MyParagraph;
 
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
     procedure memoClick(Sender: TObject);
@@ -86,9 +94,23 @@ begin
 end;
 
 procedure TForm1.saveBtnClick(Sender: TObject);
-{Guardar el json editado}
+{Guardar el JSON de revision}
+var
+  I: Integer;
+  jsonObject: TJSONObject;
+  jsonArray: TJSONArray;
 begin
- {TODO}
+  saveDialog.Execute();
+  jsonArray := TJSONArray.Create();
+  for I := 0 to Length(pArr)-1 do
+  begin
+    jsonObject := TJSONObject.Create();
+    jsonObject.AddPair(TJSONPair.Create('from', TJSONValue.Create(pArr[I].from)));
+    jsonObject.AddPair(TJSONPair.Create('to', TJSONValue.Create(pArr[I].toTime)));
+    jsonObject.AddPair(TJSONPair.Create('words', pArr[I].words.Text));
+    jsonArray.AddElement(jsonObject);
+  end;
+  TFile.WriteAllText(saveDialog.FileName+'.json', jsonArray.ToJSON);
 end;
 
 procedure TForm1.exportBtnClick(Sender: TObject);
@@ -104,9 +126,9 @@ begin
       AssignFile(Fichero, exportDialog.FileName+'.txt');
       try
         Rewrite(Fichero);
-        for I := 0 to Length(memoArray)-1 do
+        for I := 0 to Length(pArr)-1 do
         begin
-          WriteLn(Fichero, memoArray[I].Text);
+          WriteLn(Fichero, pArr[I].words.Text);
           WriteLn(Fichero, '');
         end;
       finally
@@ -126,20 +148,21 @@ end;
 procedure TForm1.joinBtnClick(Sender: TObject);
 {Juntar parrafos}
 begin
-  if lastMemoClicked = -1 then
+  if lastMemo = -1 then
   begin
     showMessage('No se ha seleccionado un parrafo');
   end
-  else if size-1 = lastMemoClicked then
+  else if size-1 = lastMemo then
   begin
     showMessage('No se se puede unir el ultimo parrafo');
   end
   else
   begin
-    memoArray[lastMemoClicked].Text :=  memoArray[lastMemoClicked].Text + memoArray[lastMemoClicked+1].Text;
-    //memoArray[lastMemoClicked].Height := 19 + memoArray[lastMemoClicked].Lines.Count * 13;
-    memoArray[lastMemoClicked+1].Free;
-    deleteX(lastMemoClicked+1);
+    pArr[lastMemo].words.Text :=  pArr[lastMemo].words.Text + pArr[lastMemo+1].words.Text;
+    pArr[lastMemo].toTime :=  pArr[lastMemo+1].toTime;
+    pArr[lastMemo].words.Height := 19 + pArr[lastMemo].words.Lines.Count * 13;
+    pArr[lastMemo+1].words.Free;
+    deleteX(lastMemo+1);
   end;
 end;
 
@@ -150,14 +173,12 @@ var
 begin
   for I := index+1 to size-1 do
   begin
-    startTimeArray[I-1] := startTimeArray[I];
-    memoArray[I].Tag := memoArray[I].Tag - 1;
-    memoArray[I-1] := memoArray[I];
+    pArr[I-1] := pArr[I];
+    pArr[I].words.Tag := pArr[I].words.Tag - 1;
   end;
   size := size - 1;
 
-  SetLength(memoArray, size);
-  SetLength(startTimeArray, size);
+  SetLength(pArr, size);
 end;
 
 {Funciones del Content}
@@ -165,41 +186,37 @@ end;
 procedure TForm1.linkData(jData: TJSONArray; sender: TMediaPlayer);
 {Cargar los parrafos creando Memo's}
 var Memo: TMemo;
-    word: TJSONValue;
     jValue: TJSONValue;
-    words: String;
     I : Integer;
+    paragraph: MyParagraph;
 begin
-  lastMemoClicked := -1;
+  lastMemo := -1;
   size := jData.Count;
-  SetLength(memoArray, size);
-  SetLength(startTimeArray, size);
+  SetLength(pArr, size);
 
   I := size-1;
-  lastTimeStamp := Round(jData.Items[I].GetValue<Double>('to') * 1000);
+  lastTStamp := Round(jData.Items[I].GetValue<Double>('to') * 1000);
   while(I>=0) do
   begin
     Memo := TMemo.Create(Self);
     Memo.Name := 'memoEj'+I.ToString;
 
-    words := '';
     jValue := jData.Items[I];
-    for word in jValue.FindValue('words') as TJSONArray do
-    begin
-          words := words + ' ' + word.FindValue('word').Value;
-    end;
+    Memo.Text := jValue.FindValue('words').Value;
 
-    Memo.Text := words;
     Memo.Parent := ScrollBox1;
-    Memo.Align := Custom;
+    Memo.Align := alTop;
     Memo.Tag := I;
     Memo.OnClick := memoClick;
-    //Memo.Height := 19 + Memo.Lines.Count * 13;
+    Memo.Height := 19 + Memo.Lines.Count * 13;
 
-    memoArray[I] := Memo;
-    startTimeArray[I] := jValue.GetValue<Double>('from');
+    paragraph := MyParagraph.Create();
+    paragraph.words := Memo;
+    paragraph.from := jValue.GetValue<Double>('from');
+    paragraph.toTime := jValue.GetValue<Double>('to');
+    pArr[I] := paragraph;
+
     I := I-1;
-//    Sleep(100);
   end;
   AutoScroll := true;
 end;
@@ -211,9 +228,8 @@ begin
     begin
       with Sender as TMemo do
       begin
-        showmessage(Tag.ToString);
-        lastMemoClicked := Tag;
-        MediaPlayer1.Position := Round(startTimeArray[Tag]*(audioSize/lastTimeStamp))*1000 - 3000; //-3000 como epsilon
+        lastMemo := Tag;
+        MediaPlayer1.Position := Round(pArr[Tag].from*(audioSize/lastTStamp))*1000 - 3000;
         if state then
         begin
           MediaPlayer1.Play;
@@ -233,8 +249,7 @@ begin
     if state then
     begin
      MediaPlayer1.Pause;
-     {Cuando se pausa se revobina 3segs}
-     MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
+     MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(pArr[Tag].from*(audioSize/lastTStamp));
      state := false ;
     end
     else
@@ -251,7 +266,7 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
+    MediaPlayer1.Position := MediaPlayer1.Position - 3000*Round(pArr[Tag].from*(audioSize/lastTStamp));
     MediaPlayer1.Play;
   end;
 end;
@@ -262,9 +277,8 @@ begin
   if MediaPlayer1.FileName <> '' then
   begin
     MediaPlayer1.Pause;
-    MediaPlayer1.Position := MediaPlayer1.Position + 3000*Round(startTimeArray[Tag]*(audioSize/lastTimeStamp)); //FIXED
+    MediaPlayer1.Position := MediaPlayer1.Position + 3000*Round(pArr[Tag].from*(audioSize/lastTStamp));
     MediaPlayer1.Play;
   end;
 end;
 end.
-
