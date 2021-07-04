@@ -56,7 +56,6 @@ type
     lastMemo : Integer;
     lastTStamp : Integer;
     audioSize : Integer;
-    lastSender : TObject;
     pArr : array of MyParagraph;
 
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
@@ -229,22 +228,21 @@ end;
 procedure TForm1.memoClick(Sender: TObject);
 {Captar el click de un memo}
 begin
-    if Sender is TMemo then
+  if Sender is TMemo then
+  begin
+    with Sender as TMemo do
     begin
-      with Sender as TMemo do
+      if (lastMemo <> Tag ) then
       begin
-         if (lastSender <> Sender ) then
-          begin
-            lastSender:=Sender;
-            lastMemo := Tag;
-            MediaPlayer1.Position := Round(pArr[Tag].from*(audioSize/lastTStamp))*1000 - 3000;
-            if state then
-                begin
-                  MediaPlayer1.Play;
-                end;
-          end;
+        lastMemo := Tag;
+        MediaPlayer1.Position := Round(pArr[Tag].from*(audioSize/lastTStamp))*1000 - 3000;
+        if state then
+        begin
+          MediaPlayer1.Play;
+        end;
       end;
     end;
+  end;
 end;
 
 {Funciones del Footer}
