@@ -74,9 +74,24 @@ implementation
 
 procedure TForm1.chargeBtnClick(Sender: TObject);
 {Cargar audio t JSON}
+var I: Integer;
 begin
-  chargeText();
-  chargeAudio();
+  if pArr = nil then
+  begin
+    chargeText();
+    chargeAudio();
+  end
+  else if MessageDlg('Desea sobreescribir la revision? puede que haya cambios sin guardar',mtConfirmation, [mbYes, mbNo], 0, mbYes) = mrYes then
+  begin
+    MediaPlayer1.Close;
+    for I := 0 to length(pArr)-1 do
+    begin
+      pArr[I].words.Free;
+      pArr[I].Free;
+    end;
+    chargeText();
+    chargeAudio();
+  end;
 end;
 
 procedure TForm1.chargeText();

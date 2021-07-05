@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
-  System.JSON, Vcl.StdCtrls, Vcl.MPlayer, IOUtils, Vcl.ExtCtrls, Vcl.ComCtrls;
+  System.JSON, Vcl.StdCtrls, Vcl.MPlayer, IOUtils, Vcl.ExtCtrls, Vcl.ComCtrls,
+  Vcl.Dialogs;
 
 type
   MyParagraph = Class(TObject)
@@ -18,9 +19,7 @@ end;
 type
   TForm1 = class(TForm)
     header: TPanel;
-    audioBtn: TButton;
-    textBtn: TButton;
-    audioDialog: TOpenDialog;
+    chargeBtn: TButton;
     textDialog: TOpenDialog;
     saveBtn: TButton;
     exportBtn: TButton;
@@ -38,8 +37,8 @@ type
     rewindBtn: TButton;
     passBtn: TButton;
     saveDialog: TSaveDialog;
-    procedure audioBtnClick(Sender: TObject);
-    procedure textBtnClick(Sender: TObject);
+    audioDialog: TOpenDialog;
+    procedure chargeBtnClick(Sender: TObject);
     procedure saveBtnClick(Sender: TObject);
     procedure exportBtnClick(Sender: TObject);
 
@@ -61,7 +60,8 @@ type
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
     procedure memoClick(Sender: TObject);
     procedure deleteX(index : Integer);
-    procedure makeSpace(index : Integer);
+    procedure chargeAudio();
+    procedure chargeText();
   end;
 
 var
@@ -73,16 +73,40 @@ implementation
 
 {Funciones del Header}
 
-procedure TForm1.textBtnClick(Sender: TObject);
+procedure TForm1.chargeBtnClick(Sender: TObject);
+{Cargar audio t JSON}
+var I: Integer;
+begin
+  if pArr = nil then
+  begin
+    chargeText();
+    chargeAudio();
+  end
+  else if MessageDlg('Desea sobreescribir la revision? puede que haya cambios sin guardar',mtConfirmation, [mbYes, mbNo], 0, mbYes) = mrYes then
+  begin
+    for I := 0 to length(pArr) do
+    begin
+      pArr[I].words.Free;
+      pArr[I].Free;
+    end;
+
+    chargeText();
+    chargeAudio();
+  end;
+end;
+
+procedure TForm1.chargeText();
 {Cargar el JSON}
 var jText : TJSONValue;
 begin
-  textDialog.Execute();
-  jText := TJSonObject.parseJSONValue(TFile.ReadAllText(textDialog.FileName));
-  linkData(jText as TJSONArray, MediaPlayer1);
+  if textDialog.Execute() then
+  begin
+    jText := TJSonObject.parseJSONValue(TFile.ReadAllText(textDialog.FileName));
+    linkData(jText as TJSONArray, MediaPlayer1);
+  end;
 end;
 
-procedure TForm1.audioBtnClick(Sender: TObject);
+procedure TForm1.chargeAudio();
 {Cargar el audio}
 begin
   if audioDialog.Execute() then
@@ -98,6 +122,8 @@ procedure TForm1.saveBtnClick(Sender: TObject);
 {Guardar el JSON de revision}
 var
   I: Integer;
+  fromJSON: TJSONValue;
+  toJSON: TJSONValue;
   jsonObject: TJSONObject;
   jsonArray: TJSONArray;
 begin
@@ -145,21 +171,6 @@ procedure TForm1.divideBtnClick(Sender: TObject);
 {Dividir en 2 parrafos}
 begin
   {TODO}
-  if lastMemo = -1 then
-  begin
-    showMessage('No se ha seleccionado un parrafo');
-  end
-  else
-  begin
-    pArr[lastMemo].words.SelStart;
-    makeSpace(lastMemo+1);
-    {pArr[lastMemo].words.Text :=  pArr[lastMemo].words.Text + pArr[lastMemo+1].words.Text;
-    pArr[lastMemo].toTime :=  pArr[lastMemo+1].toTime;
-    pArr[lastMemo].words.Height := 19 + pArr[lastMemo].words.Lines.Count * 13;
-    pArr[lastMemo+1].words.Free;
-    deleteX(lastMemo+1);}
-  end;
-
 end;
 
 procedure TForm1.joinBtnClick(Sender: TObject);
@@ -184,7 +195,7 @@ begin
 end;
 
 procedure TForm1.deleteX(index: Integer);
-{Elimina un elemento y colapsa 1 posicion}
+{Elimina un elemento y colapsa los array 1 posicion}
 var
   I: Integer;
 begin
@@ -196,23 +207,6 @@ begin
   size := size - 1;
 
   SetLength(pArr, size);
-end;
-
-procedure TForm1.makeSpace(index: Integer);
-{Crea un elemento y expande 1 posicion}
-var
-  I: Integer;
-  some: String;
-begin
-  size := size + 1;
-  SetLength(pArr, size);
-  showMessage(pArr[size-1].words.text);
-  for I := size-1 to index+1 do
-  begin
-    pArr[I] := pArr[I-1];
-    some := some +' '+pArr[I].words.Text;
-  end;
-  showmessage(some);
 end;
 
 {Funciones del Content}
@@ -255,12 +249,15 @@ begin
   AutoScroll := true;
 end;
 
+
 procedure TForm1.memoClick(Sender: TObject);
 {Captar el click de un memo}
 begin
-    if Sender is TMemo then
+  if Sender is TMemo then
+  begin
+    with Sender as TMemo do
     begin
-      with Sender as TMemo do
+      if (lastMemo <> Tag ) then
       begin
         lastMemo := Tag;
         MediaPlayer1.Position := Round(pArr[Tag].from*(audioSize/lastTStamp))*1000 - 3000;
@@ -269,8 +266,8 @@ begin
           MediaPlayer1.Play;
         end;
       end;
-
     end;
+  end;
 end;
 
 {Funciones del Footer}

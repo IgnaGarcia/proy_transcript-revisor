@@ -18,9 +18,7 @@ end;
 type
   TForm1 = class(TForm)
     header: TPanel;
-    audioBtn: TButton;
-    textBtn: TButton;
-    audioDialog: TOpenDialog;
+    chargeBtn: TButton;
     textDialog: TOpenDialog;
     saveBtn: TButton;
     exportBtn: TButton;
@@ -38,8 +36,8 @@ type
     rewindBtn: TButton;
     passBtn: TButton;
     saveDialog: TSaveDialog;
-    procedure audioBtnClick(Sender: TObject);
-    procedure textBtnClick(Sender: TObject);
+    audioDialog: TOpenDialog;
+    procedure chargeBtnClick(Sender: TObject);
     procedure saveBtnClick(Sender: TObject);
     procedure exportBtnClick(Sender: TObject);
 
@@ -61,6 +59,8 @@ type
     procedure linkData(jData: TJSONArray; sender: TMediaPlayer);
     procedure memoClick(Sender: TObject);
     procedure deleteX(index : Integer);
+    procedure chargeAudio();
+    procedure chargeText();
   end;
 
 var
@@ -72,16 +72,32 @@ implementation
 
 {Funciones del Header}
 
-procedure TForm1.textBtnClick(Sender: TObject);
+procedure TForm1.chargeBtnClick(Sender: TObject);
+{Cargar audio t JSON}
+begin
+  if pArr = nil then
+  begin
+    chargeText();
+    chargeAudio();
+  end
+  else
+  begin
+    showmessage(showmessage('ok?').toString());
+  end;
+end;
+
+procedure TForm1.chargeText();
 {Cargar el JSON}
 var jText : TJSONValue;
 begin
-  textDialog.Execute();
-  jText := TJSonObject.parseJSONValue(TFile.ReadAllText(textDialog.FileName));
-  linkData(jText as TJSONArray, MediaPlayer1);
+  if textDialog.Execute() then
+  begin
+    jText := TJSonObject.parseJSONValue(TFile.ReadAllText(textDialog.FileName));
+    linkData(jText as TJSONArray, MediaPlayer1);
+  end;
 end;
 
-procedure TForm1.audioBtnClick(Sender: TObject);
+procedure TForm1.chargeAudio();
 {Cargar el audio}
 begin
   if audioDialog.Execute() then
