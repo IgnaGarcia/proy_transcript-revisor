@@ -1,21 +1,8 @@
-﻿[textBtn]
-Coordinates=159,10,55,58
-Visible=True
-
-[textDialog]
-Coordinates=176,1,72,36
-
-[MediaPlayer1]
+﻿[MediaPlayer1]
 Coordinates=10,78,93,36
 
-[audioDialog]
-Coordinates=288,1,83,36
-
-[audioBtn]
-Coordinates=10,10,65,58
-
 []
-Coordinates=286,56,91,36
+Coordinates=288,1,83,36
 Visible=True
 
 [playpauseBtn]
@@ -29,4 +16,11 @@ Coordinates=94,1,61,58
 
 [header]
 Coordinates=224,56,54,58
+
+[chargeBtn]
+Coordinates=159,10,55,58
+Visible=True
+
+[textDialog]
+Coordinates=176,1,72,36
 
