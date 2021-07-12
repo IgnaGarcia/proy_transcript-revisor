@@ -67,7 +67,7 @@ var
   Form1: TForm1;
 
 implementation
-{$MAXSTACKSIZE 41943040}
+{$MAXSTACKSIZE 45943040}
 {$R *.dfm}
 
 {Funciones del Header}
@@ -84,7 +84,7 @@ begin
   else if MessageDlg('Desea sobreescribir la revision? puede que haya cambios sin guardar',mtConfirmation, [mbYes, mbNo], 0, mbYes) = mrYes then
   begin
     MediaPlayer1.Close;
-    for I := 0 to length(pArr)-1 do
+    for I := 0 to size-1 do
     begin
       pArr[I].words.Free;
       pArr[I].Free;
@@ -121,14 +121,12 @@ procedure TForm1.saveBtnClick(Sender: TObject);
 {Guardar el JSON de revision}
 var
   I: Integer;
-  fromJSON: TJSONValue;
-  toJSON: TJSONValue;
   jsonObject: TJSONObject;
   jsonArray: TJSONArray;
 begin
   saveDialog.Execute();
   jsonArray := TJSONArray.Create();
-  for I := 0 to Length(pArr)-1 do
+  for I := 0 to size-1 do
   begin
     jsonObject := TJSONObject.Create();
 
@@ -153,7 +151,7 @@ begin
       AssignFile(Fichero, exportDialog.FileName+'.txt');
       try
         Rewrite(Fichero);
-        for I := 0 to Length(pArr)-1 do
+        for I := 0 to size-1 do
         begin
           WriteLn(Fichero, pArr[I].words.Text);
           WriteLn(Fichero, '');
@@ -168,9 +166,7 @@ end;
 
 procedure TForm1.divideBtnClick(Sender: TObject);
 {Dividir en 2 parrafos}
-var newP: String;
-  oldP: String;
-  Memo: TMemo;
+var Memo: TMemo;
   paragraph: MyParagraph;
   pArrAux : array of MyParagraph;
   I: Integer;
@@ -183,12 +179,8 @@ begin
   else
   begin
     Memo := TMemo.Create(Self);
-    Memo.Text := copy(pArr[lastMemo].words.Text,
-                      pArr[lastMemo].words.SelStart+1,
-                      length(pArr[lastMemo].words.Text));
-    pArr[lastMemo].words.Text := copy(pArr[lastMemo].words.Text,
-                                      0,
-                                      pArr[lastMemo].words.SelStart);
+    Memo.Text := copy(pArr[lastMemo].words.Text, pArr[lastMemo].words.SelStart+1, length(pArr[lastMemo].words.Text));
+    pArr[lastMemo].words.Text := copy(pArr[lastMemo].words.Text, 0, pArr[lastMemo].words.SelStart);
 
     Memo.OnClick := memoClick;
     Memo.Align := alTop;
@@ -201,28 +193,26 @@ begin
     paragraph := MyParagraph.Create();
     paragraph.words := Memo;
     paragraph.toTime := pArr[lastMemo].toTime;
-    paragraph.from := pArr[lastMemo].from;
-    //pArr[lastMemo].toTime := ;
+    paragraph.from := ((pArr[lastMemo].words.SelStart+1) * (pArr[lastMemo].toTime-pArr[lastMemo].from) / length(pArr[lastMemo].words.Text)) - 500;
+    showmessage((pArr[lastMemo].words.SelStart+1).ToString + ' ' + (pArr[lastMemo].toTime-pArr[lastMemo].from).ToString + ' ' + length(pArr[lastMemo].words.Text).ToString);
+    pArr[lastMemo].toTime := paragraph.from;
 
     SetLength(pArrAux, size+1);
-    for I := lastMemo to size+1 do
+    for I := lastMemo+1 to size do
     begin
-        if(I <= lastMemo) then
+        if (I = lastMemo+1) then
         begin
-          pArrAux[I] := pArr[I];
-        end
-        else if (I = lastMemo+1) then
-        begin
-           pArrAux[I] := paragraph;
+           pArrAux[I] := pArr[I];
+           pArr[I] := paragraph;
            paragraph.words.Tag := I
         end
         else
         begin
-           pArrAux[I] := pArr[I-1];
-           pArrAux[I].words.Tag := I
+           pArrAux[I] := pArr[I];
+           pArr[I] := pArrAux[I-1];
+           pArr[I].words.Tag := I
         end;
     end;
-    pArr := pArrAux;
     size := size+1;
   end;
 end;
@@ -259,8 +249,6 @@ begin
     pArr[I].words.Tag := pArr[I].words.Tag - 1;
   end;
   size := size - 1;
-
-  SetLength(pArr, size);
 end;
 
 {Funciones del Content}
@@ -274,7 +262,7 @@ var Memo: TMemo;
 begin
   lastMemo := -1;
   size := jData.Count;
-  SetLength(pArr, size);
+  SetLength(pArr, size+100);
 
   I := size-1;
   lastTStamp := Round(jData.Items[I].GetValue<Double>('to') * 1000);
@@ -307,6 +295,7 @@ end;
 procedure TForm1.memoClick(Sender: TObject);
 {Captar el click de un memo}
 begin
+  showmessage('first');
   if Sender is TMemo then
   begin
     with Sender as TMemo do

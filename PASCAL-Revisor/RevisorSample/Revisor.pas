@@ -170,6 +170,8 @@ var Memo: TMemo;
   paragraph: MyParagraph;
   pArrAux : array of MyParagraph;
   I: Integer;
+  cursor: Integer;
+  textLength: Integer;
 begin
   {TODO}
   if lastMemo = -1 then
@@ -178,9 +180,11 @@ begin
   end
   else
   begin
+    cursor := pArr[lastMemo].words.SelStart+1;
+    textLength := length(pArr[lastMemo].words.Text);
     Memo := TMemo.Create(Self);
-    Memo.Text := copy(pArr[lastMemo].words.Text, pArr[lastMemo].words.SelStart+1, length(pArr[lastMemo].words.Text));
-    pArr[lastMemo].words.Text := copy(pArr[lastMemo].words.Text, 0, pArr[lastMemo].words.SelStart);
+    Memo.Text := copy(pArr[lastMemo].words.Text, cursor, textLength);
+    pArr[lastMemo].words.Text := copy(pArr[lastMemo].words.Text, 0, cursor-1);
 
     Memo.OnClick := memoClick;
     Memo.Align := alTop;
@@ -193,8 +197,8 @@ begin
     paragraph := MyParagraph.Create();
     paragraph.words := Memo;
     paragraph.toTime := pArr[lastMemo].toTime;
-    paragraph.from := pArr[lastMemo].from;
-    //pArr[lastMemo].toTime := ;
+    paragraph.from := (cursor * (pArr[lastMemo].toTime-pArr[lastMemo].from) / textLength) + pArr[lastMemo].from;
+    pArr[lastMemo].toTime := paragraph.from;
 
     SetLength(pArrAux, size+1);
     for I := lastMemo+1 to size do

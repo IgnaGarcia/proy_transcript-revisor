@@ -126,7 +126,7 @@ var
 begin
   saveDialog.Execute();
   jsonArray := TJSONArray.Create();
-  for I := 0 to Length(pArr)-1 do
+  for I := 0 to size-1 do
   begin
     jsonObject := TJSONObject.Create();
 
@@ -166,12 +166,12 @@ end;
 
 procedure TForm1.divideBtnClick(Sender: TObject);
 {Dividir en 2 parrafos}
-var newP: String;
-  oldP: String;
-  Memo: TMemo;
+var Memo: TMemo;
   paragraph: MyParagraph;
   pArrAux : array of MyParagraph;
   I: Integer;
+  cursor: Integer;
+  textLength: Integer;
 begin
   {TODO}
   if lastMemo = -1 then
@@ -180,9 +180,11 @@ begin
   end
   else
   begin
+    cursor := pArr[lastMemo].words.SelStart+1;
+    textLength := length(pArr[lastMemo].words.Text);
     Memo := TMemo.Create(Self);
-    Memo.Text := copy(pArr[lastMemo].words.Text, pArr[lastMemo].words.SelStart+1, length(pArr[lastMemo].words.Text));
-    pArr[lastMemo].words.Text := copy(pArr[lastMemo].words.Text, 0, pArr[lastMemo].words.SelStart);
+    Memo.Text := copy(pArr[lastMemo].words.Text, cursor, textLength);
+    pArr[lastMemo].words.Text := copy(pArr[lastMemo].words.Text, 0, cursor-1);
 
     Memo.OnClick := memoClick;
     Memo.Align := alTop;
@@ -195,11 +197,15 @@ begin
     paragraph := MyParagraph.Create();
     paragraph.words := Memo;
     paragraph.toTime := pArr[lastMemo].toTime;
-    paragraph.from := pArr[lastMemo].from;
-    //pArr[lastMemo].toTime := ;
+    paragraph.from := (cursor * (pArr[lastMemo].toTime-pArr[lastMemo].from) / textLength);
+
+    showmessage(cursor.ToString + ' ' + (pArr[lastMemo].toTime-pArr[lastMemo].from).ToString + ' ' + textLength.ToString);
+    showmessage(paragraph.from.ToString);
+
+    pArr[lastMemo].toTime := paragraph.from;
 
     SetLength(pArrAux, size+1);
-    for I := lastMemo+1 to size+1 do
+    for I := lastMemo+1 to size do
     begin
         if (I = lastMemo+1) then
         begin
@@ -303,6 +309,7 @@ begin
       if (lastMemo <> Tag ) then
       begin
         lastMemo := Tag;
+        showmessage(pArr[Tag].from.ToString);
         MediaPlayer1.Position := Round(pArr[Tag].from*(audioSize/lastTStamp))*1000 - 3000;
         if state then
         begin
