@@ -18,12 +18,25 @@ object Form1: TForm1
     Left = 0
     Top = 0
     Width = 418
-    Height = 462
-    Align = alClient
+    Height = 153
+    Align = alTop
     Lines.Strings = (
       'Memo1')
     ScrollBars = ssVertical
     TabOrder = 0
+  end
+  object Memo2: TMemo
+    Left = 0
+    Top = 373
+    Width = 418
+    Height = 89
+    Align = alBottom
+    Lines.Strings = (
+      'Memo2')
+    TabOrder = 1
+    ExplicitLeft = 72
+    ExplicitTop = 328
+    ExplicitWidth = 185
   end
   object OpenDialog1: TOpenDialog
     Filter = 'TXT File|*.txt'

@@ -63,7 +63,6 @@ object Form1: TForm1
     Padding.Top = 5
     Padding.Bottom = 5
     TabOrder = 1
-    ExplicitTop = 470
     object MediaPlayer1: TMediaPlayer
       Left = 82
       Top = 6
@@ -115,7 +114,6 @@ object Form1: TForm1
     Padding.Top = 5
     Padding.Bottom = 5
     TabOrder = 2
-    ExplicitTop = 44
     object joinBtn: TButton
       Left = 118
       Top = 6
@@ -142,7 +140,6 @@ object Form1: TForm1
     Height = 394
     Align = alClient
     TabOrder = 3
-    ExplicitTop = 85
   end
   object textDialog: TOpenDialog
     Filter = 'JSON Content|*.json'

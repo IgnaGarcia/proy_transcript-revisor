@@ -13,6 +13,7 @@ type
     MainMenu1: TMainMenu;
     File1: TMenuItem;
     Open1: TMenuItem;
+    Memo2: TMemo;
     procedure Open1Click(Sender: TObject);
   private
     { Private declarations }
@@ -28,9 +29,19 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.Open1Click(Sender: TObject);
+var Memo: TMemo;
 begin
   OpenDialog1.Execute();
   Memo1.Lines.LoadFromFile(OpenDialog1.FileName);
+  showmessage(Memo1.Top.ToString + ' ' + Memo1.Height.ToString);
+  showMessage(Memo2.Top.ToString + ' ' + Memo2.Height.ToString);
+
+  Memo := TMemo.Create(Self);
+  Memo.Name := 'memoEj';
+  Memo.Align := alTop;
+  Memo.Top := Memo1.Top + Memo1.Height;
+  Memo.Parent := Self;
+  showmessage(Memo.Top.ToString + ' ' + Memo.Height.ToString);
 end;
 
 end.
