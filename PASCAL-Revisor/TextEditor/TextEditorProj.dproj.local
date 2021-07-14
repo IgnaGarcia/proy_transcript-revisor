@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2021/04/29 21:33:23.000.827,=D:\Projects\LEL\DelphiRevisor\Unit1.pas</Transaction>
-    <Transaction>2021/04/29 21:40:38.000.968,D:\Projects\LEL\DelphiRevisor\Unit1.dfm=D:\Projects\LEL\DelphiRevisor\TextEditor\TextEditor.dfm</Transaction>
-    <Transaction>2021/04/29 21:40:38.000.968,D:\Projects\LEL\DelphiRevisor\Unit1.pas=D:\Projects\LEL\DelphiRevisor\TextEditor\TextEditor.pas</Transaction>
-    <Transaction>2021/04/29 22:46:32.000.883,D:\Projects\LEL\DelphiRevisor\Project1.dproj=D:\Projects\LEL\DelphiRevisor\TextEditor\TextEditorProj.dproj</Transaction>
+    <Transaction>2021/04/29 21:40:38.000.968,D:\Projects\LEL\DelphiRevisor\TextEditor\TextEditor.pas=D:\Projects\LEL\DelphiRevisor\Unit1.pas</Transaction>
+    <Transaction>2021/04/29 21:40:38.000.968,D:\Projects\LEL\DelphiRevisor\TextEditor\TextEditor.dfm=D:\Projects\LEL\DelphiRevisor\Unit1.dfm</Transaction>
+    <Transaction>2021/04/29 22:46:32.000.883,D:\Projects\LEL\DelphiRevisor\TextEditor\TextEditorProj.dproj=D:\Projects\LEL\DelphiRevisor\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>
