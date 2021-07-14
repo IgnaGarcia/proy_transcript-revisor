@@ -191,6 +191,7 @@ begin
     Memo.Font.Size := 10;
     Memo.Top := pArr[lastMemo].words.Top + pArr[lastMemo].words.Height;
     Memo.Parent := ScrollBox1;
+    Memo.SetFocus;
 
     Memo.Height := 19 + Memo.Lines.Count * 16;
     pArr[lastMemo].words.Height := 19 + pArr[lastMemo].words.Lines.Count * 16;
@@ -200,6 +201,7 @@ begin
     paragraph.toTime := pArr[lastMemo].toTime;
     paragraph.from := (cursor * (pArr[lastMemo].toTime-pArr[lastMemo].from) / textLength) + pArr[lastMemo].from;
     pArr[lastMemo].toTime := paragraph.from;
+
 
     SetLength(pArrAux, size+1);
     for I := lastMemo+1 to size do
@@ -223,6 +225,7 @@ end;
 
 procedure TForm1.joinBtnClick(Sender: TObject);
 {Juntar parrafos}
+var initPos: Integer;
 begin
   if lastMemo = -1 then
   begin
@@ -234,11 +237,14 @@ begin
   end
   else
   begin
+    initPos := length(pArr[lastMemo].words.Text);
     pArr[lastMemo].words.Text :=  pArr[lastMemo].words.Text + pArr[lastMemo+1].words.Text;
     pArr[lastMemo].toTime :=  pArr[lastMemo+1].toTime;
     pArr[lastMemo].words.Height := 19 + pArr[lastMemo].words.Lines.Count * 16;
     pArr[lastMemo+1].words.Free;
     deleteX(lastMemo+1);
+    pArr[lastMemo].words.SetFocus;
+    pArr[lastMemo].words.SelStart := initPos
   end;
 end;
 
