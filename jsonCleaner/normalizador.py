@@ -1,6 +1,6 @@
 '''
 Usage: 
-    python cleanJson.py -i <input_file> -o <output_file> [-d <break_paragraph>] [--ibm]
+    python normalizador.py -i <input_file> -o <output_file> [-d <break_paragraph>] [--ibm]
 '''
 import json
 import sys, getopt

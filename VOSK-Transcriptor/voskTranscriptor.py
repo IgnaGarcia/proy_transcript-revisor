@@ -37,24 +37,6 @@ while True:
 print("Guardando la transcripcion...")
 res = json.loads(rec.FinalResult())
 
-# arch = open("resultado.txt", "w")
-# arch.write(res['text'])
-# for x in res:
-#     sMinutes = math.floor(x[0][0][0]/60)
-#     sSeconds = round(res['result'][0]['start'] - sMinutes * 60)
-#     sSeconds = sSeconds if sSeconds > 9 else "0"+str(sSeconds)
-
-#     eMinutes = math.floor(
-#         res[x]['result'][len(res[x]['result'])-1]['end']/60)
-#     eSeconds = round(res[x]['result'][len(res[x]['result'])-1]
-#                      ['end'] - eMinutes * 60)
-#     eSeconds = eSeconds if eSeconds > 9 else "0"+str(eSeconds)
-
-#     arch.write("{}:{} - {}:{} :\n\t{}\n\n".format(sMinutes,
-#                                                   sSeconds, eMinutes, eSeconds, res[x]['text']))
-
-# arch.close()
-
 arch = open("data.json", "w")
 arch.write(json.dumps(res, indent=2))
 arch.close()

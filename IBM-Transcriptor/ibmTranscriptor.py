@@ -35,9 +35,9 @@ class MyRecognizeCallback(RecognizeCallback):
 
 def main():
     # Inserte la key aqui
-    _key = 'IlPmRpIn1M-Twblnj0KF-J6N1e-nnhvxGhCEFGsebKDo'
+    _key = sys.argv[3]
     # Inserte la url de su clave aqui
-    _url = 'https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/62725879-72ad-4e7b-a9bd-5597be5f13ec'
+    _url = sys.argv[4]
 
     input_dir = sys.argv[1]
 
