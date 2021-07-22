@@ -37,7 +37,7 @@ Para esta etapa tendremos 2 opciones, se recomienda utilizar VOSK por su facilid
 Para utilizarlo se debe ir a la carpeta donde esta el *voskTransciptor.py*, abrir la consola y ejecutar:
 
 ```
-py voskTransciptor.py {Grabacion}
+voskTransciptor.exe {Grabacion}
 ```
 
 donde grabacion es la direccion relativa o exacta de donde esta la **Grabacion** a **transcribir**, incluyendo la extencion(.mp3).
@@ -46,7 +46,7 @@ Como resultado se obtiene la **Transcripcion** *data.json*.
 
 EJ: 
 ```
-py voskTransciptor.py audio.mp3
+voskTransciptor.exe audio.mp3
 ```
 
 - ***IBM***
