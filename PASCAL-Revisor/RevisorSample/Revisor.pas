@@ -16,7 +16,7 @@ type
 end;
 
 type
-  TForm1 = class(TForm)
+  TRevision = class(TForm)
     header: TPanel;
     chargeBtn: TButton;
     textDialog: TOpenDialog;
@@ -64,7 +64,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  Revision: TRevision;
 
 implementation
 {$MAXSTACKSIZE 45943040}
@@ -72,7 +72,7 @@ implementation
 
 {Funciones del Header}
 
-procedure TForm1.chargeBtnClick(Sender: TObject);
+procedure TRevision.chargeBtnClick(Sender: TObject);
 {Cargar audio t JSON}
 var I: Integer;
 begin
@@ -94,7 +94,7 @@ begin
   end;
 end;
 
-procedure TForm1.chargeText();
+procedure TRevision.chargeText();
 {Cargar el JSON}
 var jText : TJSONValue;
 begin
@@ -105,7 +105,7 @@ begin
   end;
 end;
 
-procedure TForm1.chargeAudio();
+procedure TRevision.chargeAudio();
 {Cargar el audio}
 begin
   if audioDialog.Execute() then
@@ -117,7 +117,7 @@ begin
   end;
 end;
 
-procedure TForm1.saveBtnClick(Sender: TObject);
+procedure TRevision.saveBtnClick(Sender: TObject);
 {Guardar el JSON de revision}
 var
   I: Integer;
@@ -138,7 +138,7 @@ begin
   TFile.WriteAllText(saveDialog.FileName+'.json', jsonArray.ToJSON);
 end;
 
-procedure TForm1.exportBtnClick(Sender: TObject);
+procedure TRevision.exportBtnClick(Sender: TObject);
 {Exportar el texto revisado}
 var
 Fichero: TextFile;
@@ -164,7 +164,7 @@ end;
 
 {Funciones de SubHeader}
 
-procedure TForm1.divideBtnClick(Sender: TObject);
+procedure TRevision.divideBtnClick(Sender: TObject);
 {Dividir en 2 parrafos}
 var Memo: TMemo;
   paragraph: MyParagraph;
@@ -223,7 +223,7 @@ begin
   end;
 end;
 
-procedure TForm1.joinBtnClick(Sender: TObject);
+procedure TRevision.joinBtnClick(Sender: TObject);
 {Juntar parrafos}
 var initPos: Integer;
 begin
@@ -248,7 +248,7 @@ begin
   end;
 end;
 
-procedure TForm1.deleteX(index: Integer);
+procedure TRevision.deleteX(index: Integer);
 {Elimina un elemento y colapsa los array 1 posicion}
 var
   I: Integer;
@@ -263,12 +263,13 @@ end;
 
 {Funciones del Content}
 
-procedure TForm1.linkData(jData: TJSONArray; sender: TMediaPlayer);
+procedure TRevision.linkData(jData: TJSONArray; sender: TMediaPlayer);
 {Cargar los parrafos creando Memo's}
 var Memo: TMemo;
     jValue: TJSONValue;
     I : Integer;
     paragraph: MyParagraph;
+    Rect: TRect;
 begin
   lastMemo := -1;
   size := jData.Count;
@@ -303,7 +304,7 @@ begin
 end;
 
 
-procedure TForm1.memoClick(Sender: TObject);
+procedure TRevision.memoClick(Sender: TObject);
 {Captar el click de un memo}
 begin
   if Sender is TMemo then
@@ -325,7 +326,7 @@ end;
 
 {Funciones del Footer}
 
-procedure TForm1.playpauseBtnClick(Sender: TObject);
+procedure TRevision.playpauseBtnClick(Sender: TObject);
 {Play/Pause del audio}
 begin
   if MediaPlayer1.FileName <> '' then
@@ -344,7 +345,7 @@ begin
   end;
 end;
 
-procedure TForm1.rewindBtnClick(Sender: TObject);
+procedure TRevision.rewindBtnClick(Sender: TObject);
 {Revobinar audio 5seg}
 begin
   if MediaPlayer1.FileName <> '' then
@@ -355,7 +356,7 @@ begin
   end;
 end;
 
-procedure TForm1.passBtnClick(Sender: TObject);
+procedure TRevision.passBtnClick(Sender: TObject);
 {Avanzar audio 5seg}
 begin
   if MediaPlayer1.FileName <> '' then

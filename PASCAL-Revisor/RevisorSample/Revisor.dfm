@@ -1,10 +1,10 @@
-object Form1: TForm1
+object Revision: TRevision
   Left = 0
   Top = 0
   Width = 434
   Height = 563
   AutoScroll = True
-  Caption = 'Form1'
+  Caption = 'Revision'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
