@@ -10,7 +10,7 @@ def open_dll():
         os.environ["PATH"] = dlldir + os.pathsep + os.environ['PATH']
         if hasattr(os, 'add_dll_directory'):
             os.add_dll_directory(dlldir)
-        return _ffi.dlopen("libvosk.dll")
+        return _ffi.dlopen(os.path.join(dlldir, "libvosk.dll"))
     elif sys.platform == 'linux':
         return _ffi.dlopen(os.path.join(dlldir, "libvosk.so"))
     elif sys.platform == 'darwin':
@@ -44,8 +44,8 @@ class KaldiRecognizer(object):
     def __init__(self, *args):
         if len(args) == 2:
             self._handle = _c.vosk_recognizer_new(args[0]._handle, args[1])
-        elif len(args) == 3 and type(args[1]) is SpkModel:
-            self._handle = _c.vosk_recognizer_new_spk(args[0]._handle, args[1]._handle, args[2])
+        elif len(args) == 3 and type(args[2]) is SpkModel:
+            self._handle = _c.vosk_recognizer_new_spk(args[0]._handle, args[1], args[2]._handle)
         elif len(args) == 3 and type(args[2]) is str:
             self._handle = _c.vosk_recognizer_new_grm(args[0]._handle, args[1], args[2].encode('utf-8'))
         else:
@@ -53,6 +53,15 @@ class KaldiRecognizer(object):
 
     def __del__(self):
         _c.vosk_recognizer_free(self._handle)
+
+    def SetMaxAlternatives(self, max_alternatives):
+        _c.vosk_recognizer_set_max_alternatives(self._handle, max_alternatives)
+
+    def SetWords(self, enable_words):
+        _c.vosk_recognizer_set_words(self._handle, 1 if enable_words else 0)
+
+    def SetSpkModel(self, spk_model):
+        _c.vosk_recognizer_set_spk_model(self._handle, spk_model._handle)
 
     def AcceptWaveform(self, data):
         return _c.vosk_recognizer_accept_waveform(self._handle, data, len(data))
@@ -66,6 +75,17 @@ class KaldiRecognizer(object):
     def FinalResult(self):
         return _ffi.string(_c.vosk_recognizer_final_result(self._handle)).decode('utf-8')
 
+    def Reset(self):
+        return _c.vosk_recognizer_reset(self._handle)
+
 
 def SetLogLevel(level):
     return _c.vosk_set_log_level(level)
+
+
+def GpuInit():
+    _c.vosk_gpu_init()
+
+
+def GpuThreadInit():
+    _c.vosk_gpu_thread_init()
