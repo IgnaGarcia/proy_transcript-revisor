@@ -13,19 +13,18 @@ class MyRecognizeCallback(RecognizeCallback):
         RecognizeCallback.__init__(self)
 
     def on_data(self, data):
-        output_dir = sys.argv[2]
         jsonDictonary = data  # Guardar el resultado como Dictionary
         # Convertir el resultado a un JSON Indentado para facil lectura
         jsonText = json.dumps(jsonDictonary, indent=2)
 
-        print(f"\nGuardando resultado en: {output_dir}")
+        print(f"\nGuardando resultado en: ./data.json")
 
         # Archivo para todo el resultado (Timestamps, Keywords, ETC)
-        f = open(f"{pathlib.Path(output_dir)}/data.json", "w")
+        f = open(f"./data.json", "w")
         f.write(jsonText) 
         f.close()
 
-        print(f"\nPeticion exitosa! revisar en {output_dir}")
+        print(f"\nPeticion exitosa! revisar en ./data.json")
 
     def on_error(self, error):
         print(f'\nError : {error}')
@@ -34,10 +33,8 @@ class MyRecognizeCallback(RecognizeCallback):
         print(f'\nInactividad en el audio : {error}')
 
 def main():
-    # Inserte la key aqui
-    _key = sys.argv[3]
-    # Inserte la url de su clave aqui
-    _url = sys.argv[4]
+    _key = sys.argv[2]
+    _url = sys.argv[3]
 
     input_dir = sys.argv[1]
 

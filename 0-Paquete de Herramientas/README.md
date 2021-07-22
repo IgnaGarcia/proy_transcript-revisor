@@ -60,7 +60,7 @@ Antes de utilizar la herramienta se debe crear una cuenta y crear un servicio en
 Para utilizarlo se debe ir a la carpeta donde esta el *ibmTransciptor.py*, abrir la consola y ejecutar:
 
 ```
-py ibmTranscriptor.py {Grabacion} {Transcripcion} {Clave} {URL}
+ibmTranscriptor.exe {Grabacion} {Clave} {URL}
 ```
 
 donde *grabacion* es la direccion relativa o exacta de donde esta la **Grabacion** a **transcribir**, incluyendo la extencion(.mp3);  
@@ -72,7 +72,7 @@ Como resultado se obtiene la **Transcripcion**.
 
 EJ: 
 ```
-py ibmTranscriptor.py audio.mp3 data.json \
+ibmTranscriptor.exe audio.mp3 \
 aab57cddee-ff22hhii-j12rs-aabb22ddee33gghhj \
 https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/12345678-12aa-12bb-12cc-123456789aab
 ```
@@ -82,7 +82,7 @@ https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/12345678-12aa
 Para utilizarlo se debe ir a la carpeta donde esta el *normalizador.py*, abrir la consola y ejecutar:
     
 ```
-py normalizador.py -i {Transcripcion} [-o {Normalizada}] [-d {Separador de Parrafo}] [--ibm]
+normalizador.exe -i {Transcripcion} [-o {Normalizada}] [-d {Separador de Parrafo}] [--ibm]
 ```
 
 donde *transcripcion* es la direccion relativa o exacta de el resultado del paso anterior(**Transcripcion**), con su extension;  

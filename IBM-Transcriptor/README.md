@@ -19,7 +19,7 @@ https://cloud.ibm.com/
 
 - **Ejecutar**
 ```
-pipenv run python transcriptor.py INPUT_DIR OUTPUT_DIR
+pipenv run python transcriptor.py INPUT_DIR IBM_KEY IBM_URL
 ```
 ---
 # Guia de uso para pipenv
