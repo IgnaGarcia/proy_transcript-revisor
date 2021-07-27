@@ -113,4 +113,4 @@ La ultima etapa de este flujo de trabajo consiste en revisar la calidad de la tr
     ![juntar parrafo](./docs/juntar.png "Juntar")
     8. Crear un parrafo abajo, moviendo todo el contenido desde el cursor hasta el final hacia el nuevo parrafo, se debe haber seleccionado la posicion especifica y luego darle al boton **Dividir**.  
     ![dividir parrafo](./docs/dividir.png "Dividir")
-    9. Una vez cargada una revision se puede volver a cargar otra, dandole nuevamente al boton **Cargar**, advertencia: los cambios no guardados se perderan
+    9. Una vez cargada una revision, se puede volver a cargar otra dandole nuevamente al boton **Cargar**, advertencia: los cambios no guardados de la revision anterior se perderan
