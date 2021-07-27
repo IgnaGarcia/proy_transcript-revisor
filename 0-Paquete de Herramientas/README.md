@@ -29,25 +29,29 @@
 A continuacion se explicara como utilizar las herramientas a partir de una grabacion en formato mp3.
 
 
+
 ### ***1- Transcribir la Grabacion***
 Para esta etapa tendremos 2 opciones, se recomienda utilizar VOSK por su facilidad de uso y por la pequeña diferencia en la calidad.
 
 - ***VOSK***
 
-Para utilizarlo se debe ir a la carpeta donde esta el *voskTransciptor.py*, abrir la consola y ejecutar:
+Para utilizarlo se debe ir a la carpeta donde esta el *voskTransciptor.exe*, abrir la consola y ejecutar:
 
 ```
-voskTransciptor.exe {Grabacion}
+voskTransciptor.exe "{Grabacion}"
 ```
 
-donde grabacion es la direccion relativa o exacta de donde esta la **Grabacion** a **transcribir**, incluyendo la extencion(.mp3).
+donde *grabacion* es la direccion relativa o exacta de donde esta la **Grabacion** a **transcribir**, incluyendo la extencion(.mp3).
 
 Como resultado se obtiene la **Transcripcion** *data.json*.
 
 EJ: 
 ```
-voskTransciptor.exe audio.mp3
+voskTransciptor.exe "audio.mp3"
+voskTransciptor.exe "../data/audio.mp3"
+voskTransciptor.exe "C:/Users/prueba/Documents/audio.mp3"
 ```
+
 
 - ***IBM***
 
@@ -57,11 +61,12 @@ Antes de utilizar la herramienta se debe crear una cuenta y crear un servicio en
 2. Ir a [este enlace](https://cloud.ibm.com/catalog/services/speech-to-text) para crear un servicio, es opcional cambiarle el nombre.
 3. Una vez creado el servicio les abrira un panel, dirigirse a la opcion **Gestionar** y alli pueden copiar su Clave y URL.
 
-Para utilizarlo se debe ir a la carpeta donde esta el *ibmTransciptor.py*, abrir la consola y ejecutar:
+Para utilizarlo se debe ir a la carpeta donde esta el *ibmTransciptor.exe*, abrir la consola y ejecutar:
 
 ```
-ibmTranscriptor.exe {Grabacion} {Clave} {URL}
+ibmTranscriptor.exe "{Grabacion}" {Clave} {URL}
 ```
+
 
 donde *grabacion* es la direccion relativa o exacta de donde esta la **Grabacion** a **transcribir**, incluyendo la extencion(.mp3);  
 donde *transcripcion* es la direccion relativa o exacta donse se guardara el resultado, si se quiere guardar en la misma carpeta unicamente indicar nombre y extension del archivo;  
@@ -72,23 +77,34 @@ Como resultado se obtiene la **Transcripcion**.
 
 EJ: 
 ```
-ibmTranscriptor.exe audio.mp3 \
+ibmTranscriptor.exe "audio.mp3" \
 aab57cddee-ff22hhii-j12rs-aabb22ddee33gghhj \
 https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/12345678-12aa-12bb-12cc-123456789aab
 ```
+**NOTA: el orden de los parametros afecta, primero viene el audio de entrada, luego la clave y por ultimo la url.**
+
 
 
 ### ***2- Normalizar la Transcripcion***
-Para utilizarlo se debe ir a la carpeta donde esta el *normalizador.py*, abrir la consola y ejecutar:
+Para utilizarlo se debe ir a la carpeta donde esta el *normalizador.exe*, abrir la consola y ejecutar:
     
 ```
-normalizador.exe -i {Transcripcion} [-o {Normalizada}] [-d {Separador de Parrafo}] [--ibm]
+normalizador.exe -i "{Transcripcion}" [-o "{Salida}"] [-d {Separador de Parrafo}] [--ibm]
 ```
 
 donde *transcripcion* es la direccion relativa o exacta de el resultado del paso anterior(**Transcripcion**), con su extension;  
-donde *normalizada* es la direccion relativa o exacta donde se guardara el resultado, de no especificar se guardara junto al ejecutable llamandose *clean.json*;  
+donde *salida* es la direccion relativa o exacta donde se guardara el resultado, de no especificar se guardara junto al ejecutable llamandose *clean.json*;  
 donde *separador de parrafo* es la diferencia en segundos que debe haber entre 2 palabras para ser consideradas de diferente parrafo, de no especificar se utilizara el valor *0.8*;  
 y donde *--ibm* indicara si es una transcripcion de **IBM**, de no especificar se tomara como si fuera una transcripcion de **VOSK**.
+
+EJ: 
+```
+normalizador.exe -i "data.json" -d 1.2
+normalizador.exe -i "C:/Users/prueba/Documents/data.json" --ibm
+normalizador.exe -i "../data/data.json" -o "../data/clean.json" --ibm
+```
+**NOTA: el orden de los parametros no afecta, siempre y cuando luego de cada flag venga el campo correspondiente(luego de -i la direccion de entrada, luego de -d el tiempo de separacion, y demas).**
+
 
 
 ### ***3- Revisar la Transcripcion***
