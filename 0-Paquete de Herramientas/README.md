@@ -9,7 +9,7 @@
 - Jorge H. Doorn
 - María C. Elizalde
 - Ignacio A. García Ravlic
-- Damián Casfuz
+- Damián Casafuz
 
 **Objetivo:** Se busca minimizar el tiempo de transcripcion sin perder calidad, creando herramientas e incorporando otras preexistentes.
 
