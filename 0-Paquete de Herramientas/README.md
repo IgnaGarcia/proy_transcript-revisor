@@ -69,7 +69,6 @@ ibmTranscriptor.exe "{Grabacion}" {Clave} {URL}
 
 
 donde *grabacion* es la direccion relativa o exacta de donde esta la **Grabacion** a **transcribir**, incluyendo la extencion(.mp3);  
-donde *transcripcion* es la direccion relativa o exacta donse se guardara el resultado, si se quiere guardar en la misma carpeta unicamente indicar nombre y extension del archivo;  
 donde *clave* es la clave que les otorgo IBM;  
 y donde *url* es el enlace al servicio creado en IBM.
 
